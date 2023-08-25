@@ -2,6 +2,6 @@
     <div>
         *DefaultLayout*
         <HeaderNav />
-        <Slot />
+        <slot />
     </div>
 </template>

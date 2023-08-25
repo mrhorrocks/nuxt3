@@ -8,6 +8,6 @@
 <script setup>
   definePageMeta({
     // Check the layouts folder for options
-    layout: 'CustomLayout'
+    layout: 'custom'
   });
 </script>
