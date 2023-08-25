@@ -8,9 +8,9 @@
                 <ul>
                     <li>
                         <NuxtLink to="/">Home</NuxtLink>
-                        <NuxtLink to="/about">About</NuxtLink>
                         <NuxtLink to="/products">Products Layout</NuxtLink>
                         <NuxtLink to="/custom">Custom Layout</NuxtLink>
+                        <NuxtLink to="/about">About</NuxtLink>
                     </li>
                 </ul>
             </nav>
