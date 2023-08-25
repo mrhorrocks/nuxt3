@@ -1,6 +1,5 @@
 <template>
     <div>
-        <HeaderNav />
         <p>Product details for {{ id }}</p>
     </div>
 </template>
