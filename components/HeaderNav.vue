@@ -2,7 +2,9 @@
     <div>
         <header>
             <nav>
-                <NuxtLink to="/">Site title</NuxtLink>
+                <NuxtLink to="/">
+                    Site title
+                </NuxtLink>
                 <ul>
                     <li>
                         <NuxtLink to="/">Home</NuxtLink>
@@ -15,9 +17,3 @@
         </header>
     </div>
 </template>
-
-<script setup>
-
-</script>
-
-<style scoped></style>

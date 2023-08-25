@@ -1,8 +1,9 @@
 <template>
-  <div>
-    <h2>Custom</h2>
-  </div>
+    <div>
+        <h2>Custom</h2>
+    </div>
 </template>
+
 
 <script setup>
   definePageMeta({
