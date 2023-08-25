@@ -1,5 +1,6 @@
 <template>
     <div>
-      Homepage
+        <HeaderNav />
+        <h2>Homepage</h2>
     </div>
-  </template>
+</template>

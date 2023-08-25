@@ -1,6 +1,7 @@
 <template>
     <div>
-
+        <HeaderNav />
+        <h2>Products</h2>
     </div>
 </template>
 
@@ -8,6 +9,4 @@
 
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

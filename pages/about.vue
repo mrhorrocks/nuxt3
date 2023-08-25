@@ -1,5 +1,6 @@
 <template>
     <div>
-      About
+        <HeaderNav />
+        <h2>About</h2>
     </div>
-  </template>
+</template>
