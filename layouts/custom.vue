@@ -1,6 +1,6 @@
 <template>
     <div>
-        *default* layout
+        *custom* layout
         <HeaderNav />
         <!-- output -->
         <slot />
@@ -12,3 +12,4 @@
 </script>
 
 <style scoped></style>
+  
