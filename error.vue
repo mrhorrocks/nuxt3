@@ -1,8 +1,8 @@
 <template>
     <div>
         <Head>
-            <Title>{{ error.statusCode }} - {{ error.message }}</Title>
-            <Meta name="description" content='Error page' />
+            <Title>A Nuxt 3 Project - {{ error.statusCode }} - {{ error.message }}</Title>
+            <Meta name="description" content='Error' />
         </Head>
         <h2>{{ error.statusCode }}</h2>
         <p>{{ error.message }}</p>
