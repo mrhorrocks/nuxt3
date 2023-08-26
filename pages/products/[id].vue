@@ -1,10 +1,11 @@
 <template>
     <div>
+
         <Head>
-            <Title>A Nuxt 3 Project - Products - {{ id }}</Title>
+            <Title>A Nuxt 3 Project - Product - {{ id }}</Title>
             <Meta name="description" content='Error page' />
         </Head>
-        <p>Product details for {{ id }}</p>
+        <h2>Product details for {{ id }}</h2>
     </div>
 </template>
 

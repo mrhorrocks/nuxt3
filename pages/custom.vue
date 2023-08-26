@@ -5,7 +5,7 @@
       <Title>A Nuxt 3 Project - Using a Custom Layout</Title>
       <Meta name="description" content='Custom layout' />
     </Head>
-    <h2>Custom</h2>
+    <h2>This is the custom layout</h2>
   </div>
 </template>
 
