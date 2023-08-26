@@ -5,5 +5,6 @@
 </template>
 
 <script setup>
-    const { id } = useRoute().params // this must match the file name, in this case 'id'
+    // this must match the file name, in this case 'id'
+    const { id } = useRoute().params 
 </script>
