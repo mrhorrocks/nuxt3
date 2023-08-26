@@ -1,4 +1,9 @@
 ## Composables
 
-All composables are auto imported  
-File names are to named as follows and must be preixed with utils ie: 'utilsTodo.ts'
+* All composables are auto imported
+* File naming conventions must match the example below
+
+Example:
+
+utilsTodo.ts
+
