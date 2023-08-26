@@ -1,7 +1,7 @@
 <template>
     <div>
         <Head>
-            <Title>Product Page - {{ id }}</Title>
+            <Title>A Nuxt 3 Project - Products - {{ id }}</Title>
             <Meta name="description" content='Error page' />
         </Head>
         <p>Product details for {{ id }}</p>

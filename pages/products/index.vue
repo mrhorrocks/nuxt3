@@ -2,7 +2,7 @@
     <div>
         <!-- Override the default title and meta content -->
         <Head>
-            <Title>Products</Title>
+            <Title>A Nuxt 3 Project - Products</Title>
             <Meta name="description" content="Blar Blar" />
         </Head>
         <h2>Products</h2>
