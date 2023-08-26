@@ -1,21 +1,28 @@
 ## Composables
 
-> Composables in this folder are auto imported.
+> Files in this folder are auto imported.
 
-> File naming conventions must be prefixed with utils and match the example below.
+> Naming conventions apply and must be prefixed with 'use'. See example
 
 Example:
 
 ```
-utilsPrintToConsole.ts
+usePrintString.ts
 ```
 
 How to use in a template:
 
 ```
 <script setup lang="ts">
-    // See ~/composables folder for available compaosables 
-    const printToConsole = usePrintToConsole();
+    // See ~/composables folder for available compaosables
+    const printString = usePrintString();
 </script>
+
+<template>
+    <div>
+        <p>{{ printString }}</p>
+        <!-- ~/composables/usePrintString.ts was activated -->
+    </div>
+</template>
 ```
 

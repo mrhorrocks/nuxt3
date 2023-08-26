@@ -1,7 +1,7 @@
 <script setup lang="ts">
     // See ~/composables folder for available compaosables 
-    const printString = usePrintString();
-    const printToConsole = usePrintToConsole();
+    const printString = usePrintString(); // Call the usePrintString plugin
+    const printToConsole = usePrintToConsole();  // Call the usePrintToConsole plugin
 </script>
 
 <template>
@@ -12,7 +12,6 @@
             <Meta name="description" content='Composables' />
         </Head>
         <h2>Composables</h2>
-        
         <p>{{ printString }}</p>
 
     </div>
