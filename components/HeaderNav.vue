@@ -6,13 +6,12 @@
                     Site title
                 </NuxtLink>
                 <ul>
-                    <li>
-                        <NuxtLink to="/">Home</NuxtLink>
-                        <NuxtLink to="/products">Products Layout</NuxtLink>
-                        <NuxtLink to="/custom">Custom Layout</NuxtLink>
-                        <NuxtLink to="/about">About</NuxtLink>
-                    </li>
+                    <li><NuxtLink to="/">Home</NuxtLink></li>
+                    <li><NuxtLink to="/products">Products</NuxtLink></li>
+                    <li><NuxtLink to="/custom">Custom</NuxtLink></li>
+                    <li><NuxtLink to="/about">About</NuxtLink></li>
                 </ul>
+
             </nav>
         </header>
     </div>
