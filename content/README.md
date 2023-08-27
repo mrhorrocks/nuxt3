@@ -16,7 +16,7 @@ How to show content in about.vue
 <template>
     <div>
         <!-- See: ~/content/about.md for details -->
-        <p><ContentDoc /></p>
+        <ContentDoc />
     </div>
 </template>
 ```
