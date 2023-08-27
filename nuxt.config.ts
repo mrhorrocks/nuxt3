@@ -1,18 +1,16 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  // alias:{
-  //   assets: '/<rootDir>/assets'
-  // },
+  // alias:{assets: '/<rootDir>/assets'},
   // css:['~/assets/main.css'],
   modules: [
-    '@nuxt/content'
+    '@nuxt/content',
+    '@pinia/nuxt',
   ],
   content: {
     // https://content.nuxtjs.org/api/configuration
   },
   devtools: {
     enabled: true, // Show devtools in the browser
-    
   },
 
 
