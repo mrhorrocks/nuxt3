@@ -10,6 +10,7 @@
                 <li><NuxtLink to="/custom">Custom</NuxtLink></li>
                 <li><NuxtLink to="/composables">Composables</NuxtLink></li>
                 <li><NuxtLink to="/about">About</NuxtLink></li>
+                <li><NuxtLink to="/tests">API</NuxtLink></li>
             </ul>
 
         </nav>
