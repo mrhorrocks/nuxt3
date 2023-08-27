@@ -2,7 +2,10 @@
 
 > Files in this folder are auto imported.
 
-> Naming conventions apply and must be prefixed with 'use'. See example
+```
+# Generates `composables/foo.ts`
+npx nuxi add composable foo
+```
 
 Example:
 
@@ -10,7 +13,7 @@ Example:
 usePrintString.ts
 ```
 
-How to use in a template:
+How to use:
 
 ```
 <script setup lang="ts">
