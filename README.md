@@ -51,7 +51,7 @@ Add a Tailwind Config file
 npx tailwindcss init  
 
 # Fully populated
-npx tailwindcss init
+npx tailwindcss init --full
 ```
 
 
