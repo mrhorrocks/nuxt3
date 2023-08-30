@@ -1,6 +1,9 @@
 <template>
     <div>
-        <TheHeaderNav />
-        <slot />
+        <TheHeaderNav /> 
+        <div class="container mx-auto p-4">
+            Custom
+            <slot />
+        </div>
     </div>
 </template>

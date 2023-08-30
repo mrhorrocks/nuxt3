@@ -1,14 +1,3 @@
-<template>
-    <div>
-        <!-- Override the default title and meta content -->
-        <Head>
-            <Title>A Nuxt 3 Project - Products</Title>
-            <Meta name="description" content="Blar Blar" />
-        </Head>
-        <h2>Products</h2>
-    </div>
-</template>
-
 <script setup>
     // Override the head content like this too
     // useHead({
@@ -16,3 +5,11 @@
     //     meta: {name: 'description', content: 'Prods page'}
     // })
 </script>
+
+<template>
+    <Head>
+        <Title>A Nuxt 3 Project - Products</Title>
+        <Meta name="description" content="Blar Blar" />
+    </Head>
+    <h2>Products</h2>
+</template>
