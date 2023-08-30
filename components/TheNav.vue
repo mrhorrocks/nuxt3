@@ -1,5 +1,5 @@
 <template>
-    <nav class="container mx-auto p-4 flex justify-between">
+    <nav>
         <NuxtLink to="/">Site title</NuxtLink>
         <ul class="flex gap-4">
             <li><NuxtLink to="/">Home</NuxtLink></li>
