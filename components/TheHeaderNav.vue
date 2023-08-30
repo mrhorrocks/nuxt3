@@ -1,6 +1,6 @@
 <template>
-    <header>
-        <nav>
+    <header class="shadow-small bg-amber-300">
+        <nav class="container mx-auto p-4 flex justify-between">
             <NuxtLink to="/">
                 Site title
             </NuxtLink>
