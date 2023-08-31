@@ -1,6 +1,6 @@
 <script setup>
 definePageMeta({
-  //See the layouts folder for more options
+  // Choose a layout for this page
   layout: 'custom'
 });
 </script>
