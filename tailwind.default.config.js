@@ -1,3 +1,5 @@
+// This file is not used but is used to show the defaults used by tailwincss
+// These can be overrided in tailwind.config.js
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [],
