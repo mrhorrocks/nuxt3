@@ -21,3 +21,9 @@ nav {
     flex justify-between
 }
 
+footer {
+    @apply  
+    p-4
+    bg-green-300
+}
+

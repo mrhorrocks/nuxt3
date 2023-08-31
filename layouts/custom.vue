@@ -1,9 +1,10 @@
 <template>
-    <div>
+    <div class="flex flex-col min-h-screen">
         <TheHeader />
-        <div class="container mx-auto p-4">
+        <main class="container mx-auto p-4 grow items-start">
             Custom
             <slot />
-        </div>
+        </main>
+        <TheFooter />
     </div>
 </template>
