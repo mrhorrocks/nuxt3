@@ -1,7 +1,8 @@
 <template>
-    <nav>
-        <NuxtLink to="/">Site title</NuxtLink>
-        <ul class="flex gap-4">
+    <nav class="">
+        <h1><NuxtLink to="/">Site title</NuxtLink></h1>
+
+        <ul class="hidden md:flex gap-4">
             <li><NuxtLink to="/">Home</NuxtLink></li>
             <li><NuxtLink to="/products">Products</NuxtLink></li>
             <li><NuxtLink to="/custom">Custom</NuxtLink></li>
@@ -9,5 +10,12 @@
             <li><NuxtLink to="/about">About</NuxtLink></li>
             <li><NuxtLink to="/tests">API</NuxtLink></li>
         </ul>
+
+        <div class="cursor-pointer md:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+            </svg>
+        </div>
+
     </nav>
 </template>
