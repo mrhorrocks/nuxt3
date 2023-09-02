@@ -1,8 +1,6 @@
 <template>
-    <div>
-        <Head>
-            <Meta name="description" content="Homepage" />
-        </Head>
-        <h2>Homepage</h2>
-    </div>
+    <Head>
+        <Meta name="description" content="Homepage" />
+    </Head>
+    <h2 class="shadow-small bg-green-700">Homepage</h2>
 </template>
