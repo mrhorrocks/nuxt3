@@ -13,13 +13,13 @@ header {
     bg-amber-300
 }
 
-nav {
+/* nav {
     @apply 
     container
     mx-auto 
     p-4 
     flex justify-between
-}
+} */
 
 footer {
     @apply  
