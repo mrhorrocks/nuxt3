@@ -1,7 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   // alias:{assets: '/<rootDir>/assets'},
-  // css:['~/assets/main.css'],
   modules: [
     '@nuxt/content',
     '@pinia/nuxt',
@@ -13,6 +12,9 @@ export default defineNuxtConfig({
   devtools: {
     enabled: true, // Show devtools in the browser
   },
+  css: [
+    "@/assets/css/tailwind.css"
+  ],
 
 
   app: {

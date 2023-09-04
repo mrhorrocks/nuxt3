@@ -43,7 +43,7 @@ export default {
 
         <!-- MOBILE MENU -->
         <!-- Show below 1024px -->
-        <div v-if="mobileMenuOpen" class="lg:hidden bg-blue-500">
+        <div v-if="mobileMenuOpen" class="lg:hidden container mx-auto bg-blue-500">
    <!-- <div v-if="mobileMenuOpen" class="lg:hidden bg-blue-500 container mx-auto flex justify-between"> -->
             <NuxtLink to="/" class="block">Home</NuxtLink>
             <NuxtLink to="/products" class="block">Products</NuxtLink>
