@@ -1,11 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* :root {
-    --accentColor: #7531ff;
-} */
-.global {
+:root {
+  --accentColor: #7531ff;
+  --safeColor: #31ff4c;
+}
+
+.other {
   background-color: yellow;
+  color: green;
 }
 
 body {

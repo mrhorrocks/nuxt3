@@ -8,7 +8,7 @@ export default defineNuxtConfig({
   
   // Add a global css file
   css: [
-    "@/assets/css/tailwind.css", "@/assets/scss/global.scss"
+    "@/assets/css/global.css"
   ],
   content: {
     // https://content.nuxtjs.org/api/configuration
