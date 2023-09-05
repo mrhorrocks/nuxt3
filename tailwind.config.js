@@ -1,7 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  mode: 'jit',
-  jit: true, // Enable JIT mode
+  // mode: 'jit', // This is already configured with "@nuxtjs/tailwindcss": "^6.8.0",
   content: [
     './components/**/*.{vue,js}',
     './layouts/**/*.vue',

@@ -1,10 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  // alias:{assets: '/<rootDir>/assets'},
   modules: [
     '@nuxt/content',
     '@pinia/nuxt',
     '@nuxtjs/tailwindcss',
+  ],
+  css: [
+    "@/assets/css/tailwind.css" // Add a global css file
   ],
   content: {
     // https://content.nuxtjs.org/api/configuration
@@ -12,9 +14,16 @@ export default defineNuxtConfig({
   devtools: {
     enabled: true, // Show devtools in the browser
   },
-  css: [
-    "@/assets/css/tailwind.css"
-  ],
+  build: {
+    postcss: {
+      postcssOptions: {
+        plugins: {
+          tailwindcss: {},
+          autoprefixer: {},
+        },
+      },
+    },
+  },
 
 
   app: {

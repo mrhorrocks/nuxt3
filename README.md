@@ -39,11 +39,13 @@ npm run preview
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
 
 ## Notes
+
 Add Tailwind.css
 
 ```bash
 npm install --save-dev @nuxtjs/tailwindcss
 ```
+
 Add a Tailwind Config file
 
 ```bash
@@ -54,4 +56,20 @@ npx tailwindcss init
 npx tailwindcss init --full
 ```
 
+CSS nesting is supported
+
+example below:
+
+```
+// ~/assets/css/tailwind.css  
+
+footer {
+    @apply
+    p-4
+    bg-green-300;
+        & p {
+        background: green;
+    }
+}
+```
 

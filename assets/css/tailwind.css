@@ -27,6 +27,9 @@ header {
 
 footer {
     @apply 
-    p-4 
-    bg-green-300
+    p-4
+    bg-green-300;
+    & p {
+        background: green;
+    }
 }
