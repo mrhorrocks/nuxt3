@@ -5,8 +5,10 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxtjs/tailwindcss',
   ],
+  
+  // Add a global css file
   css: [
-    "@/assets/css/tailwind.css" // Add a global css file
+    "@/assets/css/tailwind.css", "@/assets/scss/global.scss"
   ],
   content: {
     // https://content.nuxtjs.org/api/configuration
@@ -14,17 +16,6 @@ export default defineNuxtConfig({
   devtools: {
     enabled: true, // Show devtools in the browser
   },
-  build: {
-    postcss: {
-      postcssOptions: {
-        plugins: {
-          tailwindcss: {},
-          autoprefixer: {},
-        },
-      },
-    },
-  },
-
 
   app: {
     // Global title and meta config 
