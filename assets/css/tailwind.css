@@ -1,20 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 /* :root {
     --accentColor: #7531ff;
 } */
+.global {
+  background-color: yellow;
+}
 
 body {
-    @apply 
-    bg-gray-50;
+  @apply bg-gray-50;
 }
 
 header {
-    @apply 
-    shadow-2xl 
-    bg-amber-300
+  @apply shadow-2xl 
+    bg-amber-300;
 }
 
 /* nav {
@@ -24,12 +24,10 @@ header {
     p-4 
     flex justify-between
 } */
-
 footer {
-    @apply 
-    p-4
+  @apply p-4
     bg-green-300;
-    & p {
-        background: green;
-    }
+}
+footer p {
+  background: green;
 }

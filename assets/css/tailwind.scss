@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+// SCSS files below
+@import "../scss/vars";
+@import "../scss/global";
+
+body {
+    @apply 
+    bg-gray-50;
+}
+
+header {
+    @apply 
+    shadow-2xl 
+    bg-amber-300
+}
+
+/* nav {
+    @apply 
+    container
+    mx-auto 
+    p-4 
+    flex justify-between
+} */
+
+footer {
+    @apply 
+    p-4
+    bg-green-300;
+    & p {
+        background: green;
+    }
+}
