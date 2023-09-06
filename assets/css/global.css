@@ -6,11 +6,6 @@
   --safeColor: #31ff4c;
 }
 
-.other {
-  background-color: yellow;
-  color: green;
-}
-
 body {
   @apply bg-gray-50;
 }
@@ -20,15 +15,21 @@ header {
     bg-amber-300;
 }
 
-/* nav {
-    @apply 
-    container
-    mx-auto 
-    p-4 
-    flex justify-between
-} */
+main {
+  @apply container mx-auto grow items-start;
+}
+
+.navlinks a {
+  @apply bg-slate-300 
+        rounded-md 
+        hover:bg-sky-700 
+        transition 
+        duration-150 
+        ease-in-out p-2;
+}
+
 footer {
-  @apply p-4
+  @apply p-4 
     bg-green-300;
 }
 footer p {
