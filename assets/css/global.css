@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --accentColor: #7531ff;
+  --safeColor: #31ff4c;
+}
+
+body {
+  @apply bg-gray-50;
+}
+
+header {
+  @apply shadow-2xl 
+    bg-amber-300;
+}
+
+main {
+  @apply container mx-auto grow items-start;
+}
+
+.navlinks a {
+  @apply bg-slate-300 
+        rounded-md 
+        hover:bg-sky-700 
+        transition 
+        duration-150 
+        ease-in-out p-2;
+}
+
+footer {
+  @apply p-4 
+    bg-green-300;
+}
+footer p {
+  background: green;
+}

@@ -60,7 +60,7 @@ CSS nesting is supported
 
 example below:
 
-```
+```bash
 // ~/assets/css/tailwind.css  
 
 footer {
@@ -71,5 +71,16 @@ footer {
         background: green;
     }
 }
+```
+Scss can be used in this project.
+
+```bash
+
+<style lang="scss" scoped>
+    p {
+        background: green;
+        span { color: white;}
+    }
+</style>
 ```
 

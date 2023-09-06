@@ -1,7 +1,7 @@
 <script setup lang="ts">
-// See ~/composables folder for available compaosables 
-const printString = usePrintString(); // Call the usePrintString plugin
-const printToConsole = usePrintToConsole();  // Call the usePrintToConsole plugin
+    // See ~/composables folder for available compaosables 
+    const printString = usePrintString(); // Call the usePrintString plugin
+    const printToConsole = usePrintToConsole();  // Call the usePrintToConsole plugin
 </script>
 
 <template>
