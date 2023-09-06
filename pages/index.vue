@@ -1,3 +1,10 @@
+<script setup>
+definePageMeta({
+  // Choose a layout for this page
+  layout: 'homepage'
+});
+</script>
+
 <template>
     <Head>
         <Meta name="description" content="Homepage" />
