@@ -3,15 +3,14 @@
     // Choose a layout for this page
     layout: 'homepage'
 });
+
+    // Override the head content like this too
+    useHead({
+        title: 'Mr. Horrocks',
+        meta: {name: 'description', content: 'A Nuxt 3 Project - Homepage'}
+    })
 </script>
 
 <template>
-    <Head>
-        <Meta name="description" content="Homepage" />
-    </Head>
-    <Head>
-        <Title>A Nuxt 3 Project</Title>
-        <Meta name="description" content='Homepage layout' />
-    </Head>
     <h2>This is the Homepage layout</h2>
 </template>
