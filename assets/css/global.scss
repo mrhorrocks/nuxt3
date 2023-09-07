@@ -7,13 +7,16 @@
 
 body {
     @apply 
-    bg-gray-50;
+    bg-gray-50
+    border-t-8 
+    border-blue-300
 }
 
 header {
     @apply 
     shadow-2xl 
-    bg-amber-300
+    bg-blue-500
+    py-4
 }
 
 main {
@@ -21,16 +24,15 @@ main {
     container 
     mx-auto 
     grow 
-    items-start
-    py-4;
+    items-start;
 }
 
 .navlinks {
     a {
         @apply 
         bg-slate-300 
-        rounded-md 
-        hover:bg-sky-700 
+        rounded
+        hover:bg-blue-900 
         transition 
         duration-150 
         ease-in-out 
@@ -47,12 +49,15 @@ main {
 .mobilenavlinks {
     a {
         @apply 
-        hover:bg-sky-700 
+        text-slate-200
+        hover:text-white 
+        hover:underline
+        border-white
         transition 
         duration-150 
         ease-in-out 
         py-2 
-        pl-2
+        pl-0
     }
 
 }
@@ -60,9 +65,10 @@ main {
 footer {
     @apply 
     p-4 
-    bg-sky-300;
-
-    & p {
-        background: green;
+    bg-blue-300;
+    a {
+    @apply
+        inline-block
+        pr-2
     }
 }
