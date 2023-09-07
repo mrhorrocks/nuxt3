@@ -9,14 +9,14 @@ body {
     @apply 
     bg-gray-50
     border-t-8 
-    border-blue-300
+    border-blue-300;
 }
 
 header {
     @apply 
     shadow-2xl 
     bg-blue-500
-    py-4
+    py-4;
 }
 
 main {
@@ -31,7 +31,6 @@ main {
     a {
         @apply 
         rounded
-        hover:bg-blue-900 
         transition 
         duration-150 
         ease-in-out 
@@ -39,11 +38,12 @@ main {
         font-bold
         uppercase
         py-1 
-        px-2;
-        color: wheat;
+        px-2
+        text-white;
         &:hover {
             @apply 
-            text-white
+            text-blue-500
+            bg-white
         }
     }
 }
@@ -52,14 +52,17 @@ main {
     a {
         @apply 
         text-slate-200
-        hover:text-white 
-        hover:underline
         border-white
         transition 
         duration-150 
         ease-in-out 
         py-2 
-        pl-0
+        pl-0;
+        &:hover {
+            @apply
+            text-white 
+            underline;
+        }
     }
 
 }
@@ -68,9 +71,10 @@ footer {
     @apply 
     p-4 
     bg-blue-300;
+
     a {
     @apply
         inline-block
-        pr-2
+        pr-2;
     }
 }
