@@ -16,7 +16,7 @@ export default {
 </script>
   
 <template>
-    <nav class="container mx-auto">
+    <nav class="container mx-auto px-2">
         <!-- Primary Menu and Site Title -->
         <div class="flex justify-between items-center">
             <!-- Site Title -->

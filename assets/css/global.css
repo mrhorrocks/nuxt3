@@ -26,15 +26,17 @@ main {
 }
 
 .navlinks a {
-  @apply bg-slate-300 
-        rounded
+  @apply rounded
         hover:bg-blue-900 
         transition 
         duration-150 
         ease-in-out 
         text-sm
+        font-bold
+        uppercase
         py-1 
         px-2;
+  color: wheat;
 }
 .navlinks a:hover {
   @apply text-white;

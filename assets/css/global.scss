@@ -30,15 +30,17 @@ main {
 .navlinks {
     a {
         @apply 
-        bg-slate-300 
         rounded
         hover:bg-blue-900 
         transition 
         duration-150 
         ease-in-out 
         text-sm
+        font-bold
+        uppercase
         py-1 
         px-2;
+        color: wheat;
         &:hover {
             @apply 
             text-white
