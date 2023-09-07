@@ -6,37 +6,75 @@
 @import "../scss/topnav";
 
 body {
-    @apply bg-gray-50;
+    @apply 
+    bg-gray-50
+    border-t-8 
+    border-blue-300;
 }
 
 header {
     @apply 
     shadow-2xl 
-    bg-amber-300
+    bg-blue-500
+    py-4;
 }
 
 main {
-    @apply container mx-auto grow items-start;
+    @apply 
+    container 
+    mx-auto 
+    grow 
+    items-start;
 }
 
 .navlinks {
     a {
         @apply 
-        bg-slate-300 
-        rounded-md 
-        hover:bg-sky-700 
+        rounded
         transition 
         duration-150 
-        ease-in-out p-2
+        ease-in-out 
+        text-sm
+        font-bold
+        uppercase
+        py-1 
+        px-2
+        text-white;
+        &:hover {
+            @apply 
+            text-blue-500
+            bg-white
+        }
     }
+}
+
+.mobilenavlinks {
+    a {
+        @apply 
+        text-slate-200
+        border-white
+        transition 
+        duration-150 
+        ease-in-out 
+        py-2 
+        pl-0;
+        &:hover {
+            @apply
+            text-white 
+            underline;
+        }
+    }
+
 }
 
 footer {
     @apply 
     p-4 
-    bg-green-300;
+    bg-blue-300;
 
-    & p {
-        background: green;
+    a {
+    @apply
+        inline-block
+        pr-2;
     }
 }

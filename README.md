@@ -40,7 +40,7 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 
 ## Notes
 
-Add Tailwind.css
+Add Tailwind to the project
 
 ```bash
 npm install --save-dev @nuxtjs/tailwindcss
@@ -56,12 +56,12 @@ npx tailwindcss init
 npx tailwindcss init --full
 ```
 
-CSS nesting is supported
+Native CSS nesting is supported.
 
 example below:
 
 ```bash
-// ~/assets/css/tailwind.css  
+// ~/assets/css/global.css 
 
 footer {
     @apply
@@ -72,7 +72,9 @@ footer {
     }
 }
 ```
-Scss can be used in this project.
+SCSS can be used in this project.
+
+example below:
 
 ```bash
 

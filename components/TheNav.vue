@@ -16,12 +16,12 @@ export default {
 </script>
   
 <template>
-    <nav class="bg-blue-500 p-4">
+    <nav class="container mx-auto px-2">
         <!-- Primary Menu and Site Title -->
-        <div class="container mx-auto flex justify-between items-center">
+        <div class="flex justify-between items-center">
             <!-- Site Title -->
-            <h1>
-                <NuxtLink to="/">Site title</NuxtLink>
+            <h1 class="text-white">
+                <NuxtLink to="/" style="font: normal small-caps bold 1.5rem/1 Georgia, serif;">Mr. Horrocks</NuxtLink>
             </h1>
 
             <!-- Show below 1024px -->
@@ -33,25 +33,27 @@ export default {
 
             <!-- MAIN MENU -->
             <!-- Hide below 1024px -->
-            <div class="lg:flex space-x-4 hidden navlinks">
+            <div class="lg:flex space-x-3 hidden navlinks">
                 <NuxtLink to="/">Home</NuxtLink>
                 <NuxtLink to="/products">Products</NuxtLink>
                 <NuxtLink to="/custom">Custom</NuxtLink>
                 <NuxtLink to="/tests">API</NuxtLink>
                 <NuxtLink to="/composables">Composables</NuxtLink>
                 <NuxtLink to="/about">About</NuxtLink>
+                <NuxtLink to="/uses">Uses</NuxtLink>
             </div>
         </div>
 
         <!-- MOBILE MENU -->
         <!-- Show below 1024px -->
-        <div v-if="mobileMenuOpen" class="lg:hidden container mx-auto bg-blue-500">
+        <div v-if="mobileMenuOpen" class="lg:hidden container mx-auto bg-blue-500 mobilenavlinks divide-y divide-slate-200">
             <NuxtLink to="/" class="block">Home</NuxtLink>
             <NuxtLink to="/products" class="block">Products</NuxtLink>
             <NuxtLink to="/custom" class="block">Custom</NuxtLink>
-            <NuxtLink to="/tests" class="bloce">API</NuxtLink>
-            <NuxtLink to="/composables" class="block ">Composables</NuxtLink>
+            <NuxtLink to="/tests" class="block">API</NuxtLink>
+            <NuxtLink to="/composables" class="block">Composables</NuxtLink>
             <NuxtLink to="/about" class="block">About</NuxtLink>
+            <NuxtLink to="/uses" class="block">Uses</NuxtLink>
         </div>
     </nav>
 </template>
