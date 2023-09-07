@@ -7,6 +7,7 @@
   </Head>
   <h2>Editor + Terminal</h2>
   <h2>Desktop Apps</h2>
+  <h2>Resources</h2>
 </template>
 
 <style scoped></style>
