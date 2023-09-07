@@ -20,8 +20,8 @@ export default {
         <!-- Primary Menu and Site Title -->
         <div class="container mx-auto flex justify-between items-center">
             <!-- Site Title -->
-            <h1>
-                <NuxtLink to="/">Site title</NuxtLink>
+            <h1 class="text-white">
+                <NuxtLink to="/">A Nuxt 3 project</NuxtLink>
             </h1>
 
             <!-- Show below 1024px -->
@@ -40,18 +40,20 @@ export default {
                 <NuxtLink to="/tests">API</NuxtLink>
                 <NuxtLink to="/composables">Composables</NuxtLink>
                 <NuxtLink to="/about">About</NuxtLink>
+                <NuxtLink to="/uses">Uses</NuxtLink>
             </div>
         </div>
 
         <!-- MOBILE MENU -->
         <!-- Show below 1024px -->
-        <div v-if="mobileMenuOpen" class="lg:hidden container mx-auto bg-blue-500">
+        <div v-if="mobileMenuOpen" class="lg:hidden container mx-auto bg-blue-500 mobilenavlinks">
             <NuxtLink to="/" class="block">Home</NuxtLink>
             <NuxtLink to="/products" class="block">Products</NuxtLink>
             <NuxtLink to="/custom" class="block">Custom</NuxtLink>
             <NuxtLink to="/tests" class="bloce">API</NuxtLink>
             <NuxtLink to="/composables" class="block ">Composables</NuxtLink>
             <NuxtLink to="/about" class="block">About</NuxtLink>
+            <NuxtLink to="/uses">Uses</NuxtLink>
         </div>
     </nav>
 </template>

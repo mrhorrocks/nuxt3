@@ -10,8 +10,8 @@
         <Meta name="description" content="Homepage" />
     </Head>
     <Head>
-        <Title>A Nuxt 3 Project - Using a Custom Layout</Title>
-        <Meta name="description" content='Custom layout' />
+        <Title>A Nuxt 3 Project</Title>
+        <Meta name="description" content='Homepage layout' />
     </Head>
-    <h2>This is the custom layout</h2>
+    <h2>This is the Homepage layout</h2>
 </template>

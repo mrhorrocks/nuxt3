@@ -16,7 +16,11 @@ header {
 }
 
 main {
-  @apply container mx-auto grow items-start;
+  @apply container 
+    mx-auto 
+    grow 
+    items-start
+    py-4;
 }
 
 .navlinks a {
@@ -25,12 +29,27 @@ main {
         hover:bg-sky-700 
         transition 
         duration-150 
-        ease-in-out p-2;
+        ease-in-out 
+        text-sm
+        py-1 
+        px-2;
+}
+.navlinks a:hover {
+  @apply text-white;
+}
+
+.mobilenavlinks a {
+  @apply hover:bg-sky-700 
+        transition 
+        duration-150 
+        ease-in-out 
+        py-2 
+        pl-2;
 }
 
 footer {
   @apply p-4 
-    bg-green-300;
+    bg-sky-300;
 }
 footer p {
   background: green;
