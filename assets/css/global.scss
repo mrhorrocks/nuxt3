@@ -4,12 +4,24 @@
 // SCSS files below
 @import "../scss/vars";
 @import "../scss/topnav";
+@import "../scss/type";
 
 body {
     @apply 
     bg-gray-50
     border-t-8 
     border-blue-300;
+}
+
+.app-height {
+    /* @apply 
+    flex 
+    flex-col 
+    min-h-screen; */
+    /* Use the below css if there is an 8px border at the top of the page. Otherwise use the above css instead */
+    display: flex;
+    min-height: calc(100vh - 8px);
+    flex-direction: column;
 }
 
 header {
@@ -24,7 +36,8 @@ main {
     container 
     mx-auto 
     grow 
-    items-start;
+    items-start
+    px-2;
 }
 
 .navlinks {
@@ -51,6 +64,7 @@ main {
 .mobilenavlinks {
     a {
         @apply 
+        block 
         text-slate-200
         border-white
         transition 

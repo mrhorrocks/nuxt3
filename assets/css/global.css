@@ -6,10 +6,26 @@
   --safeColor: #31ff4c;
 }
 
+h2 {
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
 body {
   @apply bg-gray-50
     border-t-8 
     border-blue-300;
+}
+
+.app-height {
+  /* @apply 
+  flex 
+  flex-col 
+  min-h-screen; */
+  /* Use the below css if there is an 8px border at the top of the page. Otherwise use the above css instead */
+  display: flex;
+  min-height: calc(100vh - 8px);
+  flex-direction: column;
 }
 
 header {
@@ -22,7 +38,8 @@ main {
   @apply container 
     mx-auto 
     grow 
-    items-start;
+    items-start
+    px-2;
 }
 
 .navlinks a {
@@ -43,7 +60,8 @@ main {
 }
 
 .mobilenavlinks a {
-  @apply text-slate-200
+  @apply block 
+        text-slate-200
         border-white
         transition 
         duration-150 

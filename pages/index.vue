@@ -12,5 +12,5 @@
 </script>
 
 <template>
-    <h2>This is the Homepage layout</h2>
+    <h2>Homepage layout</h2>
 </template>

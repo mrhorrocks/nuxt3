@@ -1,13 +1,17 @@
-<script lang="ts" setup></script>
-
+<script setup>
+    // Override the head content like this too
+    useHead({
+        title: 'Mr. Horrocks',
+        meta: {name: 'description', content: 'A Nuxt 3 Project - Uses'}
+    })
+</script>
 <template>
-  <Head>
-      <Title>A Nuxt 3 Project - Uses</Title>
-      <Meta name="description" content='Custom layout' />
-  </Head>
   <h2>Editor + Terminal</h2>
+  VS Code, Windows Terminal
   <h2>Desktop Apps</h2>
+  Artweaver, Inkscape
   <h2>Resources</h2>
+  Hero Icons, Material Icons
 </template>
 
 <style scoped></style>

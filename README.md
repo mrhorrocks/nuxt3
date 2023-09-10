@@ -61,7 +61,7 @@ Native CSS nesting is supported.
 example below:
 
 ```bash
-// ~/assets/css/global.css 
+// @/assets/css/global.css 
 
 footer {
     @apply
