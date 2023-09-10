@@ -35,14 +35,10 @@ export default {
             <!-- Hide below 1024px -->
             <div class="lg:flex space-x-3 hidden navlinks">
                 <NuxtLink to="/">Home</NuxtLink>
-                <NuxtLink to="/products">Products</NuxtLink>
-                <NuxtLink to="/custom">Custom</NuxtLink>
-                <NuxtLink to="/tests">API</NuxtLink>
-                <NuxtLink to="/composables">Composables</NuxtLink>
-                <NuxtLink to="/about">About</NuxtLink>
-                <NuxtLink to="/uses">Uses</NuxtLink>
-                <NuxtLink to="/todos">Todos</NuxtLink>
                 <NuxtLink to="/graphs">Graphs</NuxtLink>
+                <NuxtLink to="/todos">Todos</NuxtLink>
+                <NuxtLink to="/uses">Uses</NuxtLink>
+                <NuxtLink to="/about">About</NuxtLink>
             </div>
         </div>
 
@@ -50,14 +46,10 @@ export default {
         <!-- Show below 1024px -->
         <div v-if="mobileMenuOpen" class="lg:hidden container mx-auto bg-blue-500 mobilenavlinks divide-y divide-slate-200">
             <NuxtLink to="/">Home</NuxtLink>
-            <NuxtLink to="/products">Products</NuxtLink>
-            <NuxtLink to="/custom">Custom</NuxtLink>
-            <NuxtLink to="/tests">API</NuxtLink>
-            <NuxtLink to="/composables">Composables</NuxtLink>
-            <NuxtLink to="/about">About</NuxtLink>
-            <NuxtLink to="/uses">Uses</NuxtLink>
-            <NuxtLink to="/todos">Todos</NuxtLink>
             <NuxtLink to="/graphs">Graphs</NuxtLink>
+            <NuxtLink to="/todos">Todos</NuxtLink>
+            <NuxtLink to="/uses">Uses</NuxtLink>
+            <NuxtLink to="/about">About</NuxtLink>
         </div>
     </nav>
 </template>
