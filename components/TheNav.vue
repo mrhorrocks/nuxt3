@@ -44,7 +44,7 @@ export default {
 
         <!-- MOBILE MENU -->
         <!-- Show below 1024px -->
-        <div v-if="mobileMenuOpen" class="lg:hidden container mx-auto bg-blue-500 mobilenavlinks divide-y divide-slate-200">
+        <div v-if="mobileMenuOpen" class="lg:hidden bg-blue-500 mobilenavlinks divide-y divide-slate-200">
             <NuxtLink to="/">Home</NuxtLink>
             <NuxtLink to="/graphs">Graphs</NuxtLink>
             <NuxtLink to="/todos">Todos</NuxtLink>
