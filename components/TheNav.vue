@@ -41,19 +41,23 @@ export default {
                 <NuxtLink to="/composables">Composables</NuxtLink>
                 <NuxtLink to="/about">About</NuxtLink>
                 <NuxtLink to="/uses">Uses</NuxtLink>
+                <NuxtLink to="/todos">Todos</NuxtLink>
+                <NuxtLink to="/graphs">Graphs</NuxtLink>
             </div>
         </div>
 
         <!-- MOBILE MENU -->
         <!-- Show below 1024px -->
         <div v-if="mobileMenuOpen" class="lg:hidden container mx-auto bg-blue-500 mobilenavlinks divide-y divide-slate-200">
-            <NuxtLink to="/" class="block">Home</NuxtLink>
-            <NuxtLink to="/products" class="block">Products</NuxtLink>
-            <NuxtLink to="/custom" class="block">Custom</NuxtLink>
-            <NuxtLink to="/tests" class="block">API</NuxtLink>
-            <NuxtLink to="/composables" class="block">Composables</NuxtLink>
-            <NuxtLink to="/about" class="block">About</NuxtLink>
-            <NuxtLink to="/uses" class="block">Uses</NuxtLink>
+            <NuxtLink to="/">Home</NuxtLink>
+            <NuxtLink to="/products">Products</NuxtLink>
+            <NuxtLink to="/custom">Custom</NuxtLink>
+            <NuxtLink to="/tests">API</NuxtLink>
+            <NuxtLink to="/composables">Composables</NuxtLink>
+            <NuxtLink to="/about">About</NuxtLink>
+            <NuxtLink to="/uses">Uses</NuxtLink>
+            <NuxtLink to="/todos">Todos</NuxtLink>
+            <NuxtLink to="/graphs">Graphs</NuxtLink>
         </div>
     </nav>
 </template>

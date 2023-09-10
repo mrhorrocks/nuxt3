@@ -7,7 +7,7 @@
 </script>
 <template>
   <h2>Editor + Terminal</h2>
-  VS Code, Windows Tepminal
+  VS Code, Windows Terminal
   <h2>Desktop Apps</h2>
   Artweaver, Inkscape
   <h2>Resources</h2>

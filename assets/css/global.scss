@@ -64,6 +64,7 @@ main {
 .mobilenavlinks {
     a {
         @apply 
+        block 
         text-slate-200
         border-white
         transition 

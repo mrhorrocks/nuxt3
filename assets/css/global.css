@@ -60,7 +60,8 @@ main {
 }
 
 .mobilenavlinks a {
-  @apply text-slate-200
+  @apply block 
+        text-slate-200
         border-white
         transition 
         duration-150 
