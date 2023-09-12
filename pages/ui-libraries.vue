@@ -2,11 +2,11 @@
 
 <template>
     
-    <h2 class="page-heading">Graphs</h2>
+    <h2 class="page-heading">UI Libraries</h2>
 
-    <h3>Chartjs</h3>
+    <h3>Nuxt UI</h3>
     
-    <h3>Google Charts</h3>
+    <h3>Vutify</h3>
 
 </template>
 

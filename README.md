@@ -1,5 +1,7 @@
 # Nuxt 3 - UI
 
+[![](https://img.shields.io/badge/nuxt.js-v3.6.5-04C690.svg)](https://nuxt.com) [![](https://img.shields.io/badge/node-v16.18.0-026e00.svg)](https://nodejs.org/en)
+
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
 ## Setup

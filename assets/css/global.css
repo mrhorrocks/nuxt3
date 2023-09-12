@@ -8,16 +8,15 @@
 
 h1 {
   font: normal small-caps bold 1.5rem/1 Georgia, serif;
+  color: white;
 }
 
-h2 {
+h2.page-heading {
   font-size: 1.5rem;
   line-height: 2;
   font-weight: 500;
   @apply text-blue-500;
   margin-top: 1rem;
-}
-h2.page-heading {
   font-size: 2.5rem;
   line-height: 1.3;
   margin-top: 2rem;
@@ -35,7 +34,7 @@ h2.page-heading a:hover {
 h3 {
   font-size: 1.25rem;
   line-height: 2;
-  font-weight: 300;
+  font-weight: 400;
   @apply text-blue-500;
   margin-top: 1rem;
 }
@@ -71,6 +70,17 @@ main {
     px-2;
 }
 
+nav {
+  @apply container 
+    mx-auto 
+    px-2;
+}
+
+.navlinks {
+  @apply lg:flex 
+    space-x-3 
+    hidden;
+}
 .navlinks a {
   @apply rounded
         transition 
@@ -88,6 +98,12 @@ main {
             bg-white;
 }
 
+.mobilenavlinks {
+  @apply lg:hidden 
+    bg-blue-500
+    divide-y 
+    divide-slate-200;
+}
 .mobilenavlinks a {
   @apply block 
         text-slate-200
