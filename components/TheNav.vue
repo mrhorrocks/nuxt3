@@ -36,7 +36,7 @@ export default {
             <div class="lg:flex space-x-3 hidden navlinks">
                 <NuxtLink to="/">Home</NuxtLink>
                 <NuxtLink to="/graphs">Graphs</NuxtLink>
-                <NuxtLink to="/ui">UI Libraries</NuxtLink>
+                <NuxtLink to="/ui-libraries">UI Libraries</NuxtLink>
                 <NuxtLink to="/todos">Todos</NuxtLink>
                 <NuxtLink to="/about">About</NuxtLink>
             </div>
@@ -47,7 +47,7 @@ export default {
         <div v-if="mobileMenuOpen" class="lg:hidden bg-blue-500 mobilenavlinks divide-y divide-slate-200">
             <NuxtLink to="/">Home</NuxtLink>
             <NuxtLink to="/graphs">Graphs</NuxtLink>
-            <NuxtLink to="/ui">UI Libraries</NuxtLink>
+            <NuxtLink to="/ui-libraries">UI Libraries</NuxtLink>
             <NuxtLink to="/todos">Todos</NuxtLink>
             <NuxtLink to="/about">About</NuxtLink>
         </div>
