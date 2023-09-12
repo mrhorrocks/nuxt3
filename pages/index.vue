@@ -13,7 +13,7 @@
 
 <template>
 
-    <h2 class="page-heading">I make fast responsive websites using <a href="https://nuxt.com/">Nuxt.js</a></h2>
+    <h2 class="page-heading">I make fast responsive websites with <a href="https://nuxt.com/">Nuxt.js</a></h2>
 
     <h3>Current tech</h3>
     <p>Nuxt 3, Tailwind, Laravel, NPM, SCSS, GIT, VSCode, MySQL, Chartjs, Artweaver, Inkscape, ChatGPT</p>
