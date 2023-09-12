@@ -10,7 +10,7 @@
         <li>Add UI library component examples</li>
         <li>Convert the todo page content to markdown</li>
         <li>Connect to a MySQL/SQlite/GraphQL</li>
-        <li>Once this sites structure is complete. I need to visually redesign it</li>
+        <li>Visually redesign this website</li>
     </ol>
 </template>
 
