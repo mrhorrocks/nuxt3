@@ -8,6 +8,7 @@
         <li>Add google charts examples</li>
         <li>Add UI library component examples</li>
         <li>Convert the todo page content to markdown</li>
+        <li>Once this sites structure is complete. I need to visually redesign it</li>
     </ol>
 </template>
 
