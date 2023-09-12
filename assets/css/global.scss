@@ -40,7 +40,18 @@ main {
     px-2;
 }
 
+nav {
+    @apply 
+    container 
+    mx-auto 
+    px-2;
+}
+
 .navlinks {
+    @apply 
+    lg:flex 
+    space-x-3 
+    hidden; 
     a {
         @apply 
         rounded
@@ -62,6 +73,11 @@ main {
 }
 
 .mobilenavlinks {
+    @apply 
+    lg:hidden 
+    bg-blue-500
+    divide-y 
+    divide-slate-200;
     a {
         @apply 
         block 

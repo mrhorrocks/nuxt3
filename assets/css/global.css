@@ -8,6 +8,7 @@
 
 h1 {
   font: normal small-caps bold 1.5rem/1 Georgia, serif;
+  color: white;
 }
 
 h2.page-heading {
@@ -69,6 +70,17 @@ main {
     px-2;
 }
 
+nav {
+  @apply container 
+    mx-auto 
+    px-2;
+}
+
+.navlinks {
+  @apply lg:flex 
+    space-x-3 
+    hidden;
+}
 .navlinks a {
   @apply rounded
         transition 
@@ -86,6 +98,12 @@ main {
             bg-white;
 }
 
+.mobilenavlinks {
+  @apply lg:hidden 
+    bg-blue-500
+    divide-y 
+    divide-slate-200;
+}
 .mobilenavlinks a {
   @apply block 
         text-slate-200
