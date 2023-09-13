@@ -13,12 +13,12 @@
 
 <template>
 
-    <h2 class="page-heading">I make fast responsive websites with <a href="https://nuxt.com/">Nuxt.js</a></h2>
+    <h2 class="page-heading">Made with <a href="https://nuxt.com/">Nuxt</a></h2>
 
     <h3>Current tech</h3>
-    <p>Nuxt 3, Tailwind, Laravel, NPM, SCSS, GIT, VSCode, MySQL, Chartjs, Artweaver, Inkscape, ChatGPT</p>
+    <p>Nuxt, Tailwind, Laravel, NPM, SCSS, GIT, VSCode, MySQL, Chartjs, Artweaver, Inkscape, ChatGPT</p>
 
-    <h3>Past tech</h3>
+    <h3>Previous tech</h3>
     <p>CakePHP, Highcharts, Jquery, SVN, Wordpress, Joomla, Photoshop, Dreamweaver</p>
 
     <h3>Resources</h3>

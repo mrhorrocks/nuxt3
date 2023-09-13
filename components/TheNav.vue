@@ -21,7 +21,7 @@ export default {
         <div class="flex justify-between items-center">
             <!-- Site Title -->
             <h1>
-                <NuxtLink to="/">Mr. Horrocks</NuxtLink>
+                <NuxtLink to="/">Mr.Horrocks</NuxtLink>
             </h1>
 
             <!-- Show below 1024px -->
