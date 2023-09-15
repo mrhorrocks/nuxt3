@@ -5,6 +5,8 @@
     <h2 class="page-heading">Graphs</h2>
 
     <h3>Chartjs</h3>
+
+    <BarChart />
     
     <h3>Google Charts</h3>
 

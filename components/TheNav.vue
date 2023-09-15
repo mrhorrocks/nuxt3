@@ -35,7 +35,7 @@ export default {
             <!-- Hide below 1024px -->
             <div class="navlinks">
                 <NuxtLink to="/">Home</NuxtLink>
-                <NuxtLink to="/graphs">Graphs</NuxtLink>
+                <NuxtLink to="/charts">Charts</NuxtLink>
                 <NuxtLink to="/ui-libraries">UI Libraries</NuxtLink>
                 <NuxtLink to="/todos">Todos</NuxtLink>
                 <NuxtLink to="/about">About</NuxtLink>
@@ -46,7 +46,7 @@ export default {
         <!-- Show below 1024px -->
         <div v-if="mobileMenuOpen" class="mobilenavlinks">
             <NuxtLink to="/">Home</NuxtLink>
-            <NuxtLink to="/graphs">Graphs</NuxtLink>
+            <NuxtLink to="/charts">Charts</NuxtLink>
             <NuxtLink to="/ui-libraries">UI Libraries</NuxtLink>
             <NuxtLink to="/todos">Todos</NuxtLink>
             <NuxtLink to="/about">About</NuxtLink>
