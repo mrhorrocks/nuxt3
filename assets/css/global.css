@@ -1,11 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* SCSS files below */
 :root {
   --first-colour: #3b82f6;
   --second-colour: #93c5fd;
+  --chart-title: #ea580c;
 }
 
+/* type.scss */
 h1 {
   font: normal small-caps bold 1.5rem/1 Georgia, serif;
   color: white;
@@ -15,7 +18,7 @@ h2.page-heading {
   font-size: 1.5rem;
   line-height: 2;
   font-weight: 500;
-  @apply text-blue-500;
+  color: var(--first-colour);
   margin-top: 1rem;
   font-size: 2.5rem;
   line-height: 1.3;
@@ -35,8 +38,11 @@ h3 {
   font-size: 1.25rem;
   line-height: 2;
   font-weight: 400;
-  @apply text-blue-500;
+  color: var(--first-colour);
   margin-top: 1rem;
+}
+h3.chart-title {
+  color: var(--chart-title);
 }
 
 body {
@@ -119,6 +125,9 @@ nav {
             underline;
 }
 
+/* .container {
+    border: 1px solid red;
+} */
 footer {
   @apply p-4 
     bg-blue-300;

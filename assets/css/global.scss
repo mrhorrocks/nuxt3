@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-// SCSS files below
+/* SCSS files below */
 @import "../scss/vars";
 @import "../scss/topnav";
 @import "../scss/type";
@@ -97,9 +97,9 @@ nav {
 
 }
 
-// .container {
-//     border: 1px solid red;
-// }
+/* .container {
+    border: 1px solid red;
+} */
 
 footer {
     @apply 
