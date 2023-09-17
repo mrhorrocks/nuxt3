@@ -30,7 +30,7 @@ export default {
         ],
 
         datasets: [{
-            label: 'Sunlight hours',
+            label: ' Hours of light',
             data: [
               8,  // Jan
               9,  // Feb
