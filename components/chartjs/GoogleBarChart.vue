@@ -63,9 +63,12 @@ export default {
         },
       chartOptions: {
         responsive: true,
-        label: 'My First Dataset',
-        title: 'My First Dataset',
         // maintainAspectRatio: true
+        layout: {
+            padding: {
+                bottom: 30
+            }
+        }
       }
     }
   }
