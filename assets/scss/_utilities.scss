@@ -1,0 +1,28 @@
+a {
+    &.chip {
+        display: inline-block;
+        border: 2px solid white;
+        background-color: #ccc;
+        padding: 0.25rem 0.5rem;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
+        text-decoration: underline;
+        @apply transition 
+        duration-150 
+        ease-in-out;
+        @apply text-blue-600;
+        &:hover {
+            background-color: #acacac;
+            color: white;
+            box-shadow: 3px 3px 3px #ccc;
+            text-decoration: none;
+        }
+        &:active {
+            background-color: red;
+            color: white;
+            box-shadow: 3px 3px 3px #ccc;
+        }
+    }
+}
