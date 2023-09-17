@@ -1,7 +1,7 @@
 <template>
     <h2 class="page-heading">Todos</h2>
 
-    <div class="md:grid grid-cols-2">
+    <div class="lg:grid grid-cols-2">
         <div class="pt-8">
             <ol class="list-decimal pl-4 pt-4">
                 <li>Chartjs</li>
@@ -13,7 +13,7 @@
             </ol>
         </div>
         <div class="pt-8">
-            <ContentDoc />
+            <!-- <ContentDoc /> -->
         </div>
     </div>
 </template>
