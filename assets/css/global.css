@@ -13,6 +13,10 @@ h1 {
   font: normal small-caps bold 1.5rem/1 Georgia, serif;
   color: white;
 }
+h1 a {
+  display: block;
+  transform: rotate(358deg);
+}
 
 h2.page-heading {
   font-size: 1.5rem;
