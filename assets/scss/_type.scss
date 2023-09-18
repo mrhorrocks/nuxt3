@@ -5,6 +5,9 @@ h1 {
     a {
         display: block;
         transform: rotate(358deg);
+        &:hover {
+            transform: rotate(360deg);
+        }
     }
 }
 

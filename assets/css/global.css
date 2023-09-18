@@ -19,6 +19,9 @@ h1 a {
   display: block;
   transform: rotate(358deg);
 }
+h1 a:hover {
+  transform: rotate(360deg);
+}
 
 h2.page-heading {
   @apply text-3xl
