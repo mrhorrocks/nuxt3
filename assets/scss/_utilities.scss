@@ -2,6 +2,7 @@
 a {
     &.chip {
         position: relative;
+        display: inline-block;
         border: 0.15rem solid white;
         background-color: #ccc;
         padding: 0.25rem 0.5rem;
