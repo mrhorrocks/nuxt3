@@ -1,4 +1,8 @@
 <template>
+    <Head>
+        <Title>Todos - A Nuxt 3 Project</Title>
+        <Meta name="description" content='Things to do' />
+    </Head>
     <h2 class="page-heading">Todos</h2>
 
     <div class="lg:grid grid-cols-2">

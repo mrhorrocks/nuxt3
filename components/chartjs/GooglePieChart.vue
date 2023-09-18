@@ -75,7 +75,7 @@ export default {
             },
             chartOptions: {
                 responsive: true,
-                maintainAspectRatio: true,
+                // maintainAspectRatio: true,
                 plugins: {
                     legend: {
                         position: 'right'
@@ -83,7 +83,7 @@ export default {
                 },
                 layout: {
                     padding: {
-                        top: 0,
+                        bottom: 30,
                     },
                 },
                 tooltips: {
