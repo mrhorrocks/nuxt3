@@ -18,4 +18,18 @@
             <ChartjsPieChart />
         </div>
     </div>
+
+    <h3>Google Charts</h3>
+    <!-- row 2 -->
+    <div class="lg:grid grid-cols-3">
+        <div class="col-span-2 lg:pr-32">
+            <h3 class="chart-title">UK hours of sunight per month</h3>
+            <GoogleBarChart />
+        </div>
+
+        <div class="pr-4">
+            <h3 class="chart-title">UK hours of sunight per month</h3>
+            <GooglePieChart />
+        </div>
+    </div>
 </template>

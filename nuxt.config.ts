@@ -27,10 +27,11 @@ export default defineNuxtConfig({
     devtools: {
         enabled: true, // Show devtools in the browser
     },
-  
+
     components: [
-        // ~/components/charts/BarChart.vue => <BarChart />
+        // Add sub folders to the component direcory 
         { path: '~/components/chartjs', pathPrefix: false },
+        { path: '~/components/googlecharts', pathPrefix: false },
 
         // It's important that this comes last if you have overrides you wish to apply
         // to sub-directories of `~/components`.
