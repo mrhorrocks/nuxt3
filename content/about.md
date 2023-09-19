@@ -1,7 +1,7 @@
 ### Why Nuxt?
 
-Nuxt is built on top of Vue.js and it takes alot of the repetition and setup out of the equation so I can just get on with building websites.
+Nuxt is a Javascript framework built on top of Vue.js. It removes alot of repetition and setup issues and enables me to get projects started quickly... It's also lightening fast.
 
 ### About this website
 
-This website is an easily scalable, advanced starter template for future projects. 
+This website is an scalable, advanced starter template for future projects.
