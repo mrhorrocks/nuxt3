@@ -8,7 +8,7 @@
     <div class="lg:grid grid-cols-2">
         <div class="pt-8">
             <ol class="list-decimal pl-4 pt-4">
-                <li>Chartjs</li>
+                <li><s>Chartjs</s></li>
                 <li>Google charts</li>
                 <li>UI library</li>
                 <li>Headless cms</li>
