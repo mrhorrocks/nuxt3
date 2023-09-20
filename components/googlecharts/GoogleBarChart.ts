@@ -34,7 +34,7 @@ export const options = {
     height: 357,
     backgroundColor: 'transparent',
     legend: {position: 'in'},
-    colors:['#92400e', 'red'],
+    colors:['#92400e','red'],
     bar: {
         groupWidth: '76%' // Space between columns
     }
