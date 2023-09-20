@@ -10,10 +10,10 @@
             <ol class="list-decimal pl-4 pt-4">
                 <li><s>Chartjs</s></li>
                 <li><s>Google charts</s></li>
-                <li>UI library</li>
-                <li>Headless cms</li>
                 <li><s>404 page build</s></li>
+                <li>UI library</li>
                 <li>Cookie banner</li>
+                <li>Headless cms</li>
                 <li>Connect to a MySQL/SQlite or GraphQL</li>
                 <li>Visually redesign</li>
             </ol>
