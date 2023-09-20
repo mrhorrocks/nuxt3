@@ -14,7 +14,8 @@
 
     <h2 class="page-heading">Front-End Web Developer</h2>
 
-    <h3>Current tech</h3>
+    <section>
+    <h3 class="section-title">Current tech</h3>
     <p>
         <a class="chip" href="https://nuxt.com/" alt="Nuxt">Nuxt</a>
         <a class="chip" href="https://tailwindcss.com/" alt="Tailwind">Tailwind</a>
@@ -29,8 +30,10 @@
         <a class="chip" href="https://inkscape.org/" alt="Inkscape">Inkscape</a>
         <a class="chip" href="https://chat.openai.com/" alt="ChatGPT">ChatGPT</a>
     </p>
+    </section>
 
-    <h3>Previous tech</h3>
+    <section>
+    <h3 class="section-title">Previous tech</h3>
     <p>
         <a class="chip" href="https://cakephp.org/" alt="CakePHP">CakePHP</a>
         <a class="chip" href="https://www.highcharts.com/" alt="Highcharts">Highcharts</a>
@@ -40,10 +43,13 @@
         <a class="chip" href="https://www.joomla.org/" alt="Wordpress">Joomla</a>
         <a class="chip" href="https://www.adobe.com/uk/" alt="Adobe suite">Adobe suite</a>
     </p>
+    </section>
 
-    <h3>Resources</h3>
+    <section>
+    <h3 class="section-title">Resources</h3>
     <p>
         <a class="chip" href="https://heroicons.com/" alt="Hero Icons">Hero Icons</a>
     </p>
+    </section>
     
 </template>
