@@ -3,8 +3,8 @@ export default defineNuxtConfig({
     app: {
         // Global title and meta config 
         head: {
-            title: 'A Nuxt 3 Project...',
-            meta: [{ name: 'description', content: 'A Nuxt 3 Project Description' }],
+            title: 'Mr.Horrocks - A Nuxt 3 Project',
+            meta: [{ name: 'description', content: 'Front-End Web Developer' }],
             // Example of loading a global stylesheet 
             // link: [
             //   { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }
