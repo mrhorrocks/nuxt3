@@ -64,10 +64,13 @@ h3.chart-title {
 
 /* Utilities */
 a.chip {
+  height: 90px;
+  width: 90px;
   position: relative;
   display: inline-block;
   border: 0.15rem solid white;
-  background-color: #ffaaaa;
+  color: #fff;
+  background-color: #858585;
   padding: 0.25rem 0.5rem;
   border-radius: 5px;
   font-size: 0.9rem;
@@ -75,7 +78,6 @@ a.chip {
   margin-bottom: 0.5rem;
   text-decoration: underline;
   text-decoration-style: dotted;
-  color: black;
   box-shadow: 0px 3px 3px #ccc;
   @apply transition 
         duration-150 
@@ -83,13 +85,14 @@ a.chip {
 }
 a.chip:hover {
   top: 1px;
-  background-color: #acacac;
-  color: white;
+  background-color: gold;
+  color: #000;
   text-decoration: none;
   box-shadow: 0px 1px 3px #ccc;
 }
 a.chip:active {
-  background-color: red;
+  background-color: #00c500;
+  color: #fff;
 }
 
 body {
@@ -174,6 +177,9 @@ nav {
 
 /* .container {
     border: 1px solid red;
+} */
+/* [aria-label='Current tech'] {
+    background: red
 } */
 footer {
   @apply p-4 

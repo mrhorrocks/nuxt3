@@ -35,7 +35,7 @@ definePageMeta({
             <a class="chip" href="https://subversion.apache.org/" alt="SVN">SVN</a>
             <a class="chip" href="https://wordpress.com/" alt="">Wordpress</a>
             <a class="chip" href="https://www.joomla.org/" alt="Wordpress">Joomla</a>
-            <a class="chip" href="https://www.adobe.com/uk/" alt="Adobe suite">Adobe suite</a>
+            <a class="chip" href="https://www.adobe.com/uk/" alt="Adobe suite">Adobe</a>
         </p>
     </section>
 
