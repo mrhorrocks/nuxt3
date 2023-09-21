@@ -5,7 +5,7 @@
     </Head>
     <h2 class="page-heading">Todos</h2>
 
-    <div class="lg:grid grid-cols-2">
+    <section aria-label="Todo List" class="lg:grid grid-cols-2">
         <div class="pt-4">
             <ol class="list-decimal pl-4 pt-4">
                 <li><s>Chartjs</s></li>
@@ -18,8 +18,5 @@
                 <li>Visually redesign</li>
             </ol>
         </div>
-        <div class="pt-8">
-            <!-- <ContentDoc /> -->
-        </div>
-    </div>
+    </section>
 </template>
