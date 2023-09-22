@@ -94,8 +94,10 @@ nav {
             text-white 
             underline;
         }
+        &:first-child{
+            margin-top: 1rem;
+        }
     }
-
 }
 
 /* .container {
