@@ -47,10 +47,9 @@ h3 {
         margin: 1rem 0;
     }
     &.chart-title {
+        width: 100%;
         font-size: 1.25rem;
         margin: 1rem 0;
         color: var(--chart-title);
-        float: left;
-        width: 100%;
     }
 }
