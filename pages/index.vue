@@ -8,8 +8,8 @@ definePageMeta({
 
     <h2 class="page-heading">Front-End Web Developer</h2>
 
-    <section aria-label="Current tech">
-        <h3 class="section-title">Current tech</h3>
+    <section aria-label="Current Stack">
+        <h3 class="section-title">Current Stack</h3>
         <p>
             <a class="chip" href="https://nuxt.com/" alt="Nuxt">Nuxt</a>
             <a class="chip" href="https://tailwindcss.com/" alt="Tailwind">Tailwind</a>
@@ -26,8 +26,8 @@ definePageMeta({
         </p>
     </section>
 
-    <section aria-label="Previous tech">
-        <h3 class="section-title">Previous tech</h3>
+    <section aria-label="Previous Stack">
+        <h3 class="section-title">Previous Stack</h3>
         <p>
             <a class="chip" href="https://cakephp.org/" alt="CakePHP">CakePHP</a>
             <a class="chip" href="https://www.highcharts.com/" alt="Highcharts">Highcharts</a>
