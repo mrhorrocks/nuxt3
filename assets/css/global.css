@@ -26,8 +26,7 @@ h1 a:hover {
 
 h2.page-heading {
   @apply text-3xl
-    md:text-5xl
-    lg:text-6xl;
+    md:text-5xl;
   line-height: 2;
   font-weight: 500;
   color: var(--first-colour);
@@ -46,7 +45,7 @@ h2.page-heading a:hover {
 }
 
 h3 {
-  font-size: 2.25rem;
+  font-size: 1.25rem;
   line-height: 2;
   font-weight: 400;
   color: var(--first-colour);
@@ -59,7 +58,6 @@ h3.section-title {
 }
 h3.chart-title {
   width: 100%;
-  font-size: 1.25rem;
   margin: 1rem 0;
   color: var(--chart-title);
 }
@@ -189,12 +187,14 @@ nav {
     background: red
 } */
 footer {
-  @apply p-4 
-    bg-blue-300;
+  @apply bg-blue-300;
 }
 footer a {
   @apply inline-block
         pr-2;
+}
+footer .container {
+  @apply p-4;
 }
 
 p {

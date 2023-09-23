@@ -110,16 +110,17 @@ nav {
 
 footer {
     @apply 
-    p-4 
     bg-blue-300;
-
     a {
     @apply
         inline-block
         pr-2;
     }
+    .container {
+        @apply
+        p-4
+    }
 }
-
 p {
     margin: 0 0px 1rem 0px;
 }
