@@ -3,6 +3,7 @@
         <Title>Charts - A Nuxt 3 Project</Title>
         <Meta name="description" content='Chart Libraries' />
     </Head>
+    
     <h2 class="page-heading">Charts</h2>
     
     <section aria-label="Chartjs Examples">
