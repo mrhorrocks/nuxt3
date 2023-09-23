@@ -13,5 +13,6 @@ const items = [{
 </script>
 
 <template>
-    <UAccordion :items="items" />
+    <!-- <UAccordion :items="items" /> -->
+    <UAccordion color="sky" variant="solid" size="xl" :items="items" />
 </template>
