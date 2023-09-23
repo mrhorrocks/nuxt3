@@ -14,7 +14,8 @@ export default defineNuxtConfig({
     modules: [
         '@nuxt/content',
         '@pinia/nuxt',
-        '@nuxtjs/tailwindcss',
+        // '@nuxtjs/tailwindcss',
+        '@nuxt/ui',
     ],
 
     // Add a global css file
@@ -32,6 +33,7 @@ export default defineNuxtConfig({
         // Add sub folders to the component direcory 
         { path: '~/components/chartjs', pathPrefix: false },
         { path: '~/components/googlecharts', pathPrefix: false },
+        { path: '~/components/nuxtui', pathPrefix: false },
 
         // It's important that this comes last if you have overrides you wish to apply
         // to sub-directories of `~/components`.

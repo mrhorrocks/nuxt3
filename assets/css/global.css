@@ -18,6 +18,7 @@ h1 {
 h1 a {
   display: block;
   transform: rotate(358deg);
+  transition-duration: 150ms;
 }
 h1 a:hover {
   transform: rotate(360deg);
@@ -194,4 +195,8 @@ footer {
 footer a {
   @apply inline-block
         pr-2;
+}
+
+p {
+  margin: 0 0px 1rem 0px;
 }
