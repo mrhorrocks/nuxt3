@@ -9,8 +9,12 @@
     <section aria-label="UI Libraries">
         <h3>Nuxt UI</h3>
         
-        <p>A few pebuilt components using <a href="https://ui.nuxt.com/" class="underline">Nuxt UI</a></p>
-
+        <p>A few pebuilt components using 
+            <UTooltip text="Visit the Nuxt UI Docs">
+                <a href="https://ui.nuxt.com/" class="underline">Nuxt UI</a>
+            </UTooltip>
+        </p>
+        
         <div class="ui-item">
             <UButton>Button</UButton>
         </div>
@@ -33,11 +37,21 @@
             <UKbd>R</UKbd>
             <UKbd>T</UKbd>
             <UKbd>Y</UKbd>
+            &nbsp;&nbsp;
+            <UKbd>K</UKbd>
+            <UKbd>E</UKbd>
+            <UKbd>Y</UKbd>
+            <UKbd>B</UKbd>
+            <UKbd>O</UKbd>
+            <UKbd>A</UKbd>
+            <UKbd>R</UKbd>
+            <UKbd>D</UKbd>
         </div>
         
         <!-- Checkbox -->
         <div class="ui-item">
             <form action="">
+                <Checkbox id="Yes" label="Yes" />
                 <Checkbox id="No" label="No" />
             </form>
         </div>
