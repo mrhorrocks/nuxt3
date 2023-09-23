@@ -2,11 +2,12 @@
     <div class="w-full">
         <!-- valley.svg -->
         <svg data-v-28a3fc44="" version="1.1" viewBox="0 0 1921.3 145.82" xmlns="http://www.w3.org/2000/svg">
-        <path d="m3e-3 25 0.0035054 120.82 1921.2 0.05336 5e-4 -120.88-972.23 85z" fill="#93c5fd"/>
+            <path d="m3e-3 44.967 0.0035054 120.82 1921.2 0.0534 5e-4 -120.88-972.23 85z" fill="#93c5fd" />
         </svg>
+
     </div>
     <footer>
-        <div class="container mx-auto p-4">
+        <div class="container mx-auto">
             <a href="https://github.com/mrhorrocks">
                 <svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true"
                     class="octicon octicon-mark-github v-align-middle color-fg-default">
