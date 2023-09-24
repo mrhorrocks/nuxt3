@@ -53,6 +53,7 @@ definePageMeta({
     <section aria-label="Previous Stack">
         <h3 class="section-title">Previous Stack</h3>
         <p>
+            <a class="chip" href="https://www.docker.com/" alt="Docker">Docker</a>
             <a class="chip" href="https://cakephp.org/" alt="CakePHP">CakePHP</a>
             <a class="chip" href="https://www.highcharts.com/" alt="Highcharts">Highcharts</a>
             <a class="chip" href="https://jquery.com/" alt="Jquery">Jquery</a>
