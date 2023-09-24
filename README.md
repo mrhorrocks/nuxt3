@@ -1,28 +1,25 @@
-# Nuxt 3 - UI
-
-[![](https://img.shields.io/badge/nuxt.js-v3.6.5-04C690.svg)](https://nuxt.com) [![](https://img.shields.io/badge/node-v16.18.0-026e00.svg)](https://nodejs.org/en)
+# Nuxt 3 + UI + Charts + Pinia
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-## Setup
+### System Requirements
 
-Make sure to install the dependencies:
+Install Nodejs: `https://nodejs.org/en`
+Install Git: `https://git-scm.com/downloads`
+
+Open a terminal in the folder where you want the files to reside.
+
+Copy and paste the 3 lines below into that same terminal.
 
 ```bash
-# npm
+git clone https://github.com/mrhorrocks/nuxt3.git
 npm install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
 npm run dev
 ```
 
-## Production
+The development server is running on `http://localhost:3000`:
+
+### Production
 
 Build the application for production:
 
@@ -40,7 +37,9 @@ npm run preview
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
 
-## Notes
+---
+
+### Additional Notes
 
 Add Tailwind to the project
 
@@ -52,6 +51,7 @@ Add a Tailwind Config file
 
 ```bash
 # With no styles
+
 npx tailwindcss init  
 
 # Fully populated
@@ -60,10 +60,8 @@ npx tailwindcss init --full
 
 Native CSS nesting is supported.
 
-example below:
-
 ```bash
-// @/assets/css/global.css 
+# @/assets/css/global.css 
 
 footer {
     @apply
@@ -74,17 +72,16 @@ footer {
     }
 }
 ```
+
 SCSS can be used in this project.
 
-example below:
-
 ```bash
-
 <style lang="scss" scoped>
     p {
         background: green;
-        span { color: white;}
+        span {
+            color: white;
+        }
     }
 </style>
 ```
-
