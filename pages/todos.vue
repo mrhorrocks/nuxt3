@@ -18,7 +18,7 @@
             </ol>
         </div>
 
-        <div>
+        <div class="lg:ml-8">
             <h3 class="section-title">Stage 2</h3>
             <ol class="list-decimal pl-4">
                 <li>Headless cms</li>
