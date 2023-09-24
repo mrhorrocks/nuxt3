@@ -4,8 +4,8 @@ Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introdu
 
 ### System Requirements
 
-[Install Nodejs](https://nodejs.org/en)  
-[Install Git](https://git-scm.com/downloads)
+[Nodejs](https://nodejs.org/en)
+[Git](https://git-scm.com/downloads)
 
 ### Installation Instructions
 
