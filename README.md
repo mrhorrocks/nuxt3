@@ -4,12 +4,10 @@ Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introdu
 
 ### System Requirements
 
-Install Nodejs: `https://nodejs.org/en`  
-Install Git: `https://git-scm.com/downloads`
+[Install Nodejs](https://nodejs.org/en)  
+[Install Git](https://git-scm.com/downloads)
 
-Open a terminal in the folder where you want the files to reside.
-
-Copy and paste the 3 lines below into that same terminal.
+### Installation Instructions
 
 ```bash
 git clone https://github.com/mrhorrocks/nuxt3.git
