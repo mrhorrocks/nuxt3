@@ -24,7 +24,7 @@ definePageMeta({
 
             It enables me to get projects built quickly.
             <br /><br />
-            ...and it's also lightening fast. Click the link to visit my
+            It's also lightening fast. Click the link to visit my
 
             <UTooltip text="Visit my Git repo">
                 <a href="https://github.com/mrhorrocks/nuxt3" class="underline" alt="check out my Git repo.">Git repo</a>.
