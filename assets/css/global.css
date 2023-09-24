@@ -16,6 +16,7 @@ h1 {
   color: white;
 }
 h1 a {
+  text-decoration: none;
   display: block;
   transform: rotate(358deg);
   transition-duration: 150ms;
@@ -26,8 +27,7 @@ h1 a:hover {
 
 h2.page-heading {
   @apply text-3xl
-    md:text-5xl
-    lg:text-6xl;
+    md:text-5xl;
   line-height: 2;
   font-weight: 500;
   color: var(--first-colour);
@@ -46,7 +46,7 @@ h2.page-heading a:hover {
 }
 
 h3 {
-  font-size: 2.25rem;
+  font-size: 1.25rem;
   line-height: 2;
   font-weight: 400;
   color: var(--first-colour);
@@ -59,14 +59,13 @@ h3.section-title {
 }
 h3.chart-title {
   width: 100%;
-  font-size: 1.25rem;
-  margin: 1rem 0;
+  margin: 0;
   color: var(--chart-title);
 }
 
 /* Utilities */
 a.chip {
-  height: 90px;
+  height: 70px;
   width: 33%;
   margin-right: 0;
   margin-bottom: 0.5rem;
@@ -152,6 +151,7 @@ nav {
         py-1 
         px-2
         text-white;
+  text-decoration: none;
 }
 .navlinks a:hover {
   @apply text-blue-500
@@ -189,14 +189,30 @@ nav {
     background: red
 } */
 footer {
-  @apply p-4 
-    bg-blue-300;
+  @apply bg-blue-300;
 }
 footer a {
   @apply inline-block
         pr-2;
 }
+footer .container {
+  @apply p-4;
+}
 
-p {
+p, span.paragraph {
+  display: block;
+  width: 100%;
   margin: 0 0px 1rem 0px;
+}
+
+.ui-item {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #b6b6b6;
+}
+
+a, .underline {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 2px;
 }

@@ -3,6 +3,7 @@ h1 {
     font: normal small-caps bold 1.5rem/1 Georgia, serif;
     color: white;
     a {
+        text-decoration: none;
         display: block;
         transform: rotate(358deg);
         transition-duration: 150ms;
@@ -16,8 +17,7 @@ h2 {
     &.page-heading {
     @apply 
     text-3xl
-    md:text-5xl
-    lg:text-6xl;
+    md:text-5xl;
     line-height: 2;
     font-weight: 500;
     color: var(--first-colour);
@@ -37,7 +37,7 @@ h2 {
 }
 
 h3 {
-    font-size: 2.25rem;
+    font-size: 1.25rem;
     line-height: 2;
     font-weight: 400;
     color: var(--first-colour);
@@ -49,8 +49,7 @@ h3 {
     }
     &.chart-title {
         width: 100%;
-        font-size: 1.25rem;
-        margin: 1rem 0;
+        margin: 0;
         color: var(--chart-title);
     }
 }

@@ -5,8 +5,32 @@ definePageMeta({
 </script>
 
 <template>
-
     <h2 class="page-heading">Front-End Web Developer</h2>
+
+    <section aria-label="About this website">
+        <h3 class="section-title">About this website</h3>
+        <span class="paragraph">
+            This website is an scalable, advanced starter template built using
+
+            <UTooltip text="Visit the Nuxt docs">
+                <a href="https://nuxt.com/">Nuxt</a>.
+            </UTooltip>
+
+            Nuxt is a Javascript framework built on top of
+
+            <UTooltip text="Visit the Vue docs">
+                <a href="https://vuejs.org/">Vue.js</a>.
+            </UTooltip>
+
+            It enables me to get projects built quickly.
+            <br /><br />
+            ...and it's also lightening fast. Click the link to visit my
+
+            <UTooltip text="Visit my Git repo">
+                <a href="https://github.com/mrhorrocks/nuxt3" class="underline" alt="check out my Git repo.">Git repo</a>.
+            </UTooltip>
+        </span>
+    </section>
 
     <section aria-label="Current Stack">
         <h3 class="section-title">Current Stack</h3>

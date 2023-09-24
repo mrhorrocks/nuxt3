@@ -6,71 +6,80 @@
 
     <h2 class="page-heading">UI Libraries</h2>
 
-    <section aria-label="UI Libraries">
-        <h3>Nuxt UI</h3>
-        
-        <p>A few pebuilt components using <a href="https://ui.nuxt.com/" class="underline">Nuxt UI</a></p>
+        <div class="lg:grid grid-cols-2">
+            <section aria-label="Nuxt UI Components">
+                <div class="col-span-1">
+                    <h3 class="section-title">Nuxt UI Components</h3>
 
-        <div class="ui-item">
-            <UButton>Button</UButton>
-        </div>
-        
-        <!-- Avatar -->
-        <div class="ui-item">
-            <Avatar />
-        </div>
-        
-        <!-- Accordian -->
-        <div class="ui-item">
-            <Accordian />
-        </div>
-        
-        <!-- Keyboard -->
-        <div class="ui-item">
-            <UKbd>Q</UKbd>
-            <UKbd>W</UKbd>
-            <UKbd>E</UKbd>
-            <UKbd>R</UKbd>
-            <UKbd>T</UKbd>
-            <UKbd>Y</UKbd>
-        </div>
-        
-        <!-- Checkbox -->
-        <div class="ui-item">
-            <form action="">
-                <Checkbox id="No" label="No" />
-            </form>
-        </div>
-        
-        <!-- Toggle -->
-        <div class="ui-item">
-            <Toggle />
-        </div>
-        
-        <!-- Range -->
-        <div class="ui-item">
-            <Range />
-        </div>
-        
-        <!-- Dropdown -->
-        <div class="ui-item">
-            <Dropdown />
-        </div>
-    </section>
+                    <UTooltip text="Visit the Nuxt UI Docs" class="mb-8">
+                        <a href="https://ui.nuxt.com/getting-started" class="underline">Go to the Nuxt UI docs</a>
+                    </UTooltip>
 
+                    <div class="ui-item">
+                        <!-- Button -->
+                        <UButton>Button</UButton>&nbsp;
+                        <!-- Dropdown -->
+                        <Dropdown />
+                    </div>
+
+                    <!-- Avatar -->
+                    <div class="ui-item">
+                        <Avatar />
+                    </div>
+
+                    <!-- Accordian -->
+                    <div class="ui-item">
+                        <Accordian />
+                    </div>
+
+                    <!-- Keyboard -->
+                    <div class="ui-item">
+                        <UKbd>Q</UKbd>
+                        <UKbd>W</UKbd>
+                        <UKbd>E</UKbd>
+                        <UKbd>R</UKbd>
+                        <UKbd>T</UKbd>
+                        <UKbd>Y</UKbd>
+                        &nbsp;&nbsp;
+                        <UKbd>K</UKbd>
+                        <UKbd>E</UKbd>
+                        <UKbd>Y</UKbd>
+                        <UKbd>B</UKbd>
+                        <UKbd>O</UKbd>
+                        <UKbd>A</UKbd>
+                        <UKbd>R</UKbd>
+                        <UKbd>D</UKbd>
+                    </div>
+
+                    <!-- Checkbox -->
+                    <div class="ui-item">
+                        <form action="">
+                            <Checkbox id="Yes" label="Yes" />
+                            <Checkbox id="No" label="No" />
+                        </form>
+                    </div>
+
+                    <!-- Toggle -->
+                    <div class="ui-item">
+                        <Toggle />
+                    </div>
+
+                    <!-- Range -->
+                    <div class="ui-item">
+                        <Range />
+                    </div>
+                </div>
+            </section>
+
+            <section aria-label="Vuestic UI Components">
+                <div class="col-span-1 lg:ml-8">
+                    <h3 class="section-title">Vuestic UI Components</h3>
+                    
+                    <UTooltip text="Visit the Vuestic UI Docs" class="mb-8">
+                        <a href="https://ui.vuestic.dev/introduction/overview" class="underline">Go to the Vuestic UI Docs</a>
+                    </UTooltip>
+                        
+                </div>
+            </section>
+        </div>
 </template>
-
-<style scoped>
-.ui-item {
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #b6b6b6;
-}
-
-.underline {
-    text-decoration: underline;
-    text-decoration-style: dotted;
-    text-decoration-thickness: 2px;
-}
-    
-</style>

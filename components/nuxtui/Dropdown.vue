@@ -35,7 +35,7 @@ const items = [
     <!-- Hover -->
     <!-- <UDropdown :items="items" :popper="{ placement: 'bottom-start' }"> -->
     <!-- Click -->
-    <UDropdown :items="items" :popper="{ placement: 'bottom-end' }" mode="hover">
+    <UDropdown :items="items" :popper="{ placement: 'bottom-end' }" mode="click">
     <UButton color="white" label="Options" trailing-icon="i-heroicons-chevron-down-20-solid" />
   </UDropdown>
 </template>
