@@ -7,7 +7,7 @@
     <h2 class="page-heading">Charts</h2>
     
     <section aria-label="Chartjs Examples">
-        <h3>Chartjs Examples</h3>
+        <h3><a href="https://www.chartjs.org/">Chartjs Examples</a></h3>
         <div class="lg:grid grid-cols-3">
             <div class="col-span-2 lg:pr-32">
                 <h3 class="chart-title">UK sunlight hours per month</h3>
@@ -22,7 +22,7 @@
     </section>
 
     <section aria-label="Google Charts Examples">
-        <h3>Google Charts Examples</h3>
+        <h3><a href="https://developers.google.com/chart">Google Charts Examples</a></h3>
         <div class="lg:grid grid-cols-3">
             <div class="col-span-2 lg:pr-32">
                 <h3 class="chart-title">UK sunlight hours per month</h3>
