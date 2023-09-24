@@ -1,6 +1,6 @@
 # Nuxt 3 + UI + Charts + Pinia
 
-This website is an scalable, advanced starter template built using Nuxt. Nuxt is a Javascript framework built on top of Vue.js  
+A scalable, advanced starter template built with Nuxt 3.
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
