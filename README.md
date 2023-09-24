@@ -17,7 +17,7 @@ npm install
 npm run dev
 ```
 
-The development server is running on `http://localhost:3000`:
+The development server is running on `http://localhost:3000`
 
 ### Production
 
