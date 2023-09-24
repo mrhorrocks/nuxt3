@@ -24,6 +24,7 @@
                 <li>Headless cms</li>
                 <li>Connect to a database using MySQL/SQlite or GraphQL</li>
                 <li>Manipulate database data with UI components</li>
+                <li>Add authentication</li>
                 <li>Visual redesign</li>
             </ol>
         </div>
