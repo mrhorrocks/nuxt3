@@ -7,12 +7,30 @@ definePageMeta({
 <template>
     <h2 class="page-heading">Front-End Web Developer</h2>
 
-    <h3>Why Nuxt?</h3>
-    <p>Nuxt is a Javascript framework built on top of Vue.js. It removes alot of repetition and setup issues and enables
-        me to get projects started quickly... It's also lightening fast.</p>
+    <section aria-label="About this website">
+        <h3 class="section-title">About this website</h3>
+        <span class="paragraph">
+            This website is an scalable, advanced starter template built using
 
-    <h3>About this website</h3>
-    <p>This website is an scalable, advanced starter template for future projects.</p>
+            <UTooltip text="Visit the Nuxt docs">
+                <a href="https://nuxt.com/">Nuxt</a>.
+            </UTooltip>
+
+            Nuxt is a Javascript framework built on top of
+
+            <UTooltip text="Visit the Vue docs">
+                <a href="https://vuejs.org/">Vue.js</a>.
+            </UTooltip>
+
+            It enables me to get projects built quickly.
+            <br /><br />
+            ...and it's also lightening fast. Click the link to visit my
+
+            <UTooltip text="Visit my Git repo">
+                <a href="https://github.com/mrhorrocks/nuxt3" class="underline" alt="check out my Git repo.">Git repo</a>.
+            </UTooltip>
+        </span>
+    </section>
 
     <section aria-label="Current Stack">
         <h3 class="section-title">Current Stack</h3>
