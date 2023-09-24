@@ -16,6 +16,7 @@ h1 {
   color: white;
 }
 h1 a {
+  text-decoration: none;
   display: block;
   transform: rotate(358deg);
   transition-duration: 150ms;
@@ -58,7 +59,7 @@ h3.section-title {
 }
 h3.chart-title {
   width: 100%;
-  margin: 1rem 0;
+  margin: 1rem 0 0 0;
   color: var(--chart-title);
 }
 
@@ -150,6 +151,7 @@ nav {
         py-1 
         px-2
         text-white;
+  text-decoration: none;
 }
 .navlinks a:hover {
   @apply text-blue-500
@@ -197,6 +199,20 @@ footer .container {
   @apply p-4;
 }
 
-p {
+p, span.paragraph {
+  display: block;
+  width: 100%;
   margin: 0 0px 1rem 0px;
+}
+
+.ui-item {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #b6b6b6;
+}
+
+a, .underline {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 2px;
 }
