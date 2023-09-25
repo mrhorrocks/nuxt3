@@ -24,7 +24,7 @@ definePageMeta({
 
             It enables me to get projects built quickly.
             <br /><br />
-            ...and it's also lightening fast. Click the link to visit my
+            It's also lightening fast. Click the link to visit my
 
             <UTooltip text="Visit my Git repo">
                 <a href="https://github.com/mrhorrocks/nuxt3" class="underline" alt="check out my Git repo.">Git repo</a>.
@@ -53,6 +53,7 @@ definePageMeta({
     <section aria-label="Previous Stack">
         <h3 class="section-title">Previous Stack</h3>
         <p>
+            <a class="chip" href="https://www.docker.com/" alt="Docker">Docker</a>
             <a class="chip" href="https://cakephp.org/" alt="CakePHP">CakePHP</a>
             <a class="chip" href="https://www.highcharts.com/" alt="Highcharts">Highcharts</a>
             <a class="chip" href="https://jquery.com/" alt="Jquery">Jquery</a>

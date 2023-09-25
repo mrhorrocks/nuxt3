@@ -14,7 +14,7 @@ const handleError = () => clearError({ redirect: '/' })
                 <Meta name="description" content='Error' />
             </Head>
             <div class="grid grid-cols-1">
-                <div class="pt-8">
+                <div class="pt-8 text-center">
                     <h2>Error {{ error.statusCode }}</h2>
 
                     <p>{{ error.message }}</p>
@@ -30,9 +30,8 @@ const handleError = () => clearError({ redirect: '/' })
 
 <style lang="scss" scoped>
 h2 {
-    font-size: 6rem;
+    font-size: 4rem;
     line-height: 10rem;
-    color: #ef4444;
     font-weight: bold;
     text-shadow: 1px 1px 0px #000;
     font-style: italic;
