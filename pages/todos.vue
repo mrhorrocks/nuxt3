@@ -13,7 +13,7 @@
                 <li><s>Google charts</s></li>
                 <li><s>404 page build</s></li>
                 <li><s>Add Nuxt UI</s></li>
-                <li>Vuestic UI</li>
+                <li>Update the <a href="https://github.com/mrhorrocks/nuxt3/wiki/Additional-Notes">Wiki</a></li>
                 <li>Cookie banner</li>
             </ol>
         </div>
