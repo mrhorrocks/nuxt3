@@ -72,23 +72,20 @@
             </div>
 
             <div class="col-span-1 lg:ml-8 lg:mt-32">
-                <!-- Modal -->
-                <div class="ui-item">
+                <div class="ui-item modals">
+                    <!-- Modal -->
                     <Modal />
-                </div>
-
-                <!-- Fullscreen Modal-->
-                <div class="ui-item">
+                    <!-- Fullscreen Modal-->
                     <ModalFull />
                 </div>
 
-                <!-- SideOver-->
                 <div class="ui-item">
+                    <!-- SideOver-->
                     <SideOver />
                 </div>
 
-                <!-- Notification-->
                 <div class="ui-item">
+                    <!-- Notification-->
                     <Notification />
                     <!-- 
                         <UNotifications /> is placed here for code clarity. 
@@ -102,3 +99,11 @@
         </div>
     </section>
 </template>
+
+<style>
+.modals > div {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+</style>
