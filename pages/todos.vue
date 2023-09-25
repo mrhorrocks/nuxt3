@@ -1,6 +1,6 @@
 <template>
     <Head>
-        <Title>Todos - A Nuxt 3 Project</Title>
+        <Title>Todos - Mr.Horrocks</Title>
         <Meta name="description" content='Things to do' />
     </Head>
     <h2 class="page-heading">Todos</h2>

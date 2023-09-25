@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     app: {
         // Global title and meta config 
         head: {
-            title: 'Mr.Horrocks - A Nuxt 3 Project',
+            title: 'Mr.Horrocks',
             meta: [{ name: 'description', content: 'Front-End Web Developer' }],
             // Example of loading a global stylesheet 
             // link: [

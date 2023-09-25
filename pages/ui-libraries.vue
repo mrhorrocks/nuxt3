@@ -1,6 +1,6 @@
 <template>
     <Head>
-        <Title>UI Libraries - A Nuxt 3 Project</Title>
+        <Title>UI Libraries - Mr.Horrocks</Title>
         <Meta name="description" content='Chart Libraries' />
     </Head>
 
