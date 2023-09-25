@@ -4,7 +4,7 @@ const isOpen = ref(false)
 
 <template>
     <div>
-        <UButton label="Open a fullscreen modal" @click="isOpen = true" />
+        <UButton label="Fullscreen modal" @click="isOpen = true" />
 
         <UModal v-model="isOpen" fullscreen>
             <UCard :ui="{

@@ -4,7 +4,7 @@ const isOpen = ref(false)
 
 <template>
     <div>
-        <UButton label="Open standatd modal" @click="isOpen = true" />
+        <UButton label="Standard modal" @click="isOpen = true" />
 
         <UModal v-model="isOpen" width="sm:max-w-lg" height="h-100">
             <div class="m-10">
