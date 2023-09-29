@@ -1,8 +1,8 @@
-<script setup>
+<!-- <script setup>
 definePageMeta({
     layout: 'homepage'
 });
-</script>
+</script> -->
 
 <template>
     <h2 class="page-heading">Front-End Web Developer</h2>
