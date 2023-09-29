@@ -18,7 +18,7 @@ export default defineNuxtConfig({
         }
     },
     modules: [
-        '@nuxt/content',
+        // '@nuxt/content',
         '@pinia/nuxt',
         // '@nuxtjs/tailwindcss',
         '@nuxt/ui',
@@ -28,9 +28,9 @@ export default defineNuxtConfig({
     css: [
         "@/assets/css/global.css"
     ],
-    content: {
-        // https://content.nuxtjs.org/api/configuration
-    },
+    // content: {
+    //     // https://content.nuxtjs.org/api/configuration
+    // },
     devtools: {
         enabled: true, // Show devtools in the browser
     },
