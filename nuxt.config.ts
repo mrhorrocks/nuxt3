@@ -59,12 +59,14 @@ export default defineNuxtConfig({
         // Component colors.
         // If you want to disable colors set colors property to false.
         colors: {
-            barBackground: 'gold',
-            barButtonBackground: 'yellow',
-            barButtonColor: 'pink',
-            barButtonHoverBackground: 'green',
-            barButtonHoverColor: 'orange',
-            barTextColor: 'purple',
+            // Cookie Banner
+            barBackground: 'black',
+            barButtonBackground: 'white',
+            barButtonColor: 'black',
+            barButtonHoverBackground: 'gold',
+            barButtonHoverColor: 'black',
+            barTextColor: 'white',
+
             checkboxActiveBackground: 'blue',
             checkboxActiveCircleBackground: '#fff',
             checkboxDisabledBackground: '#ddd',
@@ -76,6 +78,7 @@ export default defineNuxtConfig({
             controlButtonIconColor: '#000',
             controlButtonIconHoverColor: '#fff',
             focusRingColor: '#808080',
+            // Popup
             modalBackground: '#fff',
             modalButtonBackground: '#000',
             modalButtonColor: '#fff',
