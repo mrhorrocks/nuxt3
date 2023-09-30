@@ -10,7 +10,7 @@ definePageMeta({
     <section aria-label="About this website">
         <h3 class="section-title">About this website</h3>
         <span class="paragraph">
-            This website is an scalable, advanced starter template built using
+            This website is an scalable, responsive, starter template built using
 
             <UTooltip text="Visit the Nuxt docs">
                 <a href="https://nuxt.com/">Nuxt</a>.
@@ -68,6 +68,7 @@ definePageMeta({
         <h3 class="section-title">Resources</h3>
         <p>
             <a class="chip" href="https://heroicons.com/" alt="Hero Icons">Hero Icons</a>
+            <a class="chip" href="https://css2sass.herokuapp.com/" alt="Hero Icons">CSS to SASS</a>
         </p>
     </section>
 </template>
