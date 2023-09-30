@@ -1,6 +1,8 @@
-# Nuxt 3 + UI + Charts + Pinia
+# Nuxt 3 + UI + Charts + Pinia  
 
-A scalable, advanced starter template built with Nuxt 3.
+[![](https://img.shields.io/badge/nuxt.js-v3.7.4-04C690.svg)](https://nuxt.com)  
+
+A scalable, advanced starter template built with Nuxt 3.  
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
