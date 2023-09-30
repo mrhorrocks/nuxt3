@@ -5,6 +5,7 @@
 @import "../scss/vars";
 @import "../scss/topnav";
 @import "../scss/type";
+@import "../scss/cookie";
 @import "../scss/utilities";
 
 body {
@@ -29,7 +30,7 @@ header {
     @apply 
     shadow-2xl 
     bg-blue-500
-    py-4;
+    py-8;
 }
 
 main {

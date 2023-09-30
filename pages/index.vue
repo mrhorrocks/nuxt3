@@ -1,16 +1,15 @@
-<script setup>
+<!-- <script setup>
 definePageMeta({
     layout: 'homepage'
 });
-</script>
+</script> -->
 
 <template>
-    <h2 class="page-heading">Front-End Web Developer</h2>
 
     <section aria-label="About this website">
-        <h3 class="section-title">About this website</h3>
+        <h2 class="page-heading mb-8">About this website</h2>
         <span class="paragraph">
-            This website is an scalable, advanced starter template built using
+            You are now viewing a scalable, responsive, starter template built using
 
             <UTooltip text="Visit the Nuxt docs">
                 <a href="https://nuxt.com/">Nuxt</a>.
@@ -22,12 +21,12 @@ definePageMeta({
                 <a href="https://vuejs.org/">Vue.js</a>.
             </UTooltip>
 
-            It enables me to get projects built quickly.
+            It enables me to build projects quickly.
             <br /><br />
             It's also lightening fast. Click the link to visit my
 
             <UTooltip text="Visit my Git repo">
-                <a href="https://github.com/mrhorrocks/nuxt3" class="underline" alt="check out my Git repo.">Git repo</a>.
+                <a href="https://github.com/mrhorrocks/nuxt3" class="underline" alt="check out my Git repo.">repo</a>.
             </UTooltip>
         </span>
     </section>
@@ -68,6 +67,7 @@ definePageMeta({
         <h3 class="section-title">Resources</h3>
         <p>
             <a class="chip" href="https://heroicons.com/" alt="Hero Icons">Hero Icons</a>
+            <a class="chip" href="https://css2sass.herokuapp.com/" alt="Hero Icons">CSS to SASS</a>
         </p>
     </section>
 </template>
