@@ -54,8 +54,9 @@ h3 {
   margin-bottom: 0;
 }
 h3.section-title {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   margin: 1rem 0;
+  font-weight: 500;
 }
 h3.chart-title {
   width: 100%;
@@ -128,6 +129,22 @@ h3.chart-title {
 .cookieControl__Bar button {
   color: var(--cookie-control-barButtonColor);
   background-color: var(--cookie-control-barButtonBackground);
+}
+.cookieControl__Bar button:nth-of-type(1) {
+  background-color: green;
+  color: white;
+}
+.cookieControl__Bar button:nth-of-type(1):hover {
+  background-color: #00b300;
+  color: white;
+}
+.cookieControl__Bar button:nth-of-type(2) {
+  background-color: red;
+  color: white;
+}
+.cookieControl__Bar button:nth-of-type(2):hover {
+  background-color: #cc0000;
+  color: white;
 }
 .cookieControl__Bar button:hover {
   color: var(--cookie-control-barButtonHoverColor);
@@ -245,13 +262,14 @@ h3.chart-title {
   vertical-align: middle;
   color: var(--cookie-control-modalTextColor);
   background-color: var(--cookie-control-modalBackground);
+  border-radius: 1rem;
+  overflow: hidden;
 }
 .cookieControl__ModalContent *:not(button) {
   color: var(--cookie-control-modalTextColor);
 }
 .cookieControl__ModalContent h3 {
   font-size: 24px;
-  margin: 15px 0px;
 }
 .cookieControl__ModalContent h3:first-of-type {
   margin-top: 0;
@@ -318,7 +336,7 @@ h3.chart-title {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 40px;
+  padding: 20px 40px;
 }
 
 .cookieControl__ModalInputWrapper {
@@ -336,6 +354,7 @@ h3.chart-title {
 }
 
 .cookieControl__ModalClose {
+  display: none;
   align-self: flex-end;
   top: 20px;
   right: 20px;
@@ -346,6 +365,7 @@ h3.chart-title {
   margin-top: 40px;
   align-items: stretch;
   gap: 20px;
+  margin-top: 0;
 }
 
 .cookieControl__ModalUnsaved {
@@ -373,7 +393,6 @@ h3.chart-title {
     right: 0;
   }
   .cookieControl__Bar div div {
-    background-color: lightblue;
     width: 100%;
   }
   .cookieControl__Bar p, .cookieControl__Bar h3 {
@@ -513,7 +532,7 @@ body {
 header {
   @apply shadow-2xl 
     bg-blue-500
-    py-4;
+    py-8;
 }
 
 main {
