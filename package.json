@@ -28,8 +28,5 @@
     "chart.js": "^4.4.0",
     "pinia": "^2.1.6",
     "vue-chartjs": "^5.2.0"
-  },
-  "comment-out-old-dependencies": {
-    "vue-google-charts": "^1.1.0"
   }
 }
