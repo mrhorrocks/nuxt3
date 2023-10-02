@@ -37,7 +37,6 @@ export default defineNuxtConfig({
     components: [
         // Add sub folders to the component direcory 
         { path: '~/components/chartjs', pathPrefix: false },
-        { path: '~/components/googlecharts', pathPrefix: false },
         { path: '~/components/nuxtui', pathPrefix: false },
 
         // It's important that this comes last if you have overrides you wish to apply
