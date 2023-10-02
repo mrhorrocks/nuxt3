@@ -1,3 +1,10 @@
+
+<template>
+    <button :class="btnClass" @click="handleClick">
+        {{ buttonText }}
+    </button>
+</template>
+
 <script>
 export default {
     props: {
@@ -9,10 +16,6 @@ export default {
             type: String,
             default: "button",
         },
-        to: {
-            type: String,
-            default: "/404"
-        },
     },
     methods: {
         handleClick() {
@@ -21,12 +24,4 @@ export default {
         }
     },
 };
-</script>
-
-<template>
-    <button :class="btnClass" @click="handleClick">
-        {{ buttonText }}
-    </button>
-</template>
-
-<style lang="scss" scoped></style>
+</script>#
