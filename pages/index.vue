@@ -5,30 +5,24 @@ definePageMeta({
 </script> -->
 
 <template>
-
     <section aria-label="About this website">
         <h2 class="page-heading mb-8">About this website</h2>
-        <span class="paragraph">
-            You are now viewing a scalable, responsive, starter template built using
 
+        <p>
+            This is a scalable, responsive, starter template built with
             <UTooltip text="Visit the Nuxt docs">
-                <a href="https://nuxt.com/">Nuxt</a>.
+                <a href="https://nuxt.com/" class="underline">Nuxt.Js</a>.
             </UTooltip>
+        </p>
 
-            Nuxt is a Javascript framework built on top of
+        <p>
+            It can be used as a wireframe for web apps. Chartjs and Nuxt UI are pre installed.
+        </p>
+        
+        <p>
+            <ButtonLink to="https://github.com/mrhorrocks/nuxt3" class="w-full sm:w-[initial]" linkText="Install from github !!!" />
+        </p>
 
-            <UTooltip text="Visit the Vue docs">
-                <a href="https://vuejs.org/">Vue.js</a>.
-            </UTooltip>
-
-            It enables me to build projects quickly.
-            <br /><br />
-            It's also lightening fast. Click the link to visit my
-
-            <UTooltip text="Visit my Git repo">
-                <a href="https://github.com/mrhorrocks/nuxt3" class="underline" alt="check out my Git repo.">repo</a>.
-            </UTooltip>
-        </span>
     </section>
 
     <section aria-label="Current Stack">

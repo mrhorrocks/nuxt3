@@ -7,6 +7,7 @@
 @import "../scss/type";
 @import "../scss/cookie";
 @import "../scss/utilities";
+@import "../scss/button";
 
 body {
     @apply 
@@ -123,7 +124,7 @@ footer {
         p-4
     }
 }
-p, span.paragraph {
+p {
     display: block;
     width: 100%;
     margin: 0 0px 1rem 0px;
@@ -135,7 +136,7 @@ p, span.paragraph {
     border-bottom: 1px solid #b6b6b6;
 }
 
-a, .underline {
+.underline {
     text-decoration: underline;
     text-decoration-style: dotted;
     text-decoration-thickness: 2px;

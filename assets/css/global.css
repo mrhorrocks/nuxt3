@@ -7,6 +7,7 @@
   --first-colour: #3b82f6;
   --second-colour: #93c5fd;
   --chart-title: #ea580c;
+  --gold-colour: gold;
 }
 
 /* topnav.scss */
@@ -512,6 +513,31 @@ a.chip:active {
   color: #fff;
 }
 
+.button {
+  display: inline-block;
+  background-color: var(--first-colour);
+  padding: 0.5rem 2rem;
+  border-radius: 0.3rem;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  @apply transition 
+  duration-150 
+  ease-in-out;
+}
+.button:hover {
+  background-color: var(--gold-colour);
+  color: black;
+  box-shadow: 0px 3px 3px #ccc;
+}
+.button:hover:hover {
+  box-shadow: 0px 1px 3px #ccc;
+}
+.button:active {
+  background-color: #00c500;
+  color: white;
+}
+
 body {
   @apply bg-gray-50
     border-t-8 
@@ -613,7 +639,7 @@ footer .container {
   @apply p-4;
 }
 
-p, span.paragraph {
+p {
   display: block;
   width: 100%;
   margin: 0 0px 1rem 0px;
@@ -625,7 +651,7 @@ p, span.paragraph {
   border-bottom: 1px solid #b6b6b6;
 }
 
-a, .underline {
+.underline {
   text-decoration: underline;
   text-decoration-style: dotted;
   text-decoration-thickness: 2px;
