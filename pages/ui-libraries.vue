@@ -24,7 +24,7 @@
                 <div class="ui-item">
                     <Accordian />
                 </div>
-                
+
                 <div class="ui-item modals">
                     <!-- Modal -->
                     <Modal class="w-full sm:w-[initial] mb-4" />
@@ -48,22 +48,29 @@
                 </div>
             </div>
 
+
+
             <div class="col-span-1 lg:ml-8">
                 <h3 class="section-title">Bespoke Components</h3>
 
                 <div class="ui-item">
-                    <ButtonLink 
-                    to="https://github.com/mrhorrocks/nuxt3" 
-                    class="w-full sm:w-[initial]" 
-                    linkText="Install from github" />
+                    <ButtonLink to="https://github.com/mrhorrocks/nuxt3" class="w-full sm:w-[initial]"
+                        linkText="Install from github" />
                 </div>
 
                 <div class="ui-item">
-                    <Checkbox label="Yes" checked="checked" />
-                    <Checkbox label="No" />
-                    <Checkbox label="Maybe" />
-                    <Checkbox label="Bespoke Compoments" checked="checked" />
+                    <Checkbox id="1" label="One" checked="checked" />
+                    <Checkbox id="2" label="Two" />
+                    <Checkbox id="3" label="Three" />
+                    <Checkbox id="4" label="Bespoke Components" checked="checked" />
+                </div>
 
+                <div class="ui-item">
+                    <form autocomplete="on">
+                        <Radio name="name" id="10" label="Yes" checked="checked" />
+                        <Radio name="name" id="11" label="No" />
+                        <Radio name="name" id="12" label="Maybe" />
+                    </form>
                 </div>
 
             </div>
@@ -75,12 +82,10 @@
 .modals > div {
     display: inline-block;
     margin-right: 0.5rem;
+
     button {
-        
-    @apply 
-    w-full
-    lg:w-auto;
+        @apply w-full lg:w-auto;
     }
 }
-
 </style>
+

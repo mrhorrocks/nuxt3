@@ -1,26 +1,25 @@
 <template>
     <label class="checkbox">
-        <input 
-        type="checkbox" 
-        id="myCheckbox" 
-        name="myCheckbox" 
-        aria-labelledby="checkboxLabel"
-        :checked="checked">
-
-        <span class="checkmark"></span>
-        <span id="checkboxLabel">{{ label }}</span>
+      <input type="checkbox" :id="id" :checked="checked"/>
+      <span class="checkmark"></span>
+      <span id="checkboxLabel">{{ label }}</span>
     </label>
-</template>
-
-<script>
-
-export default {
+  </template>
+  
+  <script>
+  export default {
     props: {
-        label: String,
-        checked: String,
+      value: {
+        type: Boolean,
+        default: false,
+      },
+      label: String,
+      id: String,
+      checked: String,
     },
-};
-</script>
+
+  };
+  </script>
 
 <style>
 
@@ -101,3 +100,7 @@ export default {
 }
 
 </style>
+
+
+ 
+  
