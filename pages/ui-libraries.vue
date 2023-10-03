@@ -27,13 +27,13 @@
                 
                 <div class="ui-item modals">
                     <!-- Modal -->
-                    <Modal />
+                    <Modal class="w-full sm:w-[initial] mb-4" />
                     <!-- Fullscreen Modal-->
-                    <ModalFull />
+                    <ModalFull class="w-full sm:w-[initial] mb-4" />
                     <!-- SideOver-->
-                    <SideOver />
+                    <SideOver class="w-full sm:w-[initial] mb-4" />
                     <!-- Notification-->
-                    <Notification />
+                    <Notification class="w-full sm:w-[initial] mb-4" />
                 </div>
 
 
@@ -75,6 +75,12 @@
 .modals > div {
     display: inline-block;
     margin-right: 0.5rem;
+    button {
+        
+    @apply 
+    w-full
+    lg:w-auto;
+    }
 }
 
 </style>
