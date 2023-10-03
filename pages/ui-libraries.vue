@@ -48,8 +48,6 @@
                 </div>
             </div>
 
-
-
             <div class="col-span-1 lg:ml-8">
                 <h3 class="section-title">Bespoke Components</h3>
 
@@ -73,13 +71,19 @@
                     </form>
                 </div>
 
+                <div class="ui-item">
+                    <TextField label="Name" placeholder="Name" id="13"/>
+                    <TextField label="Email" placeholder="Email" id="14" />
+                    <TextArea label="Description" placeholder="Add description" />
+                </div>
+
             </div>
         </div>
     </section>
 </template>
 
 <style>
-.modals > div {
+.modals>div {
     display: inline-block;
     margin-right: 0.5rem;
 

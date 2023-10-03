@@ -1,6 +1,6 @@
 <template>
     <label class="radio">
-      <input type="radio" :id="id" :checked="checked" :name="name" />
+      <input type="radio" :id="id" :checked="checked" :name="name" autocomplete="on"/>
       <span class="checkmark"></span>
       <span id="checkboxLabel">{{ label }}</span>
     </label>
