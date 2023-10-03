@@ -1,0 +1,103 @@
+<template>
+    <label class="checkbox">
+        <input 
+        type="checkbox" 
+        id="myCheckbox" 
+        name="myCheckbox" 
+        aria-labelledby="checkboxLabel"
+        :checked="checked">
+
+        <span class="checkmark"></span>
+        <span id="checkboxLabel">{{ label }}</span>
+    </label>
+</template>
+
+<script>
+
+export default {
+    props: {
+        label: String,
+        checked: String,
+    },
+};
+</script>
+
+<style>
+
+.checkbox {
+    position: relative;
+    display: inline-block;
+    /* background-color: red; */
+    cursor: pointer;
+    margin-right: 2rem;
+        user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+    }
+
+/* Hide the browser's default checkbox */
+.checkbox input {
+    display: none;
+}
+
+/* Create a custom checkbox */
+.checkbox .checkmark {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 2rem;
+    width: 2rem;
+    background-color: #eee;
+    border: 2px solid #888;
+    border-radius: 4px;
+}
+
+/* On mouse-over, add a background color */
+.checkbox:hover input ~ .checkmark {
+    background-color: var(--third-colour);
+}   
+
+/* When the checkbox is checked, add a blue background */
+.checkbox input:checked ~ .checkmark {
+    background-color: var(--second-colour);
+    height: 2rem;
+    width: 2rem;
+    border: 0;
+    border: 2px solid var(--first-colour);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox .checkmark:after {
+    left: 8px;
+    top: 2px;
+    width: 12px;
+    height: 20px;
+    border: solid white;
+    border-width: 0 5px 5px 0;
+    transform: rotate(41deg);
+        -webkit-transform: rotate(41deg);
+        -ms-transform: rotate(41deg);
+        transform: rotate(41deg);
+}
+#checkboxLabel {
+    /* background-color: pink; */
+    display: inline-block;
+    float: left;
+    margin-left: 2.2rem;
+    height: 2rem;
+    line-height: 2;
+}
+
+</style>

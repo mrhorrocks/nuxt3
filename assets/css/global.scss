@@ -107,10 +107,6 @@ nav {
     border: 1px solid red;
 } */
 
-/* [aria-label='Current tech'] {
-    background: red
-} */
-
 footer {
     @apply 
     bg-blue-300;
@@ -134,6 +130,9 @@ p {
     padding-bottom: 20px;
     margin-bottom: 20px;
     border-bottom: 1px solid #b6b6b6;
+    &:last-child {
+        border-bottom: none;
+    }
 }
 
 .underline {

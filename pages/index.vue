@@ -8,19 +8,13 @@ definePageMeta({
     <section aria-label="About this website">
         <h2 class="page-heading mb-8">About this website</h2>
 
-        <p>
-            This is a scalable, responsive, starter template built with
-            <UTooltip text="Visit the Nuxt docs">
-                <a href="https://nuxt.com/" class="underline">Nuxt.Js</a>.
-            </UTooltip>
-        </p>
+        <p>This is a scalable, responsive, starter template built with Nuxt.Js. Tailwindcss, Chartjs, Nuxt UI and Pinia are pre installed.</p>
 
         <p>
-            It can be used as a wireframe for web apps. Chartjs and Nuxt UI are pre installed.
-        </p>
-        
-        <p>
-            <ButtonLink to="https://github.com/mrhorrocks/nuxt3" class="w-full sm:w-[initial]" linkText="Install from github !!!" />
+            <ButtonLink 
+                to="https://github.com/mrhorrocks/nuxt3" 
+                class="w-full sm:w-[initial]" 
+                linkText="Install from github" />
         </p>
 
     </section>

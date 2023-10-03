@@ -6,6 +6,7 @@
 :root {
   --first-colour: #3b82f6;
   --second-colour: #93c5fd;
+  --third-colour: #c6e1ff;
   --chart-title: #ea580c;
   --gold-colour: gold;
 }
@@ -514,6 +515,7 @@ a.chip:active {
 }
 
 .button {
+  position: relative;
   display: inline-block;
   background-color: var(--first-colour);
   padding: 0.5rem 2rem;
@@ -521,11 +523,13 @@ a.chip:active {
   color: white;
   cursor: pointer;
   text-align: center;
+  box-shadow: 0px 3px 3px #ccc;
   @apply transition 
   duration-150 
   ease-in-out;
 }
 .button:hover {
+  top: 1px;
   background-color: var(--gold-colour);
   color: black;
   box-shadow: 0px 3px 3px #ccc;
@@ -625,9 +629,6 @@ nav {
 /* .container {
     border: 1px solid red;
 } */
-/* [aria-label='Current tech'] {
-    background: red
-} */
 footer {
   @apply bg-blue-300;
 }
@@ -649,6 +650,9 @@ p {
   padding-bottom: 20px;
   margin-bottom: 20px;
   border-bottom: 1px solid #b6b6b6;
+}
+.ui-item:last-child {
+  border-bottom: none;
 }
 
 .underline {

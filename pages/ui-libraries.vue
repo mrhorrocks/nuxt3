@@ -6,7 +6,6 @@
 
     <h2 class="page-heading">UI Libraries</h2>
 
-
     <section aria-label="Nuxt UI Components">
         <div class="lg:grid grid-cols-2">
             <div class="col-span-1">
@@ -17,48 +16,26 @@
                 </UTooltip>
 
                 <div class="ui-item">
-                    <!-- Button -->
-                    <UButton>Button</UButton>&nbsp;
                     <!-- Dropdown -->
                     <Dropdown />
-                </div>
-
-                <!-- Avatar -->
-                <div class="ui-item">
-                    <Avatar />
                 </div>
 
                 <!-- Accordian -->
                 <div class="ui-item">
                     <Accordian />
                 </div>
-
-                <!-- Keyboard -->
-                <div class="ui-item">
-                    <UKbd>Q</UKbd>
-                    <UKbd>W</UKbd>
-                    <UKbd>E</UKbd>
-                    <UKbd>R</UKbd>
-                    <UKbd>T</UKbd>
-                    <UKbd>Y</UKbd>
-                    &nbsp;&nbsp;
-                    <UKbd>K</UKbd>
-                    <UKbd>E</UKbd>
-                    <UKbd>Y</UKbd>
-                    <UKbd>B</UKbd>
-                    <UKbd>O</UKbd>
-                    <UKbd>A</UKbd>
-                    <UKbd>R</UKbd>
-                    <UKbd>D</UKbd>
+                
+                <div class="ui-item modals">
+                    <!-- Modal -->
+                    <Modal />
+                    <!-- Fullscreen Modal-->
+                    <ModalFull />
+                    <!-- SideOver-->
+                    <SideOver />
+                    <!-- Notification-->
+                    <Notification />
                 </div>
 
-                <!-- Checkbox -->
-                <div class="ui-item">
-                    <form action="">
-                        <Checkbox id="Yes" label="Yes" />
-                        <Checkbox id="No" label="No" />
-                    </form>
-                </div>
 
                 <!-- Toggle -->
                 <div class="ui-item">
@@ -71,28 +48,22 @@
                 </div>
             </div>
 
-            <div class="col-span-1 lg:ml-8 lg:mt-32">
-                <div class="ui-item modals">
-                    <!-- Modal -->
-                    <Modal />
-                    <!-- Fullscreen Modal-->
-                    <ModalFull />
+            <div class="col-span-1 lg:ml-8">
+                <h3 class="section-title">Bespoke Components</h3>
+
+                <div class="ui-item">
+                    <ButtonLink 
+                    to="https://github.com/mrhorrocks/nuxt3" 
+                    class="w-full sm:w-[initial]" 
+                    linkText="Install from github" />
                 </div>
 
                 <div class="ui-item">
-                    <!-- SideOver-->
-                    <SideOver />
-                </div>
+                    <Checkbox label="Yes" checked="checked" />
+                    <Checkbox label="No" />
+                    <Checkbox label="Maybe" />
+                    <Checkbox label="Bespoke Compoments" checked="checked" />
 
-                <div class="ui-item">
-                    <!-- Notification-->
-                    <Notification />
-                    <!-- 
-                        <UNotifications /> is placed here for code clarity. 
-                        In production it should be placed in once app.vue 
-                        or in one of the /layouts.
-                    -->
-                    <UNotifications />
                 </div>
 
             </div>
