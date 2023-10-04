@@ -12,8 +12,6 @@
 body {
     @apply 
     bg-gray-50
-    border-t-8 
-    border-blue-300;
 }
 
 .app-height {
@@ -23,15 +21,20 @@ body {
     min-h-screen; */
     /* Use the below css if there is an 8px border at the top of the page. Otherwise use the above css instead */
     display: flex;
-    min-height: calc(100vh - 8px);
+    min-height: calc(100vh - 0px);
     flex-direction: column;
 }
 
 header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
     @apply 
     shadow-2xl 
     bg-blue-500
-    py-8;
+    py-8
+    border-t-8 
+    border-blue-300;
 }
 
 main {
@@ -41,6 +44,7 @@ main {
     grow 
     items-start
     px-2;
+    margin-top: 111px;
 }
 
 nav {
@@ -56,22 +60,18 @@ nav {
     space-x-3 
     hidden; 
     a {
+        border-radius: 0.25rem;
+        color:white;
+        padding: 0.45rem 0.5rem 0.25rem;
+        font: normal 700 1.75rem/1 'Yanone Kaffeesatz', sans-serif;
+        text-decoration: none;
         @apply 
-        rounded
         transition 
         duration-150 
-        ease-in-out 
-        text-sm
-        font-bold
-        uppercase
-        py-1 
-        px-2
-        text-white;
-        text-decoration: none;
+        ease-in-out;
         &:hover {
-            @apply 
-            text-blue-500
-            bg-white
+            color: var(--first-colour);
+            background-color: white;
         }
     }
 }
@@ -83,6 +83,7 @@ nav {
     divide-y 
     divide-slate-200;
     a {
+        text-align: center;
         @apply 
         block 
         text-slate-200
@@ -94,7 +95,14 @@ nav {
         pl-0;
         &:hover {
             @apply
-            text-white 
+            text-blue-500
+            bg-slate-200
+            underline;
+        }
+        &:active {
+            @apply
+            text-blue-500
+            bg-white
             underline;
         }
         &:first-child{

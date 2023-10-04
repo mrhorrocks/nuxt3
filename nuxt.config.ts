@@ -12,9 +12,10 @@ export default defineNuxtConfig({
             title: 'Mr.Horrocks',
             meta: [{ name: 'description', content: 'Front-End Web Developer' }],
             // Example of loading a global stylesheet 
-            // link: [
-            //   { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }
-            // ]
+            link: [
+                { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap'},
+                { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Lobster&family=Yanone+Kaffeesatz:wght@300;400;500;600;700&display=swap'}
+            ]
         }
     },
     modules: [

@@ -4,9 +4,15 @@
 /* SCSS files below */
 /* _vars.scss */
 :root {
+  --dark-colour: #1866e2;
   --first-colour: #3b82f6;
   --second-colour: #93c5fd;
   --third-colour: #c6e1ff;
+  --active-colour: #00c500;
+  --alert-colour: #ff0000;
+  --alert-dark-colour: #c50000;
+  --reset-colour: coral;
+  --reset-dark-colour: #d35527;
   --chart-title: #ea580c;
   --gold-colour: gold;
 }
@@ -14,10 +20,10 @@
 /* topnav.scss */
 /* type.scss */
 h1 {
-  font: normal small-caps bold 1.5rem/1 Georgia, serif;
   color: white;
 }
 h1 a {
+  font: normal 2rem/1 "Lobster", cursive;
   text-decoration: none;
   display: block;
   transform: rotate(358deg);
@@ -30,12 +36,10 @@ h1 a:hover {
 h2.page-heading {
   @apply text-3xl
     md:text-5xl;
-  line-height: 2;
-  font-weight: 500;
+  /* font-family: 'Yanone Kaffeesatz', sans-serif; */
+  font: normal 500 3rem/2 "Lobster", cursive;
   color: var(--first-colour);
-  margin-top: 1rem;
-  line-height: 1.3;
-  margin-top: 2rem;
+  margin: 1rem 0;
   text-shadow: 1px 1px 0px #000;
 }
 h2.page-heading a {
@@ -48,22 +52,25 @@ h2.page-heading a:hover {
 }
 
 h3 {
-  font-size: 1.25rem;
-  line-height: 2;
-  font-weight: 400;
+  /* 300;400;500;600;700 */
+  font: normal 700 2rem/1 "Yanone Kaffeesatz", sans-serif;
   color: var(--first-colour);
   margin-top: 1rem;
-  margin-bottom: 0;
-}
-h3.section-title {
-  font-size: 1.5rem;
   margin: 1rem 0;
-  font-weight: 500;
+  /* &.section-title {
+      margin: 1rem 0;
+  } */
 }
 h3.chart-title {
-  width: 100%;
-  margin: 0;
-  color: var(--chart-title);
+  width: auto;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 1rem 0;
+  padding: 0.55rem;
+  background: var(--first-colour);
+  color: white;
+  box-shadow: 7px 7px 2px #ccc;
+  text-align: center;
 }
 
 .cookieControl__Modal-enter-active, .cookieControl__Modal-leave-active {
@@ -519,14 +526,15 @@ a.chip:active {
   display: inline-block;
   background-color: var(--first-colour);
   padding: 0.5rem 2rem;
+  margin: 0 1rem 0 0;
   border-radius: 0.3rem;
   color: white;
   cursor: pointer;
   text-align: center;
   box-shadow: 0px 3px 3px #ccc;
   @apply transition 
-  duration-150 
-  ease-in-out;
+    duration-150 
+    ease-in-out;
 }
 .button:hover {
   top: 1px;
@@ -534,18 +542,34 @@ a.chip:active {
   color: black;
   box-shadow: 0px 3px 3px #ccc;
 }
-.button:hover:hover {
-  box-shadow: 0px 1px 3px #ccc;
-}
 .button:active {
-  background-color: #00c500;
+  background-color: var(--active-colour);
+  color: white;
+}
+.button.submit {
+  background-color: var(--first-colour);
+}
+.button.submit:hover {
+  background-color: var(--dark-colour);
+  color: white;
+}
+.button.cancel {
+  background-color: var(--alert-colour);
+}
+.button.cancel:hover {
+  background-color: var(--alert-dark-colour);
+  color: white;
+}
+.button.reset {
+  background-color: var(--reset-dark-colour);
+}
+.button.reset:hover {
+  background-color: var(--reset-colour);
   color: white;
 }
 
 body {
-  @apply bg-gray-50
-    border-t-8 
-    border-blue-300;
+  @apply bg-gray-50;
 }
 
 .app-height {
@@ -555,14 +579,19 @@ body {
   min-h-screen; */
   /* Use the below css if there is an 8px border at the top of the page. Otherwise use the above css instead */
   display: flex;
-  min-height: calc(100vh - 8px);
+  min-height: calc(100vh - 0px);
   flex-direction: column;
 }
 
 header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
   @apply shadow-2xl 
     bg-blue-500
-    py-8;
+    py-8
+    border-t-8 
+    border-blue-300;
 }
 
 main {
@@ -571,6 +600,7 @@ main {
     grow 
     items-start
     px-2;
+  margin-top: 111px;
 }
 
 nav {
@@ -585,21 +615,18 @@ nav {
     hidden;
 }
 .navlinks a {
-  @apply rounded
-        transition 
-        duration-150 
-        ease-in-out 
-        text-sm
-        font-bold
-        uppercase
-        py-1 
-        px-2
-        text-white;
+  border-radius: 0.25rem;
+  color: white;
+  padding: 0.45rem 0.5rem 0.25rem;
+  font: normal 700 1.75rem/1 "Yanone Kaffeesatz", sans-serif;
   text-decoration: none;
+  @apply transition 
+        duration-150 
+        ease-in-out;
 }
 .navlinks a:hover {
-  @apply text-blue-500
-            bg-white;
+  color: var(--first-colour);
+  background-color: white;
 }
 
 .mobilenavlinks {
@@ -609,6 +636,7 @@ nav {
     divide-slate-200;
 }
 .mobilenavlinks a {
+  text-align: center;
   @apply block 
         text-slate-200
         border-white
@@ -619,7 +647,13 @@ nav {
         pl-0;
 }
 .mobilenavlinks a:hover {
-  @apply text-white 
+  @apply text-blue-500
+            bg-slate-200
+            underline;
+}
+.mobilenavlinks a:active {
+  @apply text-blue-500
+            bg-white
             underline;
 }
 .mobilenavlinks a:first-child {
