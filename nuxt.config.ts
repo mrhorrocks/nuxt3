@@ -60,7 +60,7 @@ export default defineNuxtConfig({
         // If you want to disable colors set colors property to false.
         colors: {
             // Cookie Banner
-            barBackground: 'black',
+            barBackground: '#000000ba',
             barButtonBackground: 'white',
             barButtonColor: 'black',
             barButtonHoverBackground: 'gold',
