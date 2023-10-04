@@ -95,7 +95,7 @@
 </template>
 
 <style>
-.modals>div {
+.modals > div {
     display: inline-block;
     margin-right: 0.5rem;
 
