@@ -5,8 +5,6 @@ definePageMeta({
 </script> -->
 
 <template>
-
-
     <section aria-label="About this website">
         <h2 class="page-heading mb-8">About this website</h2>
 
@@ -18,9 +16,9 @@ definePageMeta({
                 linkText="Install from github" />
         </p>
     </section>
-    <div class="grid grid-cols-1 lg:grid-cols-3">
+    <div class="grid lg:grid-cols-3">
 
-        <div class="col-span-3 xl:col-span-2">
+        <div class="lg:col-span-2">
             <section aria-label="Current Stack">
                 <h3 class="section-title">Current Stack</h3>
                 <p>
@@ -52,14 +50,17 @@ definePageMeta({
                 </p>
             </section>
         </div>
-        <div class="col-span-1">
+
+        <div class="lg:col-span-1">
             <section aria-label="Resources">
                 <h3 class="section-title">Resources</h3>
                 <p>
                     <a class="chip" href="https://heroicons.com/" alt="Hero Icons">Hero Icons</a>
+                    <a class="chip" href="https://fonts.google.com/icons" alt="Material Icons">Material Icons</a>
                     <a class="chip" href="https://css2sass.herokuapp.com/" alt="Hero Icons">CSS to SASS</a>
                 </p>
             </section>
         </div>
+
     </div>
 </template>
