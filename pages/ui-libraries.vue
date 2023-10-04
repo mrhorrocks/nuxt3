@@ -8,7 +8,42 @@
 
     <section aria-label="Nuxt UI Components">
         <div class="lg:grid grid-cols-2">
+
             <div class="col-span-1">
+                <h3 class="section-title">Bespoke Components</h3>
+
+                <div class="ui-item">
+                    <ButtonLink to="https://github.com/mrhorrocks/nuxt3" class="w-full sm:w-[initial]"
+                        linkText="Install from github" />
+                </div>
+
+                <div class="ui-item">
+                    <Checkbox id="1" label="One" checked="checked" />
+                    <Checkbox id="2" label="Two" />
+                    <Checkbox id="3" label="Three" />
+                    <Checkbox id="4" label="Bespoke Components" checked="checked" />
+                </div>
+
+                <div class="ui-item">
+                    <form autocomplete="on">
+                        <Radio name="name" id="10" label="Yes" checked="checked" />
+                        <Radio name="name" id="11" label="No" />
+                        <Radio name="name" id="12" label="Maybe" />
+                    </form>
+                </div>
+
+                <div class="ui-item">
+                    <TextField label="Name" placeholder="Name" id="13"/>
+                    <TextField label="Email" placeholder="Email" id="14" />
+                    <TextArea label="Description" placeholder="Add description" />
+                    <Button buttonClass="button submit" linkText="Send" />
+                    <Button buttonClass="button cancel" linkText="Cancel" />
+                    <Button buttonClass="button reset" linkText="Reset" />
+                </div>
+
+            </div>
+
+            <div class="col-span-1 lg:ml-8">
                 <h3 class="section-title">Nuxt UI Components</h3>
 
                 <UTooltip text="Visit the Nuxt UI Docs" class="mb-8">
@@ -48,36 +83,6 @@
                 </div>
             </div>
 
-            <div class="col-span-1 lg:ml-8">
-                <h3 class="section-title">Bespoke Components</h3>
-
-                <div class="ui-item">
-                    <ButtonLink to="https://github.com/mrhorrocks/nuxt3" class="w-full sm:w-[initial]"
-                        linkText="Install from github" />
-                </div>
-
-                <div class="ui-item">
-                    <Checkbox id="1" label="One" checked="checked" />
-                    <Checkbox id="2" label="Two" />
-                    <Checkbox id="3" label="Three" />
-                    <Checkbox id="4" label="Bespoke Components" checked="checked" />
-                </div>
-
-                <div class="ui-item">
-                    <form autocomplete="on">
-                        <Radio name="name" id="10" label="Yes" checked="checked" />
-                        <Radio name="name" id="11" label="No" />
-                        <Radio name="name" id="12" label="Maybe" />
-                    </form>
-                </div>
-
-                <div class="ui-item">
-                    <TextField label="Name" placeholder="Name" id="13"/>
-                    <TextField label="Email" placeholder="Email" id="14" />
-                    <TextArea label="Description" placeholder="Add description" />
-                </div>
-
-            </div>
         </div>
     </section>
 </template>
