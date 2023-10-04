@@ -2,7 +2,8 @@
 h1 {
     color: white;
     a {
-        font: normal 2rem/1 'Lobster', cursive;
+        font: var(--big-font);
+        /* normal 2rem/1 'Lobster', cursive; */
         text-decoration: none;
         display: block;
         transform: rotate(358deg);
