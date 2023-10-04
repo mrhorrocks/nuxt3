@@ -587,7 +587,8 @@ header {
   position: fixed;
   z-index: 100;
   width: 100%;
-  @apply shadow-2xl 
+  @apply lg:relative
+    shadow-2xl 
     bg-blue-500
     py-8
     border-t-8 
@@ -595,12 +596,13 @@ header {
 }
 
 main {
-  @apply container 
+  @apply mt-[111px]
+    lg:mt-0
+    container 
     mx-auto 
     grow 
     items-start
     px-2;
-  margin-top: 111px;
 }
 
 nav {
