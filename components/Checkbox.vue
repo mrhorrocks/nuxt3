@@ -26,9 +26,8 @@
 .checkbox {
     position: relative;
     display: inline-block;
-    /* background-color: red; */
     cursor: pointer;
-    margin-right: 2rem;
+    margin: 0 2rem 1rem 0;
         user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
