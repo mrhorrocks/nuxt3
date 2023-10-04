@@ -6,7 +6,7 @@
 
         <CookieControl locale="en">
             <template #bar>
-                <h3>We Use Cookies</h3>
+                <h3>Just another cookie banner</h3>
                 <p>Click the accept or decline button to hide this banner. 
                     Your choice will be saved in a cookie.</p>
             </template>
