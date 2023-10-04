@@ -1,44 +1,43 @@
 <template>
     <label class="radio">
-      <input type="radio" :id="id" :checked="checked" :name="name" autocomplete="on"/>
-      <span class="checkmark"></span>
-      <span id="checkboxLabel">{{ label }}</span>
+        <input type="radio" :id="id" :checked="checked" :name="name" autocomplete="on" />
+        <span class="checkmark"></span>
+        <span id="checkboxLabel">{{ label }}</span>
     </label>
-  </template>
+</template>
   
-  <script>
-  export default {
+<script>
+export default {
     props: {
-      value: {
-        type: Boolean,
-        default: false,
-      },
-      label: String,
-      id: String,
-      checked: String,
-      name: String,
+        value: {
+            type: Boolean,
+            default: false,
+        },
+        label: String,
+        id: String,
+        checked: String,
+        name: String,
     },
 
-  };
-  </script>
+};
+</script>
 
 <style>
-
 /* Customize the label (the container) */
 .radio {
-  position: relative;
+    position: relative;
     display: inline-block;
     /* background-color: red; */
     cursor: pointer;
     margin-right: 2rem;
-        user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 /* Hide the browser's default radio button */
 .radio input {
-  display: none;
+    display: none;
 }
 
 /* Create a custom radio button */
@@ -54,12 +53,12 @@
 }
 
 /* On mouse-over, add a grey background color */
-.radio:hover input ~ .checkmark {
+.radio:hover input~.checkmark {
     background-color: var(--third-colour);
 }
 
 /* When the radio button is checked, add a blue background */
-.radio input:checked ~ .checkmark {
+.radio input:checked~.checkmark {
     background-color: #eee;
     border: 2px solid var(--first-colour);
 }
@@ -72,7 +71,7 @@
 }
 
 /* Show the indicator (dot/circle) when checked */
-.radio input:checked ~ .checkmark:after {
+.radio input:checked~.checkmark:after {
     display: block;
 }
 
