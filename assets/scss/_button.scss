@@ -1,30 +1,52 @@
 .button {
-  position: relative;
-  display: inline-block;
-  background-color: var(--first-colour);
-  padding: 0.5rem 2rem;
-  border-radius: 0.3rem;
-  color: white;
-  cursor: pointer;
-  text-align: center;
-  box-shadow: 0px 3px 3px #ccc;
-  @apply 
-  transition 
-  duration-150 
-  ease-in-out;
+    position: relative;
+    display: inline-block;
+    background-color: var(--first-colour);
+    padding: 0.5rem 2rem;
+    margin: 0 1rem 0 0;
+    border-radius: 0.3rem;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0px 3px 3px #ccc;
+    @apply 
+    transition 
+    duration-150 
+    ease-in-out;
 
-  &:hover {
-      top: 1px;
-      background-color: var(--gold-colour);
-      color: black;
-      box-shadow: 0px 3px 3px #ccc;
-      &:hover {
-          box-shadow: 0px 1px 3px #ccc;
-      }
-  }
+    &:hover {
+        top: 1px;
+        background-color: var(--gold-colour);
+        color: black;
+        box-shadow: 0px 3px 3px #ccc;
+    }
 
-  &:active {
-      background-color: #00c500;
-      color: white;
-  }
+    &:active {
+        background-color: var(--active-colour);
+        color: white;
+    }
+
+    &.submit {
+        background-color: var(--first-colour);
+        &:hover {
+            background-color: var(--dark-colour);
+            color:white;
+        }
+    }
+
+    &.cancel {
+        background-color: var(--alert-colour);
+        &:hover {
+            background-color: var(--alert-dark-colour);
+            color:white;
+        }
+    }
+
+    &.reset {
+        background-color: var(--reset-dark-colour);
+        &:hover {
+            background-color: var(--reset-colour);
+            color:white;
+        }
+    }
 }
