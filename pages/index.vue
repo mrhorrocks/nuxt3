@@ -8,7 +8,7 @@ definePageMeta({
     <section aria-label="About this website">
         <h2 class="page-heading mb-8">About this website</h2>
 
-        <p>This is a scalable, responsive, starter template built with Nuxt.Js. Tailwindcss, Chartjs, Nuxt UI and Pinia are pre installed.</p>
+        <p>A scalable, responsive, starter template built with Nuxt.Js. Tailwindcss, Chartjs, Nuxt UI and Pinia are pre installed.</p>
 
         <p>
             <ButtonLink 
