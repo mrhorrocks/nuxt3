@@ -7,9 +7,14 @@
     <h2 class="page-heading">UI Libraries</h2>
 
     <section aria-label="Nuxt UI Components">
-        <div class="lg:grid grid-cols-2">
 
-            <div class="col-span-1">
+        <!-- <h3 class="section-title">
+            UI Libraries
+        </h3> -->
+
+        <!-- GRID -->
+        <div class="lg:grid lg:grid-cols-2 lg:gap-12">
+            <div class="lg:col-span-1">
                 <h3 class="section-title">Bespoke Components</h3>
 
                 <div class="ui-item">
@@ -33,7 +38,7 @@
                 </div>
 
                 <div class="ui-item">
-                    <TextField label="Name" placeholder="Name" id="13"/>
+                    <TextField label="Name" placeholder="Name" id="13" />
                     <TextField label="Email" placeholder="Email" id="14" />
                     <TextArea label="Description" placeholder="Add description" />
                     <Button buttonClass="button submit" linkText="Send" />
@@ -43,7 +48,7 @@
 
             </div>
 
-            <div class="col-span-1 lg:ml-8">
+            <div class="lg:col-span-1 lg:ml-8">
                 <h3 class="section-title">Nuxt UI Components</h3>
 
                 <UTooltip text="Visit the Nuxt UI Docs" class="mb-8">
@@ -84,6 +89,8 @@
             </div>
 
         </div>
+        <!-- END-GRID -->
+
     </section>
 </template>
 
