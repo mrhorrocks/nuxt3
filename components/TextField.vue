@@ -2,10 +2,10 @@
     <div class="textfield">
         <label :for="id">{{ label }}</label>
         <input
-            type="text"
-            :id="id"
-            :placeholder="placeholder"
-            :disabled="disabled"
+        type="text"
+        :id="id"
+        :placeholder="placeholder"
+        :disabled="disabled"
         />
     </div>
 </template>
