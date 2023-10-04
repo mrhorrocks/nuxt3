@@ -13,8 +13,12 @@
   --alert-dark-colour: #c50000;
   --reset-colour: coral;
   --reset-dark-colour: #d35527;
+  --mobnav-hover-colour: #2d78ee;
+  --mobnav-active-colour: #5494fa;
   --chart-title: #ea580c;
   --gold-colour: gold;
+  --first-font: normal 2rem/1 "Ariel";
+  --big-font: normal 2rem/1 "Lobster", cursive;
 }
 
 /* topnav.scss */
@@ -23,7 +27,8 @@ h1 {
   color: white;
 }
 h1 a {
-  font: normal 2rem/1 "Lobster", cursive;
+  font: var(--big-font);
+  /* normal 2rem/1 'Lobster', cursive; */
   text-decoration: none;
   display: block;
   transform: rotate(358deg);
@@ -110,49 +115,66 @@ h3.chart-title {
 .cookieControl button {
   border: 0;
   outline: 0;
-  font-size: 16px;
   cursor: pointer;
-  padding: 12px 20px;
+  padding: 5px 20px;
   backface-visibility: hidden;
   transition: background-color 200ms, color 200ms;
-  border-radius: 0.5rem;
+  border-radius: 0.2rem;
+  font-weight: 500;
 }
 
 .cookieControl__Bar {
   position: fixed;
   background-color: var(--cookie-control-barBackground);
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  border-top: 8px solid #ffb900;
+  box-shadow: 0 -10px 20px 0px rgba(0, 0, 0, 0.3019607843);
+  /* COOKIE BAR BUTTONS */
 }
 .cookieControl__Bar h3, .cookieControl__Bar p {
   color: var(--cookie-control-barTextColor);
   max-width: 900px;
+  text-align: center;
+  @apply md:text-left;
 }
 .cookieControl__Bar h3 {
   margin: 0;
+  margin: 0rem 0 1rem 0;
   font-size: 20px;
+  font: normal 500 2rem/1 "Lobster", cursive;
+  transform: rotate(358deg);
+  color: #ffdc80;
+  text-shadow: 2px 2px 0px #000;
 }
 .cookieControl__Bar p {
-  font-size: 16px;
-  margin: 5px 0 0;
+  margin: 4px 0;
+  padding: 0.5rem;
 }
 .cookieControl__Bar button {
   color: var(--cookie-control-barButtonColor);
   background-color: var(--cookie-control-barButtonBackground);
 }
 .cookieControl__Bar button:nth-of-type(1) {
-  background-color: green;
-  color: white;
+  background-color: #c6c6c6;
+  color: black;
 }
 .cookieControl__Bar button:nth-of-type(1):hover {
   background-color: #00b300;
   color: white;
 }
 .cookieControl__Bar button:nth-of-type(2) {
-  background-color: red;
+  background-color: #858585;
   color: white;
 }
 .cookieControl__Bar button:nth-of-type(2):hover {
   background-color: #cc0000;
+  color: white;
+}
+.cookieControl__Bar button:nth-of-type(3) {
+  background-color: #858585;
+  color: white;
+}
+.cookieControl__Bar button:nth-of-type(3):hover {
+  background-color: #cc8400;
   color: white;
 }
 .cookieControl__Bar button:hover {
@@ -168,7 +190,7 @@ h3.chart-title {
 
 .cookieControl__BarContainer {
   display: flex;
-  padding: 20px;
+  padding: 1rem;
   align-items: flex-end;
   justify-content: space-between;
 }
@@ -227,6 +249,7 @@ h3.chart-title {
   z-index: 1;
   font-size: 0;
   text-align: center;
+  /* MODAL BUTTONS */
 }
 .cookieControl__Modal:before {
   content: "";
@@ -251,6 +274,10 @@ h3.chart-title {
 .cookieControl__Modal button {
   color: var(--cookie-control-modalButtonColor);
   background-color: var(--cookie-control-modalButtonBackground);
+  border-radius: 0.4rem;
+}
+.cookieControl__Modal button:first-of-type {
+  display: none;
 }
 .cookieControl__Modal button:hover {
   color: var(--cookie-control-modalButtonHoverColor);
@@ -271,17 +298,19 @@ h3.chart-title {
   vertical-align: middle;
   color: var(--cookie-control-modalTextColor);
   background-color: var(--cookie-control-modalBackground);
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
   overflow: hidden;
 }
 .cookieControl__ModalContent *:not(button) {
   color: var(--cookie-control-modalTextColor);
 }
 .cookieControl__ModalContent h3 {
-  font-size: 24px;
+  font: normal 500 2rem/1 "Lobster", cursive;
+  transform: rotate(358deg);
+  /* color: #ffdc80; */
 }
 .cookieControl__ModalContent h3:first-of-type {
-  margin-top: 0;
+  /* display: none; */
 }
 .cookieControl__ModalContent ul {
   padding: 0;
@@ -371,10 +400,11 @@ h3.chart-title {
 
 .cookieControl__ModalButtons {
   display: flex;
+  flex-direction: column;
   margin-top: 40px;
-  align-items: stretch;
-  gap: 20px;
+  gap: 1rem;
   margin-top: 0;
+  line-height: 4;
 }
 
 .cookieControl__ModalUnsaved {
@@ -575,22 +605,16 @@ body {
 }
 
 .app-height {
-  /* @apply 
-  flex 
-  flex-col 
-  min-h-screen; */
-  /* Use the below css if there is an 8px border at the top of the page. Otherwise use the above css instead */
   display: flex;
-  min-height: calc(100vh - 0px);
   flex-direction: column;
+  min-height: calc(100vh - 0px);
 }
 
 header {
-  position: fixed;
-  z-index: 100;
-  width: 100%;
-  @apply lg:relative
-    shadow-2xl 
+  /* position: fixed; */
+  /* z-index: 50; */
+  /* width: 100%; */
+  @apply shadow-2xl 
     bg-blue-500
     py-8
     border-t-8 
@@ -598,9 +622,7 @@ header {
 }
 
 main {
-  @apply mt-[111px]
-    lg:mt-0
-    container 
+  @apply container 
     mx-auto 
     grow 
     items-start
@@ -650,18 +672,19 @@ nav {
         py-2 
         pl-0;
 }
-.mobilenavlinks a:hover {
-  @apply text-blue-500
-            bg-slate-200
-            underline;
-}
-.mobilenavlinks a:active {
-  @apply text-blue-500
-            bg-white
-            underline;
-}
 .mobilenavlinks a:first-child {
   margin-top: 1rem;
+}
+.mobilenavlinks a.router-link-active {
+  background-color: var(--mobnav-hover-colour);
+  column-rule-color: white;
+}
+.mobilenavlinks a:hover {
+  background-color: var(--mobnav-hover-colour);
+  @apply underline;
+}
+.mobilenavlinks a:active {
+  background-color: var(--mobnav-active-colour);
 }
 
 /* .container {
