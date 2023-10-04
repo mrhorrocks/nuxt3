@@ -1,6 +1,6 @@
 # Nuxt 3 + UI + Charts + Pinia  
 
-[![](https://img.shields.io/badge/nuxt.js-v3.7.4-04C690.svg)](https://nuxt.com) [![](https://img.shields.io/badge/node-v18.18.0-026e00.svg)](https://nodejs.org/en)
+[![](https://img.shields.io/badge/nuxt.js-v3.7.4-04C690.svg)](https://nuxt.com) [![](https://img.shields.io/badge/node-v18.18.0-026e00.svg)](https://nodejs.org/en)  [![Netlify Status](https://api.netlify.com/api/v1/badges/25555fc1-33ec-43cd-be0b-a13829021aaa/deploy-status)](https://app.netlify.com/sites/mrhorrocks/deploys)
 
 A scalable, advanced starter template built with Nuxt 3.  
 
