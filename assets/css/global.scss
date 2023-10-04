@@ -21,11 +21,11 @@ body {
 }
 
 header {
-        /* position: fixed; */
-        /* z-index: 50; */
-        /* width: 100%; */
+        position: fixed;
+        z-index: 50;
+        width: 100%;
     @apply 
-        /* lg:relative */
+        lg:relative
     shadow-2xl 
     bg-blue-500
     py-8
@@ -35,8 +35,8 @@ header {
 
 main {
     @apply 
-        /* mt-[111px] */
-        /* lg:mt-0 */
+        mt-[111px]
+        lg:mt-0
     container 
     mx-auto 
     grow 

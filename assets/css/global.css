@@ -611,10 +611,11 @@ body {
 }
 
 header {
-  /* position: fixed; */
-  /* z-index: 50; */
-  /* width: 100%; */
-  @apply shadow-2xl 
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+  @apply lg:relative
+    shadow-2xl 
     bg-blue-500
     py-8
     border-t-8 
@@ -622,7 +623,9 @@ header {
 }
 
 main {
-  @apply container 
+  @apply mt-[111px]
+        lg:mt-0
+    container 
     mx-auto 
     grow 
     items-start
