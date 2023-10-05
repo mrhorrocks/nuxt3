@@ -47,7 +47,7 @@
     width: 2rem;
     background-color: #eee;
     border: 2px solid #888;
-    border-radius: 4px;
+    border-radius: 0.2rem;
 }
 
 /* On mouse-over, add a background color */
