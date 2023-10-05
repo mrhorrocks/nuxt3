@@ -60,8 +60,6 @@ h3 {
   /* 300;400;500;600;700 */
   font: normal 700 2rem/1 "Yanone Kaffeesatz", sans-serif;
   color: var(--first-colour);
-  margin-top: 1rem;
-  margin: 1rem 0;
   /* &.section-title {
       margin: 1rem 0;
   } */

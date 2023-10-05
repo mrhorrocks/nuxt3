@@ -1,10 +1,15 @@
 <template>
-    <Pie id="my-pie-id" :options="chartOptions" :data="chartData" />
+    <Pie :options="chartOptions" :data="chartData" />
 </template>
   
-<script>
+<script lang="ts">
 import { Pie } from 'vue-chartjs'
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
+import { 
+    Chart as ChartJS, 
+    ArcElement, 
+    Tooltip, 
+    Legend 
+} from 'chart.js';
 
 ChartJS.register(ArcElement, Tooltip, Legend)
 

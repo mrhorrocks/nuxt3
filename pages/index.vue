@@ -16,11 +16,13 @@ definePageMeta({
                 linkText="Install from github" />
         </p>
     </section>
-    <div class="grid lg:grid-cols-3">
+
+    <!-- GRID -->
+    <div class="lg:grid lg:grid-cols-3 lg:gap-12">
 
         <div class="lg:col-span-2">
             <section aria-label="Current Stack">
-                <h3 class="section-title">Current Stack</h3>
+                <h3 class="section-title my-6">Current Stack</h3>
                 <p>
                     <a class="chip" href="https://nuxt.com/" alt="Nuxt">Nuxt</a>
                     <a class="chip" href="https://tailwindcss.com/" alt="Tailwind">Tailwind</a>
@@ -37,7 +39,7 @@ definePageMeta({
                 </p>
             </section>
             <section aria-label="Previous Stack">
-                <h3 class="section-title">Previous Stack</h3>
+                <h3 class="section-title my-6">Previous Stack</h3>
                 <p>
                     <a class="chip" href="https://www.docker.com/" alt="Docker">Docker</a>
                     <a class="chip" href="https://cakephp.org/" alt="CakePHP">CakePHP</a>
@@ -53,7 +55,7 @@ definePageMeta({
 
         <div class="lg:col-span-1">
             <section aria-label="Resources">
-                <h3 class="section-title">Resources</h3>
+                <h3 class="section-title my-6">Resources</h3>
                 <p>
                     <a class="chip" href="https://heroicons.com/" alt="Hero Icons">Hero Icons</a>
                     <a class="chip" href="https://fonts.google.com/icons" alt="Material Icons">Material Icons</a>
@@ -63,4 +65,5 @@ definePageMeta({
         </div>
 
     </div>
+    <!-- GRID-END -->
 </template>
