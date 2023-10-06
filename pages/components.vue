@@ -87,7 +87,7 @@
             <div class="lg:col-span-1">
                 <h3 class="section-title">Headless UI Components</h3>
 
-                <UTooltip text="Visit the Nuxt UI Docs" class="mb-8">
+                <UTooltip text="Visit the Headless UI Docs" class="mb-8">
                     <a href="https://headlessui.com/" class="underline">Go to the Headless UI docs</a>
                 </UTooltip>
 
