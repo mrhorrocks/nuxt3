@@ -1,24 +1,27 @@
 <template>
     <Disclosure as="div" v-slot="{ open }" class="disclosure">
         <DisclosureButton class="disclosureButton">
-            <span>What is your refund policy?</span>
+            <span>Draw #1</span>
             <ChevronUpIcon :class="open ? 'rotate-180 transform' : ''" class="chevronUpIcon" />
         </DisclosureButton>
 
         <DisclosurePanel class="disclosurePanel">
-            If you're unhappy with your purchase for any reason, email us within
-            90 days and we'll refund you in full, no questions asked.
+            Lorem ipsum dolor sit amet, consectetur 
+            adipisicing elit. Deleniti impedit esse quaerat 
+            eos veritatis? Amet aut est ratione tempora. Nostrum?
         </DisclosurePanel>
     </Disclosure>
 
     <Disclosure as="div" v-slot="{ open }" class="disclosure">
         <DisclosureButton class="disclosureButton">
-            <span>Do you offer technical support?</span>
+            <span>Draw #2</span>
             <ChevronUpIcon :class="open ? 'rotate-180 transform' : ''" class="chevronUpIcon" />
         </DisclosureButton>
 
         <DisclosurePanel class="disclosurePanel">
-            No.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Vero dolore, soluta laudantium dolores facilis deleniti 
+            error commodi voluptatem? Temporibus, blanditiis.
         </DisclosurePanel>
     </Disclosure>
 </template>
@@ -58,6 +61,7 @@ import { ChevronUpIcon } from '@heroicons/vue/20/solid'
     pb-2 
     text-sm 
     text-gray-500;
+    background: #e7f0fa;
 }
 
 .chevronUpIcon {
