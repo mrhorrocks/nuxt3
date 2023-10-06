@@ -52,6 +52,7 @@ export default {
                 <NuxtLink to="/">Home</NuxtLink>
                 <NuxtLink to="/charts">Charts</NuxtLink>
                 <NuxtLink to="/ui-libraries">UI Libraries</NuxtLink>
+                <NuxtLink to="/headless">Headless UI</NuxtLink>
             </div>
         </div>
 
@@ -61,6 +62,7 @@ export default {
             <NuxtLink to="/">Home</NuxtLink>
             <NuxtLink to="/charts">Charts</NuxtLink>
             <NuxtLink to="/ui-libraries">UI Libraries</NuxtLink>
+            <NuxtLink to="/headless">Headless UI</NuxtLink>
         </div>
     </nav>
 </template>
