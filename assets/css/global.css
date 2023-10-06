@@ -665,6 +665,7 @@ nav {
     divide-slate-200;
 }
 .mobilenavlinks a {
+  text-transform: uppercase;
   text-align: center;
   @apply block 
         text-slate-200
