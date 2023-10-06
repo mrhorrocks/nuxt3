@@ -13,8 +13,8 @@ export default defineNuxtConfig({
             meta: [{ name: 'description', content: 'Front-End Web Developer' }],
             // Example of loading a global stylesheet 
             link: [
+                { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Lobster&family=Yanone+Kaffeesatz:wght@300;400;500;600;700&display=swap'},
                 { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap'},
-                { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Lobster&family=Yanone+Kaffeesatz:wght@300;400;500;600;700&display=swap'}
             ]
         }
     },
@@ -25,6 +25,9 @@ export default defineNuxtConfig({
         '@nuxt/ui',
         '@dargmuesli/nuxt-cookie-control'
     ],
+    colorMode: {
+        preference: 'light'
+    },
     // Add a global css file
     css: [
         "@/assets/css/global.css"
