@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Yanone+Kaffeesatz:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -22,7 +24,7 @@
 }
 
 /* topnav.scss */
-/* type.scss */
+/* _type.scss */
 h1 {
   color: white;
 }
@@ -705,7 +707,7 @@ footer .container {
 p {
   display: block;
   width: 100%;
-  margin: 0 0px 1rem 0px;
+  margin: 1rem 0px;
 }
 
 .ui-item {
