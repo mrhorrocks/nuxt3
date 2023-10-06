@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Yanone+Kaffeesatz:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -22,7 +24,7 @@
 }
 
 /* topnav.scss */
-/* type.scss */
+/* _type.scss */
 h1 {
   color: white;
 }
@@ -58,7 +60,7 @@ h2.page-heading a:hover {
 
 h3 {
   /* 300;400;500;600;700 */
-  font: normal 700 2rem/1 "Yanone Kaffeesatz", sans-serif;
+  font: normal 600 2rem/1 "Yanone Kaffeesatz", sans-serif;
   color: var(--first-colour);
   /* &.section-title {
       margin: 1rem 0;
@@ -645,7 +647,7 @@ nav {
   border-radius: 0.25rem;
   color: white;
   padding: 0.45rem 0.5rem 0.25rem;
-  font: normal 700 1.75rem/1 "Yanone Kaffeesatz", sans-serif;
+  font: normal 600 1.75rem/1 "Yanone Kaffeesatz", sans-serif;
   text-decoration: none;
   @apply transition 
         duration-150 
@@ -705,7 +707,7 @@ footer .container {
 p {
   display: block;
   width: 100%;
-  margin: 0 0px 1rem 0px;
+  margin: 1rem 0px;
 }
 
 .ui-item {

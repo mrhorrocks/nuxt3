@@ -1,4 +1,7 @@
-/* type.scss */
+/* _type.scss */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Yanone+Kaffeesatz:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap');
+
 h1 {
     color: white;
     a {
@@ -37,7 +40,7 @@ h2 {
 
 h3 {
     /* 300;400;500;600;700 */
-    font: normal 700 2rem/1 "Yanone Kaffeesatz", sans-serif;
+    font: normal 600 2rem/1 "Yanone Kaffeesatz", sans-serif;
     color: var(--first-colour);
 
     &.chart-title {

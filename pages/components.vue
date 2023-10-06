@@ -1,16 +1,12 @@
 <template>
     <Head>
-        <Title>UI Libraries - Mr.Horrocks</Title>
-        <Meta name="description" content='Chart Libraries' />
+        <Title>Components - Mr.Horrocks</Title>
+        <Meta name="description" content='Components' />
     </Head>
 
-    <h2 class="page-heading">UI Libraries</h2>
+    <h2 class="page-heading">Components</h2>
 
-    <section aria-label="Nuxt UI Components">
-
-        <!-- <h3 class="section-title">
-            UI Libraries
-        </h3> -->
+    <section aria-label="Components">
 
         <!-- GRID -->
         <div class="lg:grid lg:grid-cols-2 lg:gap-12">
@@ -88,6 +84,22 @@
                 </div>
             </div>
 
+            <div class="lg:col-span-1">
+                <h3 class="section-title">Headless UI Components</h3>
+
+                <UTooltip text="Visit the Headless UI Docs" class="mb-8">
+                    <a href="https://headlessui.com/" class="underline">Go to the Headless UI docs</a>
+                </UTooltip>
+
+                <div class="ui-item">
+                    <UiModal />
+                </div>
+
+                <div class="ui-item">
+                    <UiDisclosure />
+                </div>
+            </div>
+
         </div>
         <!-- END-GRID -->
 
@@ -95,7 +107,7 @@
 </template>
 
 <style>
-.modals > div {
+.modals>div {
     display: inline-block;
     margin-right: 0.5rem;
 
