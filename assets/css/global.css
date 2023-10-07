@@ -1,9 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Yanone+Kaffeesatz:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* SCSS files below */
 /* _vars.scss */
 :root {
   --dark-colour: #1866e2;
@@ -29,8 +26,7 @@ h1 {
   color: white;
 }
 h1 a {
-  font: var(--big-font);
-  /* normal 2rem/1 'Lobster', cursive; */
+  font: normal 2rem/1 "Lobster", cursive;
   text-decoration: none;
   display: block;
   transform: rotate(358deg);
