@@ -62,7 +62,7 @@
       margin: 0;
       margin: 0rem 0 1rem 0;
       font-size: 20px;
-      font: normal 500 2rem/1 "Lobster", cursive;
+      font: normal 2rem/1 "Lobster", cursive;
       transform: rotate(358deg);
       color: #ffdc80;
       text-shadow: 2px 2px 0px #000;
@@ -244,12 +244,11 @@
     }
   
     h3 {
-      font: normal 500 2rem/1 "Lobster", cursive;
+      font: normal 2rem/1 "Lobster", cursive;
       transform: rotate(358deg);
-      /* color: #ffdc80; */
-      &:first-of-type {
-        /* display: none; */
-      }
+      /* &:first-of-type {
+        display: none;
+      } */
     }
   
     ul {

@@ -17,7 +17,8 @@
   --chart-title: #ea580c;
   --gold-colour: gold;
   --first-font: normal 2rem/1 "Ariel";
-  --big-font: normal 2rem/1 "Lobster", cursive;
+  --site-font-one: normal 2rem/1 "Lobster", cursive;
+  --site-font-two: normal 2rem/1 "Yanone Kaffeesatz", cursive;
 }
 
 /* topnav.scss */
@@ -39,8 +40,7 @@ h1 a:hover {
 h2.page-heading {
   @apply text-3xl
     md:text-5xl;
-  /* font-family: 'Yanone Kaffeesatz', sans-serif; */
-  font: normal 500 3rem/1 "Lobster", cursive;
+  font: normal 3rem/1 "Lobster", cursive;
   color: var(--first-colour);
   margin: 3rem 0 2rem 0;
   text-shadow: 1px 1px 0px #000;
@@ -136,7 +136,7 @@ h3.chart-title {
   margin: 0;
   margin: 0rem 0 1rem 0;
   font-size: 20px;
-  font: normal 500 2rem/1 "Lobster", cursive;
+  font: normal 2rem/1 "Lobster", cursive;
   transform: rotate(358deg);
   color: #ffdc80;
   text-shadow: 2px 2px 0px #000;
@@ -301,12 +301,11 @@ h3.chart-title {
   color: var(--cookie-control-modalTextColor);
 }
 .cookieControl__ModalContent h3 {
-  font: normal 500 2rem/1 "Lobster", cursive;
+  font: normal 2rem/1 "Lobster", cursive;
   transform: rotate(358deg);
-  /* color: #ffdc80; */
-}
-.cookieControl__ModalContent h3:first-of-type {
-  /* display: none; */
+  /* &:first-of-type {
+    display: none;
+  } */
 }
 .cookieControl__ModalContent ul {
   padding: 0;
