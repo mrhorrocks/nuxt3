@@ -24,14 +24,16 @@ export default defineNuxtConfig({
     ],
     modules: [
         // '@nuxt/content',
+        // '@nuxt/ui',
         '@pinia/nuxt',
-        // '@nuxtjs/tailwindcss',
-        '@nuxt/ui',
-        '@dargmuesli/nuxt-cookie-control'
+        '@nuxtjs/tailwindcss',
+        // 'nuxt-headlessui',
+        '@dargmuesli/nuxt-cookie-control',
+        
     ],
-    colorMode: {
-        preference: 'light'
-    },
+    // colorMode: {
+    //     preference: 'light'
+    // },
     // content: {
     //     // https://content.nuxtjs.org/api/configuration
     // },
@@ -41,7 +43,7 @@ export default defineNuxtConfig({
     components: [
         // Add sub folders to the component direcory 
         { path: '~/components/chartjs', pathPrefix: false },
-        { path: '~/components/nuxtui', pathPrefix: false },
+        // { path: '~/components/nuxtui', pathPrefix: false },
 
         // It's important that this comes last if you have overrides you wish to apply
         // to sub-directories of `~/components`.

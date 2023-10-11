@@ -132,6 +132,10 @@ h3.chart-title {
   text-align: center;
   @apply md:text-left;
 }
+.cookieControl__Bar p {
+  font-size: 1rem;
+  @apply md:text-left;
+}
 .cookieControl__Bar h3 {
   margin: 0;
   margin: 0rem 0 1rem 0;
@@ -701,6 +705,7 @@ footer .container {
 }
 
 p {
+  font-size: 1.25rem;
   display: block;
   width: 100%;
   margin: 1rem 0px;

@@ -43,8 +43,9 @@
                 </div>
 
             </div>
-
-            <div class="lg:col-span-1 lg:ml-8">
+            
+            <!-- Nuxt UI -->
+            <!-- <div class="lg:col-span-1 lg:ml-8">
                 <h3 class="section-title">Nuxt UI Components</h3>
 
                 <UTooltip text="Visit the Nuxt UI Docs" class="mb-8">
@@ -52,44 +53,36 @@
                 </UTooltip>
 
                 <div class="ui-item">
-                    <!-- Dropdown -->
                     <Dropdown />
                 </div>
 
-                <!-- Accordian -->
                 <div class="ui-item">
                     <Accordian />
                 </div>
 
                 <div class="ui-item modals">
-                    <!-- Modal -->
                     <Modal class="w-full sm:w-[initial] mb-4" />
-                    <!-- Fullscreen Modal-->
                     <ModalFull class="w-full sm:w-[initial] mb-4" />
-                    <!-- SideOver-->
                     <SideOver class="w-full sm:w-[initial] mb-4" />
-                    <!-- Notification-->
                     <Notification class="w-full sm:w-[initial] mb-4" />
                 </div>
-
-
-                <!-- Toggle -->
+                
                 <div class="ui-item">
                     <Toggle />
                 </div>
 
-                <!-- Range -->
                 <div class="ui-item">
                     <Range />
                 </div>
-            </div>
+            </div> -->
 
-            <div class="lg:col-span-1">
+            <!-- Headless UI -->
+            <div class="lg:col-span-1 lg:ml-8">
                 <h3 class="section-title">Headless UI Components</h3>
 
-                <UTooltip text="Visit the Headless UI Docs" class="mb-8">
-                    <a href="https://headlessui.com/" class="underline">Go to the Headless UI docs</a>
-                </UTooltip>
+                <p class="mb-8">
+                    <a href="https://headlessui.com/" class="underline" text="Visit the Headless UI Docs">Go to the Headless UI docs</a>
+                </p>
 
                 <div class="ui-item">
                     <UiModal />

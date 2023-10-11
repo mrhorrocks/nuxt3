@@ -16,7 +16,5 @@
                 <p>Changed your mind?</p>
             </template>
         </CookieControl>
-
-        <UNotifications />
     </Body>
 </template>
