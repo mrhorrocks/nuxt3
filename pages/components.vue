@@ -11,7 +11,7 @@
         <!-- GRID -->
         <div class="lg:grid lg:grid-cols-2 lg:gap-12">
             <div class="lg:col-span-1">
-                <h3 class="section-title">Bespoke Components</h3>
+                <h3 class="section-title">Custom Made Components</h3>
 
                 <div class="ui-item">
                     <ButtonLink to="https://github.com/mrhorrocks/nuxt3" class="w-full sm:w-[initial]"
@@ -40,6 +40,10 @@
                     <Button buttonClass="button submit" linkText="Send" />
                     <Button buttonClass="button cancel" linkText="Cancel" />
                     <Button buttonClass="button reset" linkText="Reset" />
+                </div>
+
+                <div class="ui-item">
+                    <RangeInput label="Custom Range Slider" id="10" min="0" max="150" step="1" />
                 </div>
 
             </div>
@@ -91,6 +95,7 @@
                 <div class="ui-item">
                     <UiDisclosure />
                 </div>
+
             </div>
 
         </div>
@@ -109,4 +114,5 @@
     }
 }
 </style>
+
 
