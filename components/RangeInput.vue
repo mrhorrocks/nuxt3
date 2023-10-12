@@ -56,7 +56,7 @@ label {
     width: 100%;
     display: inline-block;
     /* background-color: pink; */
-    padding: 10px 
+    padding: 10px 0; 
 }
 .updated-value {
     width: 100%;
@@ -106,6 +106,12 @@ input[type="range"]::-webkit-slider-thumb {
     width: 2rem;
     border-radius: 50%;
     box-shadow: 0px 3px 3px #ccc;
+    &:hover {
+        background-color: #379cad;
+    }
+    &:active {
+        background-color: red;
+    }
 }
 
 input[type="range"]:focus::-webkit-slider-thumb {
