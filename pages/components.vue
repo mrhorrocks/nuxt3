@@ -48,44 +48,12 @@
 
             </div>
             
-            <!-- Nuxt UI -->
-            <!-- <div class="lg:col-span-1 lg:ml-8">
-                <h3 class="section-title">Nuxt UI Components</h3>
-
-                <UTooltip text="Visit the Nuxt UI Docs" class="mb-8">
-                    <a href="https://ui.nuxt.com/getting-started" class="underline">Go to the Nuxt UI docs</a>
-                </UTooltip>
-
-                <div class="ui-item">
-                    <Dropdown />
-                </div>
-
-                <div class="ui-item">
-                    <Accordian />
-                </div>
-
-                <div class="ui-item modals">
-                    <Modal class="w-full sm:w-[initial] mb-4" />
-                    <ModalFull class="w-full sm:w-[initial] mb-4" />
-                    <SideOver class="w-full sm:w-[initial] mb-4" />
-                    <Notification class="w-full sm:w-[initial] mb-4" />
-                </div>
-                
-                <div class="ui-item">
-                    <Toggle />
-                </div>
-
-                <div class="ui-item">
-                    <Range />
-                </div>
-            </div> -->
-
             <!-- Headless UI -->
-            <div class="lg:col-span-1 lg:ml-8">
+            <div class="lg:col-span-1">
                 <h3 class="section-title">Headless UI Components</h3>
 
                 <p class="mb-8">
-                    <a href="https://headlessui.com/" class="underline" text="Visit the Headless UI Docs">Go to the Headless UI docs</a>
+                    <a href="https://headlessui.com/" class="underline section-link" text="Visit the Headless UI Docs">Go to the Headless UI docs</a>
                 </p>
 
                 <div class="ui-item">
