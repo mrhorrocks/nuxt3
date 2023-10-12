@@ -85,7 +85,7 @@ input[type="range"]:focus {
 /***** Chrome, Safari, Opera and Edge Chromium styles *****/
 /* slider track */
 input[type="range"]::-webkit-slider-runnable-track {
-    background-color: #053a5f;
+    background-color: #ccc;
     border-radius: 0.5rem;
     height: 0.5rem;
     position: relative;
@@ -133,7 +133,7 @@ input[type="range"]:focus::-webkit-slider-thumb {
 /******** Firefox styles ********/
 /* slider track */
 input[type="range"]::-moz-range-track {
-    background-color: #053a5f;
+    background-color: #ccc;
     border-radius: 0.5rem;
     height: 0.5rem;
 }
@@ -148,7 +148,16 @@ input[type="range"]::-moz-range-thumb {
     /*custom styles*/
     background-color: #5cd5eb;
     height: 2rem;
-    width: 1rem;
+    width: 2rem;
+    border-radius: 50%;
+    box-shadow: 0px 3px 3px #ccc;
+    &:hover {
+        background-color: #379cad;
+    }
+    &:active {
+        background-color: red;
+    }
+
 }
 
 input[type="range"]:focus::-moz-range-thumb {
