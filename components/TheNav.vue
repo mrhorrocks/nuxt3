@@ -21,7 +21,7 @@ export default {
         <div class="flex justify-between items-center">
             <!-- Site Title -->
             <h1>
-                <NuxtLink to="/">Mr.Horrocks</NuxtLink>
+                <NuxtLink to="/" title="Mr.Horrocks">Mr.Horrocks</NuxtLink>
             </h1>
 
             <!-- Show below 1024px -->
@@ -49,18 +49,18 @@ export default {
             <!-- MAIN MENU -->
             <!-- Hide below 1024px -->
             <div class="navlinks">
-                <NuxtLink to="/">Home</NuxtLink>
-                <NuxtLink to="/components">Components</NuxtLink>
-                <NuxtLink to="/charts">Charts</NuxtLink>
+                <NuxtLink to="/" title="Home">Home</NuxtLink>
+                <NuxtLink to="/components" title="Components">Components</NuxtLink>
+                <NuxtLink to="/charts" title="Charts">Charts</NuxtLink>
             </div>
         </div>
 
         <!-- MOBILE MENU -->
         <!-- Show below 1024px -->
         <div v-if="mobileMenuOpen" class="mobilenavlinks">
-            <NuxtLink to="/">Home</NuxtLink>
-            <NuxtLink to="/components">Components</NuxtLink>
-            <NuxtLink to="/charts">Charts</NuxtLink>
+            <NuxtLink to="/" title="Home">Home</NuxtLink>
+            <NuxtLink to="/components" title="Components">Components</NuxtLink>
+            <NuxtLink to="/charts" title="Charts">Charts</NuxtLink>
         </div>
     </nav>
 </template>
