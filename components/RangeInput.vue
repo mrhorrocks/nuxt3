@@ -35,7 +35,7 @@ export default {
         label: {
             type: String,
             required: false,
-            default: 'Add Label'
+            // default: 'Add Label'
         },
     },
     data() {
@@ -55,14 +55,11 @@ export default {
 label {
     width: 100%;
     display: inline-block;
-    /* background-color: pink; */
     padding: 10px 0; 
 }
 .updated-value {
     width: 100%;
     display: inline-block;
-    /* background-color: #c8707e; */
-    padding: 10px;
     text-align: center;
     font-size: 1.5rem;
     font-weight: 600;

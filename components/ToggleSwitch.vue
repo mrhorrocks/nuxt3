@@ -3,7 +3,7 @@
         <input type="checkbox" :id="id" v-model="isChecked">
         <span class="slider round"></span>
     </label>
-    <span class="switch-status">{{ isChecked ? 'On' : 'Off' }}</span>
+    <span class="switch-status">{{ isChecked ? 'Yes' : 'No' }}</span>
 </template>
   
 <script>

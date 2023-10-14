@@ -43,7 +43,7 @@
                 </div>
 
                 <div class="ui-item">
-                    <RangeInput label="Custom Range Slider" id="10" min="0" max="150" step="1" />
+                    <RangeInput id="10" min="0" max="150" step="1" />
                 </div>
 
                 <div class="ui-item">
