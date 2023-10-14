@@ -46,6 +46,10 @@
                     <RangeInput label="Custom Range Slider" id="10" min="0" max="150" step="1" />
                 </div>
 
+                <div class="ui-item">
+                    <ToggleSwitch id="mySwitch" />
+                </div>
+
             </div>
             
             <!-- Headless UI -->
