@@ -12,7 +12,9 @@ definePageMeta({
             installed.</p>
 
         <p>
-            <ButtonLink to="https://github.com/mrhorrocks/nuxt3" class="w-full sm:w-[initial]"
+            <ButtonLink 
+                to="https://github.com/mrhorrocks/nuxt3" 
+                class="w-full sm:w-[initial]"
                 linkText="Install from github" />
         </p>
     </section>
@@ -24,31 +26,31 @@ definePageMeta({
             <section aria-label="Current Stack">
                 <h3 class="section-title my-6">Current Stack</h3>
                 <p>
-                    <a class="chip" href="https://nuxt.com/" alt="Nuxt">Nuxt</a>
-                    <a class="chip" href="https://tailwindcss.com/" alt="Tailwind">Tailwind</a>
-                    <a class="chip" href="https://laravel.com/" alt="Laravel">Laravel</a>
-                    <a class="chip" href="https://www.npmjs.com/" alt="NPM">NPM</a>
-                    <a class="chip" href="https://sass-lang.com/" alt="SCSS">SCSS</a>
-                    <a class="chip" href="https://git-scm.com/" alt="GIT">GIT</a>
-                    <a class="chip" href="https://code.visualstudio.com/" alt="VSCode">VSCode</a>
-                    <a class="chip" href="https://www.mysql.com/" alt="MySQL">MySQL</a>
-                    <a class="chip" href="https://www.chartjs.org/" alt="Chartjs">Chartjs</a>
-                    <a class="chip" href="https://www.artweaver.de/en" alt="Artweaver">Artweaver</a>
-                    <a class="chip" href="https://inkscape.org/" alt="Inkscape">Inkscape</a>
-                    <a class="chip" href="https://chat.openai.com/" alt="ChatGPT">ChatGPT</a>
+                    <a class="chip" href="https://nuxt.com/" title="Nuxt">Nuxt</a>
+                    <a class="chip" href="https://tailwindcss.com/" title="Tailwind">Tailwind</a>
+                    <a class="chip" href="https://laravel.com/" title="Laravel">Laravel</a>
+                    <a class="chip" href="https://www.npmjs.com/" title="NPM">NPM</a>
+                    <a class="chip" href="https://sass-lang.com/" title="SCSS">SCSS</a>
+                    <a class="chip" href="https://git-scm.com/" title="GIT">GIT</a>
+                    <a class="chip" href="https://code.visualstudio.com/" title="VSCode">VSCode</a>
+                    <a class="chip" href="https://www.mysql.com/" title="MySQL">MySQL</a>
+                    <a class="chip" href="https://www.chartjs.org/" title="Chartjs">Chartjs</a>
+                    <a class="chip" href="https://www.artweaver.de/en" title="Artweaver">Artweaver</a>
+                    <a class="chip" href="https://inkscape.org/" title="Inkscape">Inkscape</a>
+                    <a class="chip" href="https://chat.openai.com/" title="ChatGPT">ChatGPT</a>
                 </p>
             </section>
             <section aria-label="Previous Stack">
                 <h3 class="section-title my-6">Previous Stack</h3>
                 <p>
-                    <a class="chip" href="https://www.docker.com/" alt="Docker">Docker</a>
-                    <a class="chip" href="https://cakephp.org/" alt="CakePHP">CakePHP</a>
-                    <a class="chip" href="https://www.highcharts.com/" alt="Highcharts">Highcharts</a>
-                    <a class="chip" href="https://jquery.com/" alt="Jquery">Jquery</a>
-                    <a class="chip" href="https://subversion.apache.org/" alt="SVN">SVN</a>
-                    <a class="chip" href="https://wordpress.com/" alt="">Wordpress</a>
-                    <a class="chip" href="https://www.joomla.org/" alt="Wordpress">Joomla</a>
-                    <a class="chip" href="https://www.adobe.com/uk/" alt="Adobe suite">Adobe</a>
+                    <a class="chip" href="https://www.docker.com/" title="Docker">Docker</a>
+                    <a class="chip" href="https://cakephp.org/" title="CakePHP">CakePHP</a>
+                    <a class="chip" href="https://www.highcharts.com/" title="Highcharts">Highcharts</a>
+                    <a class="chip" href="https://jquery.com/" title="Jquery">Jquery</a>
+                    <a class="chip" href="https://subversion.apache.org/" title="SVN">SVN</a>
+                    <a class="chip" href="https://wordpress.com/" title="">Wordpress</a>
+                    <a class="chip" href="https://www.joomla.org/" title="Wordpress">Joomla</a>
+                    <a class="chip" href="https://www.adobe.com/uk/" title="Adobe suite">Adobe</a>
                 </p>
             </section>
         </div>
@@ -57,9 +59,9 @@ definePageMeta({
             <section aria-label="Resources">
                 <h3 class="section-title my-6">Resources</h3>
                 <p>
-                    <a class="chip" href="https://heroicons.com/" alt="Hero Icons">Hero Icons</a>
-                    <a class="chip" href="https://fonts.google.com/icons" alt="Material Icons">Material Icons</a>
-                    <a class="chip" href="https://css2sass.herokuapp.com/" alt="Hero Icons">CSS to SASS</a>
+                    <a class="chip" href="https://heroicons.com/" title="Hero Icons">Hero Icons</a>
+                    <a class="chip" href="https://fonts.google.com/icons" title="Material Icons">Material Icons</a>
+                    <a class="chip" href="https://css2sass.herokuapp.com/" title="Hero Icons">CSS to SASS</a>
                 </p>
             </section>
         </div>

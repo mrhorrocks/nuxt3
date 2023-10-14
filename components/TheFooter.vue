@@ -8,7 +8,7 @@
     </div>
     <footer>
         <div class="container mx-auto">
-            <a href="https://github.com/mrhorrocks">
+            <a href="https://github.com/mrhorrocks" title="GitHub">
                 <svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true"
                     class="octicon octicon-mark-github v-align-middle color-fg-default">
                     <path
@@ -16,7 +16,7 @@
                     </path>
                 </svg>
             </a>
-            <a href="https://www.linkedin.com/in/mrmarkhorrocks/">
+            <a href="https://www.linkedin.com/in/mrmarkhorrocks/" title="Linkedin">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor"
                     class="mercado-match" width="32" height="32" focusable="false">
                     <path

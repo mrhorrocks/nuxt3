@@ -53,7 +53,7 @@
             </div>
             
             <!-- Headless UI -->
-            <div class="lg:col-span-1">
+            <div class="lg:col-span-1 mt-16 lg:mt-0">
                 <h3 class="section-title">Headless UI Components</h3>
 
                 <p class="mb-8">
