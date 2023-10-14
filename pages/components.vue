@@ -50,6 +50,13 @@
                     <ToggleSwitch id="mySwitch" />
                 </div>
 
+                <div class="ui-item">
+                    <Disclosure title="Title One" content="Content 1" />
+                    <Disclosure title="Title Two">
+                        Add content using a slot too.
+                    </Disclosure>
+                </div>
+
             </div>
             
             <!-- Headless UI -->
