@@ -66,17 +66,17 @@
                     <Tabs>
                         <!-- Tab 1 -->
                         <template #tab-one>
-                            <p>Tab 1 content slot</p>
+                            Tab 1 content slot
                         </template>
 
                         <!-- Tab 2 -->
                         <template #tab-two>
-                            <p>Tab 2 content slot</p>
+                            Tab 2 content slot
                         </template>
 
                         <!-- Tab 3 -->
                         <template #tab-three>
-                            <p>Tab 3 content slot</p>
+                            Tab 3 content slot
                         </template>
                     </Tabs>
                 </div>

@@ -5,7 +5,9 @@
             <input type="radio" id="tab-1" name="tab-group-1" checked>
             <label for="tab-1">Tab One</label>
             <div class="content">
-                <slot name="tab-one" />
+                <p>
+                    <slot name="tab-one" />
+                </p>
             </div>
         </div>
 
@@ -13,7 +15,9 @@
             <input type="radio" id="tab-2" name="tab-group-1">
             <label for="tab-2">Tab Two</label>
             <div class="content">
-                <slot name="tab-two" />
+                <p>
+                    <slot name="tab-two" />
+                </p>
             </div>
         </div>
 
@@ -21,7 +25,9 @@
             <input type="radio" id="tab-3" name="tab-group-1">
             <label for="tab-3">Tab Three</label>
             <div class="content">
-                <slot name="tab-three" />
+                <p>
+                    <slot name="tab-three" />
+                </p>
             </div>
         </div>
 
