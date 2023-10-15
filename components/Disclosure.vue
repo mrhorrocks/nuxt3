@@ -36,17 +36,20 @@ details {
         color: white;
         padding: 0.5rem;
         border-radius: 0.3rem 0.3rem 0 0;
-        /* transition: margin 500ms ease-in;  */
+        overflow: hidden;
     }
 
     /* Create a new custom triangle on the right side */
     summary::after {
-        display: block;
+        position: relative;
+        top: 2px;
+        left: -12px;
         float: right;
         content: '>';
         transition: 0.1s;
-        transform: scaleY(2);
         line-height: 1;
+        transform: rotate(-90deg) scaleY(2);
+;
     }
 
     .content {
@@ -54,12 +57,9 @@ details {
     }
 }
 
-details[open]>summary {
-    margin-bottom: 5px;
-}
-
-/* details[open]>summary::after {  */
-    /* transform: rotate(90deg) scaleY(2);  */
-    /* line-height: 1.5;  */
-/* }  */
+details[open]>summary::after { 
+    transform: rotate(90deg) scaleY(2);
+    top: 3px;
+    left: -4px;
+} 
 </style>
