@@ -6,7 +6,7 @@
 
     <h2 class="page-heading">Components</h2>
 
-    <section aria-label="Components">
+    <section aria-label="Custom Made Components">
 
         <!-- GRID -->
         <div class="lg:grid lg:grid-cols-2 lg:gap-12">
@@ -43,8 +43,8 @@
                 </div>
 
             </div>
-            
-            <!-- Headless UI -->
+
+            <!-- Bespoke Components -->
             <div class="lg:col-span-1">
 
                 <div class="ui-item">
@@ -60,6 +60,25 @@
                     <Disclosure title="Title Two">
                         Add content using a slot too.
                     </Disclosure>
+                </div>
+
+                <div class="ui-item">
+                    <Tabs>
+                        <!-- Tab 1 -->
+                        <template #tab-one>
+                            <p>Tab 1 content slot</p>
+                        </template>
+
+                        <!-- Tab 2 -->
+                        <template #tab-two>
+                            <p>Tab 2 content slot</p>
+                        </template>
+
+                        <!-- Tab 3 -->
+                        <template #tab-three>
+                            <p>Tab 3 content slot</p>
+                        </template>
+                    </Tabs>
                 </div>
 
             </div>
