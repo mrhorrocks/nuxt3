@@ -10,11 +10,9 @@
   },
   "devDependencies": {
     "@dargmuesli/nuxt-cookie-control": "^6.4.4",
-    "@nuxt/content": "^2.7.2",
     "@nuxt/devtools": "latest",
     "@types/node": "^18.17.3",
     "nuxt": "^3.7.4",
-    "nuxt-headlessui": "^1.1.4",
     "sass": "^1.66.1"
   },
   "dependencies": {
@@ -24,11 +22,5 @@
     "chart.js": "^4.4.0",
     "pinia": "^2.1.6",
     "vue-chartjs": "^5.2.0"
-  },
-  "comment-out-old-devDependencies": {
-    "@nuxt/ui": "^2.8.1"
-  },
-  "overrides": {
-    "vue": "latest"
   }
 }

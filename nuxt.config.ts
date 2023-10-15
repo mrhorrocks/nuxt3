@@ -39,7 +39,7 @@ export default defineNuxtConfig({
     //     // https://content.nuxtjs.org/api/configuration
     // },
     devtools: {
-        enabled: false, // Show devtools in the browser
+        enabled: true, // Show devtools in the browser
     },
     components: [
         // Add sub folders to the component direcory 

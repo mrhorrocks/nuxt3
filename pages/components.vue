@@ -42,6 +42,11 @@
                     <Button buttonClass="button reset" linkText="Reset" />
                 </div>
 
+            </div>
+            
+            <!-- Headless UI -->
+            <div class="lg:col-span-1">
+
                 <div class="ui-item">
                     <RangeInput id="10" min="0" max="150" step="1" />
                 </div>
@@ -55,24 +60,6 @@
                     <Disclosure title="Title Two">
                         Add content using a slot too.
                     </Disclosure>
-                </div>
-
-            </div>
-            
-            <!-- Headless UI -->
-            <div class="lg:col-span-1 mt-16 lg:mt-0">
-                <h3 class="section-title">Headless UI Components</h3>
-
-                <p class="mb-8">
-                    <a href="https://headlessui.com/" class="underline section-link" text="Visit the Headless UI Docs">Go to the Headless UI docs</a>
-                </p>
-
-                <div class="ui-item">
-                    <UiModal />
-                </div>
-
-                <div class="ui-item">
-                    <UiDisclosure />
                 </div>
 
             </div>
