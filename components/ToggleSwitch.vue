@@ -26,7 +26,7 @@ export default {
 /* CSS for the switch component */
 .switch {
     position: relative;
-    display: inline-flex;
+    display: flex;
     float: left;
     width: 60px;
     height: 36px;
@@ -37,9 +37,7 @@ export default {
     height: 0;
 }
 .switch-status {
-    display: inline-flex;
-    float: left;
-    text-align: center;
+    display: flex;
     font-size: 1.5rem;
     font-weight: 600;
     padding: 0 0.5rem;
