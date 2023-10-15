@@ -8,8 +8,8 @@ definePageMeta({
     <section aria-label="About this website">
         <h2 class="page-heading mb-8">About this website</h2>
 
-        <p>You are now viewing a scalable, responsive, starter template built with Nuxt.Js. TailwindCSS, Chartjs, Headless UI and Pinia are pre
-            installed.</p>
+        <p>You are now viewing a scalable, responsive, starter template built using Nuxt.Js, TailwindCSS and Chartjs. 
+            <a href="https://pinia.vuejs.org/ssr/nuxt.html">Pinia</a> is pre installed for state management.</p>
 
         <p>
             <ButtonLink 
