@@ -1,11 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    // This solves a vue bug when calling <ModalFull /> 
-    vue: {
-        compilerOptions: {
-            isCustomElement: (tag) => ['Placeholder'].includes(tag),
-        },
-    },
     app: {
         head: {
             htmlAttrs: {lang: 'en'},
