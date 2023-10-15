@@ -21,8 +21,7 @@
   --site-font-two: normal 2rem/1 "Yanone Kaffeesatz", cursive;
 }
 
-/* topnav.scss */
-/* _type.scss */
+/* SCSS VARS */
 h1 {
   color: white;
 }
