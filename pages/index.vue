@@ -8,11 +8,12 @@ definePageMeta({
     <section aria-label="About this website">
         <h2 class="page-heading mb-8">About this website</h2>
 
-        <p>You are now viewing a scalable, responsive, starter template built with 
-            <a href="https://nuxt.com/" class="underline">Nuxt</a>, 
-            <a href="https://tailwindcss.com/" class="underline">Tailwind</a> and 
-            <a href="https://www.chartjs.org/" class="underline">Chartjs</a>.
-            <a href="https://pinia.vuejs.org/ssr/nuxt.html" class="underline">Pinia</a> is pre installed for state management.</p>
+        <p>You are now viewing a scalable, responsive, 
+            <a href="https://en.wikipedia.org/wiki/Single-page_application" class="underline" title="">SPA</a> starter template built with 
+            <a href="https://nuxt.com/" class="underline" title="">Nuxt</a>, 
+            <a href="https://tailwindcss.com/" class="underline" title="Tailwind CSS">Tailwind</a> and 
+            <a href="https://www.chartjs.org/" class="underline" title="Chartjs">Chartjs</a>.
+            <a href="https://pinia.vuejs.org/ssr/nuxt.html" class="underline" title="Pinia">Pinia</a> is pre installed for state management.</p>
 
         <p><ButtonLink to="https://github.com/mrhorrocks/nuxt3" class="w-full sm:w-[initial]" linkText="Install from github" /></p>
 
