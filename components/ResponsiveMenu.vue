@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="sidetray">
     <!-- Menu Icon -->
     <button @click="toggleMenu" class="md:hidden absolute top-0 right-0 m-4 p-2 text-gray-600 focus:outline-none">
       <svg v-if="menuOpen" class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">

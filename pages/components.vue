@@ -19,6 +19,10 @@
                 </div>
 
                 <div class="ui-item">
+                    <SideTray />
+                </div>
+
+                <div class="ui-item">
                     <Checkbox id="1" label="One" checked="checked" />
                     <Checkbox id="2" label="Two" />
                     <Checkbox id="3" label="Three" />

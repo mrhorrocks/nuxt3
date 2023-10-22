@@ -1,7 +1,8 @@
 <template>
     <div class="app-height">
+        <TheHeader />
         <main>
-            <ResponsiveMenu />
+            <SideTray />
             <slot />
         </main>
         <TheFooter />

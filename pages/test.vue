@@ -5,9 +5,7 @@ definePageMeta({
 </script>
 
 <template>
-    <div>
-        123456
-    </div>
+    <p>Test page</p>
 </template>
 
 
@@ -29,7 +27,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-/* You can style the menu here using Tailwind CSS classes */
-</style>
