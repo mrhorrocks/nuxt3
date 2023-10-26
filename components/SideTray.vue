@@ -60,7 +60,7 @@ export default {
         opacity: 50%;
     }
     .side-tray {
-        position: absolute;
+        position: fixed;
         z-index: 51;
         top: 0;
         right: 0;
