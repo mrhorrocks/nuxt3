@@ -32,14 +32,15 @@ div.textarea {
     }
     textarea {
         border: 2px solid var(--first-colour);
-        border-radius: 4px;
-        line-height: 40px;
+        border-radius: 0rem;
+        line-height: 1.5rem;
         width: 100%;
-        @apply md:w-[95%];
+        height: 110px;
         font-size: 1rem;
-        text-indent: 0.5rem;
+        padding: 1rem 0.5rem;
         margin: 0.5rem 0.5rem 0.5rem 0;
         font-family: Arial, Helvetica, sans-serif;
+        @apply md:w-[95%];
     }
     textarea:disabled {
         border: 2px solid #95989a;

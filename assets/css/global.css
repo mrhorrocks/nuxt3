@@ -555,7 +555,7 @@ a.chip:active {
   background-color: var(--first-colour);
   padding: 0.5rem 2rem;
   margin: 1rem 0.9rem 0 0;
-  border-radius: 0.3rem;
+  border-radius: 1.3rem;
   color: white;
   cursor: pointer;
   text-align: center;
@@ -602,6 +602,30 @@ body {
   @apply bg-gray-50;
 }
 
+/* Scrollbars */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 .app-height {
   display: flex;
   flex-direction: column;
@@ -610,7 +634,6 @@ body {
 
 header {
   position: fixed;
-  z-index: 50;
   width: 100%;
   @apply lg:relative
     shadow-2xl 

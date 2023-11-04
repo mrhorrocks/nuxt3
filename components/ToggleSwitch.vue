@@ -52,7 +52,7 @@ export default {
     background-color: #ccc;
     -webkit-transition: 0.4s;
     transition: 0.4s;
-    border-radius: 34px;
+    border-radius: 1.3rem;
 }
 .slider:before {
     position: absolute;
@@ -67,7 +67,7 @@ export default {
     border-radius: 50%;
 }
 input:checked+.slider {
-    background-color: #5cd5eb;
+    background-color: var(--dark-colour);
 }
 /* input:focus+.slider {
     box-shadow: 0 0 1px #2196F3;
