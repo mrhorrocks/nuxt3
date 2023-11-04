@@ -11,18 +11,21 @@
             v-if="sideTray"
             @click="toggleMenu" 
             buttonClass="button" 
-            linkText="Close Side Panel" />
+            linkText="Close Side Panel">
+        
+        </Button>
 
         <!-- Modal bg -->
         <div v-if="sideTray" @click="closeSideTray" class="modal-bg"></div>
         <!-- Modal bg -->
 
         <div v-if="sideTray" class="side-tray">
-            <ul>
-                <li><NuxtLink to="/" title="Home">Home</NuxtLink></li>
-                <li><NuxtLink to="/components" title="Components">Components</NuxtLink></li>
-                <li><NuxtLink to="/charts" title="Charts">Charts</NuxtLink></li>
-            </ul> 
+
+            <Button 
+                v-if="sideTray"
+                @click="toggleMenu" 
+                buttonClass="button" 
+                linkText="X" />
         </div>
     </div>
 </template>
@@ -68,6 +71,7 @@ export default {
         max-width: 450px;
         background-color: white;
         padding: 1rem;
+        transition-duration: 1000ms;
         @apply
         w-screen
         max-w-md
@@ -76,7 +80,7 @@ export default {
         translate-x-0 
         transition-transform 
         ease-in-out 
-        duration-1000;
+        /* duration-1000; */
     }
 </style>
   
