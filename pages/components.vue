@@ -19,7 +19,7 @@
                 </div>
 
                 <div class="ui-item">
-                    <SideTray />
+                    <SidePanel />
                 </div>
 
                 <div class="ui-item">
