@@ -8,15 +8,12 @@ definePageMeta({
     <section aria-label="About this website">
         <h2 class="page-heading mb-8">About this website</h2>
 
-        <p>You are now viewing a scalable, responsive, 
-            <a href="https://en.wikipedia.org/wiki/Single-page_application" class="underline" title="Single Page Application">SPA</a> starter template built with 
-            <a href="https://nuxt.com/" class="underline" title="Nuxt">Nuxt</a>, 
-            <a href="https://tailwindcss.com/" class="underline" title="Tailwind CSS">Tailwind</a> and 
+        <p>An easily scalable, responsive single page app built using
+            <a href="https://nuxt.com/" class="underline" title="Nuxt">Nuxt</a>,
+            <a href="https://tailwindcss.com/" class="underline" title="Tailwind CSS">Tailwind</a> and
             <a href="https://www.chartjs.org/" class="underline" title="Chartjs">Chartjs</a>.
-            <a href="https://pinia.vuejs.org/ssr/nuxt.html" class="underline" title="Pinia">Pinia</a> is pre installed for state management.</p>
-
-        <p><ButtonLink to="https://github.com/mrhorrocks/nuxt3" class="w-full sm:w-[initial]" linkText="Install from github" /></p>
-
+            <a href="https://pinia.vuejs.org/ssr/nuxt.html" class="underline" title="Pinia">Pinia</a> is pre installed.
+        </p>
     </section>
 
     <!-- GRID -->
@@ -67,5 +64,4 @@ definePageMeta({
         </div>
 
     </div>
-    <!-- GRID-END -->
-</template>
+    <!-- GRID-END --></template>

@@ -98,7 +98,7 @@ input[type="range"]::-webkit-slider-thumb {
     /* Centers thumb on the track */
 
     /*custom styles*/
-    background-color: #5cd5eb;
+    background-color: var(--second-colour);
     height: 2rem;
     width: 2rem;
     border-radius: 50%;
@@ -107,7 +107,7 @@ input[type="range"]::-webkit-slider-thumb {
         background-color: #379cad;
     }
     &:active {
-        background-color: red;
+        background-color: var(--third-colour);
     }
 }
 
@@ -143,7 +143,7 @@ input[type="range"]::-moz-range-thumb {
     /*Removes default border-radius that FF applies*/
 
     /*custom styles*/
-    background-color: #5cd5eb;
+    background-color: var(--dark-colour);
     height: 2rem;
     width: 2rem;
     border-radius: 50%;
