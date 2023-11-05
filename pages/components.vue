@@ -60,8 +60,8 @@
                 </div>
 
                 <div class="ui-item">
-                    <Disclosure title="Title One" content="Content 1" />
-                    <Disclosure title="Title Two">
+                    <Disclosure title="One" content="Content 1" />
+                    <Disclosure title="Two">
                         Add content using a slot too.
                     </Disclosure>
                 </div>

@@ -66,8 +66,11 @@ export default {
     transition: 0.4s;
     border-radius: 50%;
 }
+input:checked+.slider:before {
+    /* background-color: var(--first-colour); */
+}
 input:checked+.slider {
-    background-color: var(--dark-colour);
+    background-color: var(--second-colour);
 }
 /* input:focus+.slider {
     box-shadow: 0 0 1px #2196F3;

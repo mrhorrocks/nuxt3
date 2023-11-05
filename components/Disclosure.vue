@@ -1,5 +1,4 @@
 <script>
-import { ChevronUpIcon } from '@heroicons/vue/20/solid'
 export default {
     props: {
         title: {
