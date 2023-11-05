@@ -44,7 +44,7 @@ div.textfield {
     }
     input {
         border: 2px solid var(--first-colour);
-        border-radius: 1.3rem;
+        border-radius: 0.5rem;
         line-height: 40px;
         min-width: 100%;
         @apply md:min-w-[90%];

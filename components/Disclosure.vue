@@ -25,18 +25,17 @@ export default {
 
 <style scss scoped>
 details {
-    background: #e7f0fa;
+    background: var(--third-colour);
     margin-bottom: 0.5rem;
 
     summary {
+        overflow: hidden;
         display: block;
         list-style: none;
-        cursor: pointer;
-        background-color: #60a5fa;
-        color: white;
         padding: 0.5rem;
-        border-radius: 0.3rem 0.3rem 0 0;
-        overflow: hidden;
+        background-color: var(--first-colour);
+        color: white;
+        cursor: pointer;
     }
 
     /* Create a new custom triangle on the right side */
@@ -49,7 +48,6 @@ details {
         transition: 0.1s;
         line-height: 1;
         transform: rotate(-90deg) scaleY(2);
-;
     }
 
     .content {

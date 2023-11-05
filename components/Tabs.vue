@@ -48,7 +48,8 @@
 .tab label {
     position: relative;
     left: 1px;
-    padding: 6px 15px;
+    top: 1px;
+    padding: 0.3rem 2rem;
     border: 2px solid var(--first-colour);
     margin-left: -1px;
     background: #c6e1ff;

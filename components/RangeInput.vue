@@ -1,14 +1,8 @@
 <template>
-    <div>
+    <div class="range-input">
         <label :for="id">{{ label }}</label>
-        <input 
-            type="range" 
-            :id="id" 
-            :name="id" 
-            :min="min" 
-            :max="max"  
-            :step="step" 
-            v-model="rangeValue" @input="updateValue" />
+        <input type="range" :id="id" :name="id" :min="min" :max="max" :step="step" v-model="rangeValue"
+            @input="updateValue" />
         <span class="updated-value">{{ rangeValue }}</span>
     </div>
 </template>
@@ -51,12 +45,18 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scss scoped>
+.range-input {
+    position: relative;
+    z-index: 0;
+}
+
 label {
     width: 100%;
     display: inline-block;
-    padding: 10px 0; 
+    padding: 10px 0;
 }
+
 .updated-value {
     width: 100%;
     display: inline-block;
@@ -64,7 +64,7 @@ label {
     font-size: 1.5rem;
     font-weight: 600;
 }
-/********** Range Input Styles **********/
+
 /*Range Reset*/
 input[type="range"] {
     -webkit-appearance: none;
@@ -79,51 +79,42 @@ input[type="range"]:focus {
     outline: none;
 }
 
-/***** Chrome, Safari, Opera and Edge Chromium styles *****/
-/* slider track */
+/* Slider track */
 input[type="range"]::-webkit-slider-runnable-track {
-    background-color: #ccc;
-    border-radius: 0.5rem;
-    height: 0.5rem;
     position: relative;
     z-index: 10;
+    height: 0.5rem;
+    background-color: #ccc;
+    border-radius: 0.5rem;
 }
 
-/* slider thumb */
+/* Thumb */
 input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
-    /* Override default look */
     appearance: none;
-    margin-top: -12px;
-    /* Centers thumb on the track */
-
-    /*custom styles*/
-    background-color: var(--second-colour);
-    height: 2rem;
-    width: 2rem;
+    margin-top: -14px;
+    background-color: white;
+    border: 5px solid var(--first-colour);
+    outline: 0px solid white;
+    height: 2.25rem;
+    width: 2.25rem;
     border-radius: 50%;
-    box-shadow: 0px 3px 3px #ccc;
+    box-shadow: 0px 8px 10px 0px #ccc;
+
     &:hover {
-        background-color: #379cad;
+        background-color: var(--second-colour);
+        border: 5px solid white;
+        outline: 5px solid var(--first-colour);
     }
+
     &:active {
-        background-color: var(--third-colour);
+        background-color: var(--first-colour);
     }
 }
 
 input[type="range"]:focus::-webkit-slider-thumb {
-    border: 1px solid #053a5f;
-    outline: 3px solid #053a5f;
-    outline-offset: 0.0rem; /* The gap between thr border */
+    outline-offset: 0.0rem;
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -148,11 +139,13 @@ input[type="range"]::-moz-range-thumb {
     width: 2rem;
     border-radius: 50%;
     box-shadow: 0px 3px 3px #ccc;
+
     &:hover {
         background-color: #379cad;
     }
+
     &:active {
-        background-color: red;
+        background-color: green;
     }
 
 }
@@ -160,6 +153,7 @@ input[type="range"]::-moz-range-thumb {
 input[type="range"]:focus::-moz-range-thumb {
     border: 1px solid #053a5f;
     outline: 3px solid #053a5f;
-    outline-offset: 0.0rem; /* The gap between thr border */
+    outline-offset: 0.0rem;
+    /* The gap between thr border */
 }
 </style>
