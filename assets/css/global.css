@@ -634,6 +634,7 @@ body {
 
 header {
   position: fixed;
+  z-index: 1;
   width: 100%;
   @apply lg:relative
     shadow-2xl 
@@ -644,8 +645,8 @@ header {
 }
 
 main {
-  @apply mt-[111px]
-        lg:mt-0
+  @apply mt-[111px] 
+    lg:mt-0
     container 
     mx-auto 
     grow 
@@ -671,8 +672,8 @@ nav {
   font: normal 600 1.75rem/1 "Yanone Kaffeesatz", sans-serif;
   text-decoration: none;
   @apply transition 
-        duration-150 
-        ease-in-out;
+    duration-150 
+    ease-in-out;
 }
 .navlinks a:hover {
   color: var(--first-colour);
