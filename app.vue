@@ -1,5 +1,6 @@
 <template>
     <Body class="antialiased">
+        <NuxtLoadingIndicator />
         <NuxtLayout>
             <NuxtPage />
         </NuxtLayout>
