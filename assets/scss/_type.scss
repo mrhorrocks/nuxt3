@@ -36,12 +36,12 @@ h3 {
     /* 300;400;500;600;700 */
     font: normal 600 2rem/1 "Yanone Kaffeesatz", sans-serif;
     color: var(--first-colour);
+    margin-bottom: 2rem;
 
     &.chart-title {
         width: auto;
         font-size: 1.5rem;
         font-weight: 500;
-        margin: 1rem 0;
         padding: 0.55rem;
         background: var(--first-colour);
         color: white;

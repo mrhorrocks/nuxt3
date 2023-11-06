@@ -46,6 +46,9 @@ export default {
 </script>
 
 <style scoped>
+.button {
+    float: left;
+}
 button.close-panel {
     margin-top: 0;
     float: right;

@@ -1,36 +1,41 @@
+<script>
+export default {
+    props: {
+        title1: String,
+        title2: String,
+        title3: String,
+    },
+};
+</script>
+
 <template>
     <div class="tabs">
-
         <div class="tab">
             <input type="radio" id="tab-1" name="tab-group-1" checked>
-            <label for="tab-1">One</label>
+            <label for="tab-1">{{ title1 }}</label>
             <div class="content">
                 <p>
-                    <slot name="tab-one" />
-                </p>
+                    <slot name="tab-one">
+                    </slot>
+            </p>
             </div>
         </div>
 
         <div class="tab">
             <input type="radio" id="tab-2" name="tab-group-1">
-            <label for="tab-2">Two</label>
+            <label for="tab-2">{{ title2 }}</label>
             <div class="content">
-                <p>
-                    <slot name="tab-two" />
-                </p>
+                <p><slot name="tab-two" /></p>
             </div>
         </div>
 
         <div class="tab">
             <input type="radio" id="tab-3" name="tab-group-1">
-            <label for="tab-3">Three</label>
+            <label for="tab-3">{{ title3 }}</label>
             <div class="content">
-                <p>
-                    <slot name="tab-three" />
-                </p>
+                <p><slot name="tab-three" /></p>
             </div>
         </div>
-
     </div>
 </template>
 
@@ -38,6 +43,7 @@
 .tabs {
     position: relative;
     min-height: 200px;
+    margin: 1.5rem 0rem;
     clear: both;
 }
 
@@ -55,6 +61,7 @@
     background: #c6e1ff;
     cursor: pointer;
 }
+
 .tab [type="radio"] {
     opacity: 0;
     display: none;
@@ -89,10 +96,12 @@
     border-right: 2px solid var(--first-colour);
     z-index: 2;
 }
+
 // Selected content
 [type="radio"]:checked~label~.content {
     z-index: 1;
 }
+
 // All content 
 [type="radio"]:checked~label~.content>* {
     opacity: 1;

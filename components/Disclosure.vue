@@ -25,7 +25,7 @@ export default {
 <style scss scoped>
 details {
     background: var(--third-colour);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.1rem;
 
     summary {
         overflow: hidden;
