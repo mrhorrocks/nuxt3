@@ -43,6 +43,7 @@ export default {
 .tabs {
     position: relative;
     min-height: 200px;
+    width: 95%;
     margin: 1.5rem 0rem;
     clear: both;
 }
