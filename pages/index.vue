@@ -8,7 +8,7 @@ definePageMeta({
     <section aria-label="About this website">
         <h2 class="page-heading mb-8">About this website</h2>
 
-        <p>An easily scalable, responsive single page app built using
+        <p>An scalable, responsive single page app built using
             <a href="https://nuxt.com/" class="underline" title="Nuxt">Nuxt</a>,
             <a href="https://tailwindcss.com/" class="underline" title="Tailwind CSS">Tailwind</a> and
             <a href="https://www.chartjs.org/" class="underline" title="Chartjs">Chartjs</a>.

@@ -2,52 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "../scss/vars";
-@import "../scss/type";
-@import "../scss/cookie";
-@import "../scss/utilities";
-@import "../scss/button";
+@import '../scss/vars';
+@import '../scss/type';
+@import '../scss/cookie';
+@import '../scss/utilities';
+@import '../scss/button';
 
 body {
-    @apply 
-    bg-gray-50
+  @apply bg-gray-50;
 }
 
 /* Scrollbars */
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
-    height: 5px;
+  width: 10px;
+  height: 5px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    margin-top: 1px;
-    margin-bottom: 1px;
+  background: #f1f1f1;
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #888;
+  background: #888;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+  background: #555;
 }
 
 .app-height {
-    display: flex;
-    flex-direction: column;
-    min-height: calc(100vh - 0px);
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 0px);
 }
 
 header {
-        position: fixed;
-        width: 100%;
-    @apply 
-        lg:relative
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  @apply lg:relative
     shadow-2xl 
     bg-blue-500
     py-8
@@ -56,9 +55,8 @@ header {
 }
 
 main {
-    @apply 
-        mt-[111px]
-        lg:mt-0
+  @apply mt-[111px] 
+    lg:mt-0
     container 
     mx-auto 
     grow 
@@ -67,45 +65,40 @@ main {
 }
 
 nav {
-    @apply 
-    container 
+  @apply container 
     mx-auto 
     px-2;
 }
 
 .navlinks {
-    @apply 
-    lg:flex 
+  @apply lg:flex 
     space-x-3 
-    hidden; 
-    a {
-        border-radius: 0.25rem;
-        color:white;
-        padding: 0.45rem 0.5rem 0.25rem;
-        font: normal 600 1.75rem/1 'Yanone Kaffeesatz', sans-serif;
-        text-decoration: none;
-        @apply 
-        transition 
-        duration-150 
-        ease-in-out;
-        &:hover {
-            color: var(--first-colour);
-            background-color: white;
-        }
+    hidden;
+  a {
+    border-radius: 0.25rem;
+    color: white;
+    padding: 0.45rem 0.5rem 0.25rem;
+    font: normal 600 1.75rem/1 'Yanone Kaffeesatz', sans-serif;
+    text-decoration: none;
+    @apply transition 
+    duration-150 
+    ease-in-out;
+    &:hover {
+      color: var(--first-colour);
+      background-color: white;
     }
+  }
 }
 
 .mobilenavlinks {
-    @apply 
-    lg:hidden 
+  @apply lg:hidden 
     bg-blue-500
     divide-y 
     divide-slate-200;
-    a {
-        text-transform: uppercase;
-        text-align: center;
-        @apply 
-        block 
+  a {
+    text-transform: uppercase;
+    text-align: center;
+    @apply block 
         text-slate-200
         border-white
         transition 
@@ -113,23 +106,21 @@ nav {
         ease-in-out 
         py-2 
         pl-0;
-        &:first-child{
-            margin-top: 1rem;
-        }
-        &.router-link-active {
-            background-color: var(--mobnav-hover-colour);
-            column-rule-color: white;
-        }
-        &:hover {
-            background-color: var(--mobnav-hover-colour);
-            @apply
-            underline;
-        }
-        &:active {
-            background-color: var(--mobnav-active-colour);
-            
-        }
+    &:first-child {
+      margin-top: 1rem;
     }
+    &.router-link-active {
+      background-color: var(--mobnav-hover-colour);
+      column-rule-color: white;
+    }
+    &:hover {
+      background-color: var(--mobnav-hover-colour);
+      @apply underline;
+    }
+    &:active {
+      background-color: var(--mobnav-active-colour);
+    }
+  }
 }
 
 /* .container {
@@ -137,40 +128,37 @@ nav {
 } */
 
 footer {
-    @apply 
-    bg-blue-300;
-    a {
-    @apply
-        inline-block
+  @apply bg-blue-300;
+  a {
+    @apply inline-block
         pr-2;
-    }
-    .container {
-        @apply
-        p-4
-    }
+  }
+  .container {
+    @apply p-4;
+  }
 }
 p {
-    font-size: 1.25rem;
-    display: block;
-    width: 100%;
-    margin: 1rem 0px;
+  font-size: 1.25rem;
+  display: block;
+  width: 100%;
+  margin: 1rem 0px;
 }
 
 a.section-link {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .ui-item {
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #b6b6b6;
-    &:last-child {
-        border-bottom: none;
-    }
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #b6b6b6;
+  &:last-child {
+    border-bottom: none;
+  }
 }
 
 .underline {
-    text-decoration: underline;
-    text-decoration-style: dotted;
-    text-decoration-thickness: 2px;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 2px;
 }

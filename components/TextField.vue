@@ -36,16 +36,15 @@ div.textfield {
 
     label {
         position: absolute;
-        z-index: 1;
         top: -7px;
         left: 0.5rem;
-        background: white;
         font-size: 0.75rem;
         padding: 0 0.3rem;
+        background: white;
     }
     input {
         border: 2px solid var(--first-colour);
-        border-radius: 1.3rem;
+        border-radius: 0.5rem;
         line-height: 40px;
         min-width: 100%;
         @apply md:min-w-[90%];
