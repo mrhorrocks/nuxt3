@@ -17,7 +17,7 @@ export default {
                 <p>
                     <slot name="tab-one">
                     </slot>
-            </p>
+                </p>
             </div>
         </div>
 
@@ -25,7 +25,9 @@ export default {
             <input type="radio" id="tab-2" name="tab-group-1">
             <label for="tab-2">{{ title2 }}</label>
             <div class="content">
-                <p><slot name="tab-two" /></p>
+                <p>
+                    <slot name="tab-two" />
+                </p>
             </div>
         </div>
 
@@ -33,7 +35,9 @@ export default {
             <input type="radio" id="tab-3" name="tab-group-1">
             <label for="tab-3">{{ title3 }}</label>
             <div class="content">
-                <p><slot name="tab-three" /></p>
+                <p>
+                    <slot name="tab-three" />
+                </p>
             </div>
         </div>
     </div>
@@ -50,6 +54,7 @@ export default {
 
 .tab {
     float: left;
+
     &:last-child {
         label {
             border-right: 2px solid var(--first-colour);
@@ -84,6 +89,7 @@ export default {
     border: 2px solid var(--first-colour);
     background: white;
     overflow: hidden;
+    min-height: 200px;
 
     & p {
         font-size: 1rem;
@@ -113,5 +119,4 @@ export default {
 [type="radio"]:checked~label~.content>* {
     opacity: 1;
     transform: translateX(0);
-}
-</style>
+}</style>
