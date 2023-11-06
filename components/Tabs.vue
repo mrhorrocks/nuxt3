@@ -50,6 +50,11 @@ export default {
 
 .tab {
     float: left;
+    &:last-child {
+        label {
+            border-right: 2px solid var(--first-colour);
+        }
+    }
 }
 
 .tab label {
@@ -58,6 +63,7 @@ export default {
     top: 1px;
     padding: 0.3rem 2rem;
     border: 2px solid var(--first-colour);
+    border-right-width: 1px;
     margin-left: -1px;
     background: #c6e1ff;
     cursor: pointer;
@@ -94,7 +100,7 @@ export default {
 [type="radio"]:checked~label {
     background: white;
     border-bottom: 2px solid white;
-    border-right: 2px solid var(--first-colour);
+    // border-right: 2px solid var(--first-colour);
     z-index: 2;
 }
 

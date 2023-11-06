@@ -20,7 +20,7 @@
 
                     <!-- Tabs -->
                     <Tabs 
-                        title1="Check Boxes"
+                        title1="Checkbox and radio buttons"
                         title2="Two"
                         title3="Three"
                         >
