@@ -634,7 +634,7 @@ body {
 
 header {
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   @apply lg:relative
     shadow-2xl 
@@ -661,9 +661,10 @@ nav {
 }
 
 .navlinks {
+  height: 40px;
   @apply lg:flex 
-    space-x-3 
-    hidden;
+	space-x-3 
+	hidden;
 }
 .navlinks a {
   border-radius: 0.25rem;
@@ -682,9 +683,9 @@ nav {
 
 .mobilenavlinks {
   @apply lg:hidden 
-    bg-blue-500
-    divide-y 
-    divide-slate-200;
+	bg-blue-500
+	divide-y 
+	divide-slate-200;
 }
 .mobilenavlinks a {
   text-transform: uppercase;
