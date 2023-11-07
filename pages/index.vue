@@ -59,7 +59,7 @@ definePageMeta({
                     <NuxtLink external class="chip" href="https://heroicons.com/" title="Hero Icons">Hero Icons</NuxtLink>
                     <NuxtLink external class="chip" href="https://fonts.google.com/icons" title="Material Icons">Material
                         Icons</NuxtLink>
-                    <NuxtLink external class="chip" href="https://css2sass.herokuapp.com/" title="Hero Icons">CSS to SASS
+                    <NuxtLink external class="chip" href="https://css2sass.herokuapp.com/" title="CSS to SASS">CSS to SASS
                     </NuxtLink>
                 </p>
             </section>
