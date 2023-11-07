@@ -10,10 +10,7 @@
 
         <!-- GRID -->
         <div class="flexed-cols">
-
-            <!-- <SelectOptions label="Select from JSON file" id="select-orgs" /> -->
             <CarCard />
-
         </div>
         <!-- END-GRID -->
 

@@ -79,6 +79,11 @@
                     <SidePanel />
                     <ButtonLink to="https://github.com/mrhorrocks/nuxt3" class="w-full sm:w-[initial]"
                         linkText="Button as a link" />
+                    
+                </div>
+                
+                <div class="ui-item">
+                    <SelectOptions label="" id="select-orgs" />
                 </div>
             </div>
 
