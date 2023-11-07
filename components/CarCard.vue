@@ -46,9 +46,11 @@
                 </div>
 
                 <div class="pricing">
-                    <p class="ppm"><span>£550.90</span> /mo(PC)</p>
-                    <p class="total-price">£{{ item.price }} <button @click.stop.prevent="calculateFinance"> Calculate
-                            finance</button>
+                    <p class="ppm"><span>£{{ item.monthly_price }}</span> /mo(PC)</p>
+                    <p class="total-price">£{{ item.price }} 
+                    <button @click.stop.prevent="calculateFinance">
+                        Calculate finance
+                    </button>
                     </p>
                 </div>
 
@@ -152,7 +154,8 @@ export default {
                 -webkit-box-orient: vertical;
                 font-weight: 500;
             }
-            &.short-spec{
+
+            &.short-spec {
                 color: #ec0a0a;
             }
         }
