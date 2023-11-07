@@ -43,6 +43,7 @@ export default {
 .tabs {
     position: relative;
     min-height: 200px;
+    width: 95%;
     margin: 1.5rem 0rem;
     clear: both;
 }
@@ -76,7 +77,7 @@ export default {
     padding: 15px;
     border: 2px solid var(--first-colour);
     background: white;
-    overflow: hidden;
+    overflow: auto;
 
     & p {
         font-size: 1rem;
