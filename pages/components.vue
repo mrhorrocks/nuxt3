@@ -29,7 +29,6 @@
                             <Checkbox id="1" label="One" checked="checked" />
                             <Checkbox id="2" label="Two" />
                             <Checkbox id="3" label="Three" />
-                            <Checkbox id="4" label="Bespoke Components" checked="checked" />
                             <br>
                             <Radio name="name" id="10" label="Yes" checked="checked" />
                             <Radio name="name" id="11" label="No" />
