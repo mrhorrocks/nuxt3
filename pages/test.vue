@@ -9,12 +9,23 @@
     <section aria-label="Testing Examples">
 
         <!-- GRID -->
-        <div class="lg:grid lg:grid-cols-2 lg:gap-12">
+        <div class="flexed-cols">
 
-            <SelectOptions label="Select from JSON file" id="select-orgs" />
+            <!-- <SelectOptions label="Select from JSON file" id="select-orgs" /> -->
+            <CarCard />
 
         </div>
         <!-- END-GRID -->
 
     </section>
 </template>
+
+<style scss scoped>
+.flexed-cols {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+</style>
