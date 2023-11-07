@@ -32,13 +32,14 @@ export default {
 				{{ item.trust_name }}</option>
 		</select>
 
-		<p v-if="selectedOption">{{ selectedOption }}</p>
+		<!-- <p v-if="selectedOption">{{ selectedOption }}</p> -->
 
 	</div>
 </template>
 
 <style scss scoped>
 .selectbox {
+	width: 95%;
 	label {
 		display: block;
 		font-size: 1.25rem;
@@ -48,9 +49,12 @@ export default {
 
 	select {
 		border: 2px solid var(--first-colour);
-		border-radius: 0.5rem;
+		/* border-radius: 0.5rem; */
 		padding: 0.5rem;
 		width: 100%;
+		option:checked {
+			background-color: red;
+		}
 	}
 
 }
