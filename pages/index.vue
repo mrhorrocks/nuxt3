@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 definePageMeta({
     layout: 'homepage'
 });
@@ -30,7 +30,8 @@ definePageMeta({
                     <NuxtLink external class="chip" href="https://code.visualstudio.com/" title="VSCode">VSCode</NuxtLink>
                     <NuxtLink external class="chip" href="https://www.mysql.com/" title="MySQL">MySQL</NuxtLink>
                     <NuxtLink external class="chip" href="https://www.chartjs.org/" title="Chartjs">Chartjs</NuxtLink>
-                    <NuxtLink external class="chip" href="https://www.artweaver.de/en" title="Artweaver">Artweaver</NuxtLink>
+                    <NuxtLink external class="chip" href="https://www.artweaver.de/en" title="Artweaver">Artweaver
+                    </NuxtLink>
                     <NuxtLink external class="chip" href="https://inkscape.org/" title="Inkscape">Inkscape</NuxtLink>
                     <NuxtLink external class="chip" href="https://chat.openai.com/" title="ChatGPT">ChatGPT</NuxtLink>
                 </p>
@@ -41,7 +42,8 @@ definePageMeta({
                 <p>
                     <NuxtLink external class="chip" href="https://www.docker.com/" title="Docker">Docker</NuxtLink>
                     <NuxtLink external class="chip" href="https://cakephp.org/" title="CakePHP">CakePHP</NuxtLink>
-                    <NuxtLink external class="chip" href="https://www.highcharts.com/" title="Highcharts">Highcharts</NuxtLink>
+                    <NuxtLink external class="chip" href="https://www.highcharts.com/" title="Highcharts">Highcharts
+                    </NuxtLink>
                     <NuxtLink external class="chip" href="https://jquery.com/" title="Jquery">Jquery</NuxtLink>
                     <NuxtLink external class="chip" href="https://subversion.apache.org/" title="SVN">SVN</NuxtLink>
                     <NuxtLink external class="chip" href="https://wordpress.com/" title="">Wordpress</NuxtLink>
