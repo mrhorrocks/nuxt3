@@ -3,14 +3,14 @@ export default defineNuxtConfig({
     ssr: false, // Disable Server Side rendering
     app: {
         head: {
-            htmlAttrs: {lang: 'en'},
+            htmlAttrs: { lang: 'en' },
             charset: 'utf-8',
             viewport: 'width=device-width, initial-scale=1',
             title: 'Mr.Horrocks - Front-End Web Developer',
             meta: [{ name: 'description', content: 'Front-End Web Developer' }],
             link: [
-                { 
-                    rel: 'stylesheet', 
+                {
+                    rel: 'stylesheet',
                     href: 'https://fonts.googleapis.com/css2?family=Lobster&family=Yanone+Kaffeesatz:wght@300;400;500;600;700&display=swap',
                 },
                 {
@@ -29,21 +29,17 @@ export default defineNuxtConfig({
         '@/assets/fonts/googlefonts.css'
     ],
     modules: [
-        // '@nuxt/content',
-        '@pinia/nuxt',
+        [
+            '@pinia/nuxt',
+            {
+                autoImports: ['defineStore', 'acceptHMRUpdate'],
+            },
+        ],
         '@nuxtjs/tailwindcss',
         '@dargmuesli/nuxt-cookie-control',
-        
     ],
-    // colorMode: {
-    //     preference: 'light'
-    // },
-    // content: {
-    //     // https://content.nuxtjs.org/api/configuration
-    // },
-    devtools: {
-        enabled: true, // Show devtools in the browser
-    },
+    tailwindcss: { exposeConfig: true },
+    devtools: { enabled: true },
     components: [
         // Add sub folders to the component direcory 
         { path: '~/components/chartjs', pathPrefix: false },
@@ -56,6 +52,7 @@ export default defineNuxtConfig({
         // ~/components/base/Btn.vue => <BaseBtn />
         '~/components'
     ],
+    imports: { dirs: ['stores'] }, // Auto import this folder
     cookieControl: {
         // typed module options
         // Position of cookie bar.
@@ -121,8 +118,8 @@ export default defineNuxtConfig({
         // Switch to toggle the "accept necessary" button.
         isAcceptNecessaryButtonEnabled: true,
 
-            // Switch to toggle the button that opens the configuration modal. (Cookie options icon)
-            isControlButtonEnabled: true,
+        // Switch to toggle the button that opens the configuration modal. (Cookie options icon)
+        isControlButtonEnabled: true,
 
         // Switch to toggle the concatenation of target cookie ids to the cookie description.
         isCookieIdVisible: false,
