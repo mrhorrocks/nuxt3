@@ -1,4 +1,4 @@
-<script>
+<script setup>
 const timestamp = 1677679162168; // Replace this with your timestamp
 const date = new Date(timestamp);
 
@@ -11,6 +11,10 @@ const seconds = date.getSeconds().toString().padStart(2, '0');
 
 const formattedDate = `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
 console.log(formattedDate);
+
+// found @ ~/composables/usePrintString.ts
+const printString = usePrintString(); // Call the usePrintString plugin
+
 
 </script>
 
@@ -28,6 +32,10 @@ console.log(formattedDate);
         <div class="flexed-cols">
             <Counter />
         </div>
+
+        <p>
+            {{ printString }}
+        </p>
         <!-- END-GRID -->
 
     </section>
