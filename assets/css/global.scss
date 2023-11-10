@@ -44,12 +44,12 @@ body {
 
 header {
   position: fixed;
-  z-index: 2;
+  z-index: 100;
   width: 100%;
+  padding: 1rem 0;
   @apply lg:relative
     shadow-2xl 
     bg-blue-500
-    py-8
     border-t-8 
     border-blue-300;
 }

@@ -14,7 +14,7 @@ export default {
     },
 };
 </script>
-  
+
 <template>
     <nav>
         <!-- Primary Menu and Site Title -->
@@ -28,7 +28,7 @@ export default {
             <button @click="toggleMobileMenu" class="lg:hidden text-white">
                 <span v-if="mobileMenuOpen">
                     <!-- Close -->
-                    <svg width="32" height="32" version="1.1" viewBox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="32" height="40" version="1.1" viewBox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
                         <path fill="currentColor" d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224z"/>
                     </svg>
 
@@ -51,6 +51,7 @@ export default {
                 <NuxtLink to="/cars" title="Cars">Cars</NuxtLink>
                 <NuxtLink to="/test" title="Test">Test</NuxtLink>
                 <NuxtLink to="/products" title="Products">Products</NuxtLink>
+                <NuxtLink to="/api" title="Products">Api</NuxtLink>
             </div>
         </div>
 
@@ -63,6 +64,7 @@ export default {
             <NuxtLink to="/cars" title="Cars">Cars</NuxtLink>
             <NuxtLink to="/test" title="Test">Test</NuxtLink>
             <NuxtLink to="/products" title="Products">Products</NuxtLink>
+            <NuxtLink to="/api" title="Products">Api</NuxtLink>
         </div>
     </nav>
 </template>
