@@ -7,9 +7,10 @@ definePageMeta({
     <section aria-label="About this website">
         <h2 class="page-heading mb-8">About this website</h2>
 
-        <p>A scalable, responsive single page app built with
+        <p>This is a scalable, responsive single page app built with
             <NuxtLink external href="https://nuxt.com/" class="underline" title="Nuxt">Nuxt</NuxtLink> and
-            <NuxtLink external href="https://tailwindcss.com/" class="underline" title="Tailwind CSS">Tailwind</NuxtLink>.
+            <NuxtLink external href="https://tailwindcss.com/" class="underline" title="Tailwind CSS">Tailwind</NuxtLink>. 
+            It's also where I test components, API's, continuious intergration and severless CMS.
         </p>
     </section>
 
