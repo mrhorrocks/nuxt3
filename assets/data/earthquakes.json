@@ -1,0 +1,261 @@
+{
+    "type": "FeatureCollection",
+    "metadata": {
+        "generated": 1699498263000,
+        "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2023-03-01&endtime=2023-03-02&minmagnitude=5",
+        "title": "USGS Earthquakes",
+        "status": 200,
+        "api": "1.14.0",
+        "count": 6
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 5,
+                "place": "southern Sumatra, Indonesia",
+                "time": 1677711923415,
+                "updated": 1683511213040,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000jgnz",
+                "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000jgnz&format=geojson",
+                "felt": 2,
+                "cdi": 3.1,
+                "mmi": null,
+                "alert": null,
+                "status": "reviewed",
+                "tsunami": 0,
+                "sig": 385,
+                "net": "us",
+                "code": "7000jgnz",
+                "ids": ",us7000jgnz,",
+                "sources": ",us,",
+                "types": ",dyfi,origin,phase-data,",
+                "nst": 206,
+                "dmin": 3.49,
+                "rms": 0.64,
+                "gap": 28,
+                "magType": "mww",
+                "type": "earthquake",
+                "title": "M 5.0 - southern Sumatra, Indonesia"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    100.8384,
+                    -1.5655,
+                    93.325
+                ]
+            },
+            "id": "us7000jgnz"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 5,
+                "place": "157 km ESE of Kuril’sk, Russia",
+                "time": 1677698990616,
+                "updated": 1683511211040,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000jgmv",
+                "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000jgmv&format=geojson",
+                "felt": null,
+                "cdi": null,
+                "mmi": null,
+                "alert": null,
+                "status": "reviewed",
+                "tsunami": 0,
+                "sig": 385,
+                "net": "us",
+                "code": "7000jgmv",
+                "ids": ",us7000jgmv,",
+                "sources": ",us,",
+                "types": ",origin,phase-data,",
+                "nst": 60,
+                "dmin": 5.028,
+                "rms": 0.64,
+                "gap": 78,
+                "magType": "mb",
+                "type": "earthquake",
+                "title": "M 5.0 - 157 km ESE of Kuril’sk, Russia"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    149.5786,
+                    44.4887,
+                    35
+                ]
+            },
+            "id": "us7000jgmv"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 5.5,
+                "place": "156 km SE of San Jose Village, Northern Mariana Islands",
+                "time": 1677698887346,
+                "updated": 1699472294126,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000jgmu",
+                "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000jgmu&format=geojson",
+                "felt": null,
+                "cdi": null,
+                "mmi": 2.98,
+                "alert": "green",
+                "status": "reviewed",
+                "tsunami": 0,
+                "sig": 465,
+                "net": "us",
+                "code": "7000jgmu",
+                "ids": ",pt23060001,us7000jgmu,",
+                "sources": ",pt,us,",
+                "types": ",internal-origin,losspager,oaf,origin,phase-data,shakemap,",
+                "nst": 103,
+                "dmin": 1.965,
+                "rms": 0.9,
+                "gap": 44,
+                "magType": "mww",
+                "type": "earthquake",
+                "title": "M 5.5 - 156 km SE of San Jose Village, Northern Mariana Islands"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    146.8086,
+                    14.1495,
+                    10.404
+                ]
+            },
+            "id": "us7000jgmu"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 5,
+                "place": "Bonin Islands, Japan region",
+                "time": 1677679162168,
+                "updated": 1683511209040,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000jgk0",
+                "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000jgk0&format=geojson",
+                "felt": null,
+                "cdi": null,
+                "mmi": null,
+                "alert": null,
+                "status": "reviewed",
+                "tsunami": 0,
+                "sig": 385,
+                "net": "us",
+                "code": "7000jgk0",
+                "ids": ",us7000jgk0,",
+                "sources": ",us,",
+                "types": ",origin,phase-data,",
+                "nst": 110,
+                "dmin": 0.655,
+                "rms": 0.41,
+                "gap": 73,
+                "magType": "mb",
+                "type": "earthquake",
+                "title": "M 5.0 - Bonin Islands, Japan region"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    142.7793,
+                    27.4834,
+                    16.78
+                ]
+            },
+            "id": "us7000jgk0"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 5.1,
+                "place": "South Sandwich Islands region",
+                "time": 1677675292361,
+                "updated": 1683511208040,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000jgjq",
+                "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000jgjq&format=geojson",
+                "felt": null,
+                "cdi": null,
+                "mmi": null,
+                "alert": null,
+                "status": "reviewed",
+                "tsunami": 0,
+                "sig": 400,
+                "net": "us",
+                "code": "7000jgjq",
+                "ids": ",us7000jgjq,",
+                "sources": ",us,",
+                "types": ",origin,phase-data,",
+                "nst": 39,
+                "dmin": 17.44,
+                "rms": 0.58,
+                "gap": 95,
+                "magType": "mb",
+                "type": "earthquake",
+                "title": "M 5.1 - South Sandwich Islands region"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -27.0797,
+                    -60.3018,
+                    62.441
+                ]
+            },
+            "id": "us7000jgjq"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 6.6,
+                "place": "106 km NW of Kimbe, Papua New Guinea",
+                "time": 1677648974834,
+                "updated": 1683511204040,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000jgfd",
+                "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000jgfd&format=geojson",
+                "felt": 4,
+                "cdi": 4.1,
+                "mmi": 2.354,
+                "alert": "green",
+                "status": "reviewed",
+                "tsunami": 1,
+                "sig": 672,
+                "net": "us",
+                "code": "7000jgfd",
+                "ids": ",us7000jgfd,pt23060000,at00rqtu8d,usauto7000jgfd,",
+                "sources": ",us,pt,at,usauto,",
+                "types": ",dyfi,ground-failure,impact-link,internal-moment-tensor,internal-origin,losspager,moment-tensor,origin,phase-data,shakemap,",
+                "nst": 156,
+                "dmin": 2.725,
+                "rms": 0.76,
+                "gap": 11,
+                "magType": "mww",
+                "type": "earthquake",
+                "title": "M 6.6 - 106 km NW of Kimbe, Papua New Guinea"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    149.5041,
+                    -4.8255,
+                    600.933
+                ]
+            },
+            "id": "us7000jgfd"
+        }
+    ],
+    "bbox": [
+        -27.0797,
+        -60.3018,
+        10.404,
+        149.5786,
+        44.4887,
+        600.933
+    ]
+}

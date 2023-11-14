@@ -88,8 +88,7 @@ export default {
     padding: 15px;
     border: 2px solid var(--first-colour);
     background: white;
-    overflow: hidden;
-    min-height: 200px;
+    overflow: auto;
 
     & p {
         font-size: 1rem;

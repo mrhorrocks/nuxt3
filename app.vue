@@ -1,7 +1,8 @@
 <template>
     <Body class="antialiased">
-        <NuxtLoadingIndicator />
+        
         <NuxtLayout>
+            <NuxtLoadingIndicator />
             <NuxtPage />
         </NuxtLayout>
 
@@ -19,3 +20,14 @@
         </CookieControl>
     </Body>
 </template>
+
+<script setup lang="ts">
+// useSeoMeta({
+//   title: 'Mr.Horrocks - Front-End Web Developer',
+//   ogTitle: 'Mr.Horrocks - Front-End Web Developer',
+//   description: 'Mr.Horrocks testing website',
+//   ogDescription: 'Mr.Horrocks testing website',
+//   ogImage: 'https://example.com/image.png',
+//   twitterCard: 'summary_large_image',
+// })
+</script>

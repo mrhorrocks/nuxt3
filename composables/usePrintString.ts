@@ -1,3 +1,4 @@
 export const usePrintString = () => {
-    return useState('PrintString', () => '~/composables/usePrintString.ts was activated')
-  }
+  console.log('~/composables/usePrintString.ts was activated');
+  return useState('PrintString', () => '~/composables/usePrintString.ts was activated')
+}

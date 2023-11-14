@@ -29,7 +29,6 @@
                             <Checkbox id="1" label="One" checked="checked" />
                             <Checkbox id="2" label="Two" />
                             <Checkbox id="3" label="Three" />
-                            <Checkbox id="4" label="Bespoke Components" checked="checked" />
                             <br>
                             <Radio name="name" id="10" label="Yes" checked="checked" />
                             <Radio name="name" id="11" label="No" />
@@ -80,6 +79,11 @@
                     <SidePanel />
                     <ButtonLink to="https://github.com/mrhorrocks/nuxt3" class="w-full sm:w-[initial]"
                         linkText="Button as a link" />
+                    
+                </div>
+                
+                <div class="ui-item">
+                    <SelectOptions label="" id="select-orgs" />
                 </div>
             </div>
 
