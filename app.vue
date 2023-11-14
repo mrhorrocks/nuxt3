@@ -22,12 +22,12 @@
 </template>
 
 <script setup lang="ts">
-useSeoMeta({
-  title: 'My Amazing Site',
-  ogTitle: 'My Amazing Site',
-  description: 'This is my amazing site, let me tell you all about it.',
-  ogDescription: 'This is my amazing site, let me tell you all about it.',
-  ogImage: 'https://example.com/image.png',
-  twitterCard: 'summary_large_image',
-})
+// useSeoMeta({
+//   title: 'Mr.Horrocks - Front-End Web Developer',
+//   ogTitle: 'Mr.Horrocks - Front-End Web Developer',
+//   description: 'Mr.Horrocks testing website',
+//   ogDescription: 'Mr.Horrocks testing website',
+//   ogImage: 'https://example.com/image.png',
+//   twitterCard: 'summary_large_image',
+// })
 </script>
