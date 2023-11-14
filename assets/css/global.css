@@ -14,7 +14,7 @@
   --reset-dark-colour: #d35527;
   --mobnav-hover-colour: #2d78ee;
   --mobnav-active-colour: #5494fa;
-  --mobnav-text: #e2e8f0
+  --mobnav-text: #e2e8f0;
   --chart-title: #ea580c;
   --gold-colour: gold;
   --first-font: normal 2rem/1 "Ariel";
@@ -694,7 +694,7 @@ nav {
   display: block;
   border-color: white;
   color: var(--mobnav-text);
-  padding: 0 0.5rem;
+  padding: 0.5rem;
   padding-left: 0;
   @apply transition 
     duration-150 
@@ -705,7 +705,7 @@ nav {
 }
 .mobilenavlinks a.router-link-active {
   background-color: var(--mobnav-hover-colour);
-  column-rule-color: white;
+  color: white;
 }
 .mobilenavlinks a:hover {
   background-color: var(--mobnav-hover-colour);

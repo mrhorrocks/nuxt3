@@ -102,7 +102,7 @@ nav {
     display: block;
     border-color: white;
     color: var(--mobnav-text);
-    padding: 0 0.5rem;
+    padding: 0.5rem;
     padding-left: 0;
     @apply transition 
     duration-150 
@@ -112,7 +112,7 @@ nav {
     }
     &.router-link-active {
       background-color: var(--mobnav-hover-colour);
-      column-rule-color: white;
+      color: white;
     }
     &:hover {
       background-color: var(--mobnav-hover-colour);
