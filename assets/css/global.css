@@ -14,6 +14,7 @@
   --reset-dark-colour: #d35527;
   --mobnav-hover-colour: #2d78ee;
   --mobnav-active-colour: #5494fa;
+  --mobnav-text: #e2e8f0
   --chart-title: #ea580c;
   --gold-colour: gold;
   --first-font: normal 2rem/1 "Ariel";
@@ -599,7 +600,7 @@ a.chip:active {
 }
 
 body {
-  @apply bg-gray-50;
+  background-color: #f9fafb;
 }
 
 /* Scrollbars */
@@ -637,27 +638,27 @@ header {
   z-index: 100;
   width: 100%;
   padding: 1rem 0;
+  border-color: var(--second-colour);
+  background-color: var(--first-colour);
+  border-top-width: 8px;
   @apply lg:relative
-    shadow-2xl 
-    bg-blue-500
-    border-t-8 
-    border-blue-300;
+    shadow-2xl;
 }
 
 main {
-  @apply mt-[111px] 
+  margin: 0 auto;
+  margin-top: 70px;
+  padding: 0 0.5rem;
+  @apply container
     lg:mt-0
-    container 
-    mx-auto 
     grow 
-    items-start
-    px-2;
+    items-start;
 }
 
 nav {
-  @apply container 
-    mx-auto 
-    px-2;
+  padding: 0 0.5rem;
+  margin: 0 auto;
+  @apply container;
 }
 
 .navlinks {
@@ -682,22 +683,22 @@ nav {
 }
 
 .mobilenavlinks {
+  background-color: var(--first-colour);
   @apply lg:hidden 
-	bg-blue-500
-	divide-y 
-	divide-slate-200;
+  divide-y 
+  divide-slate-200;
 }
 .mobilenavlinks a {
   text-transform: uppercase;
   text-align: center;
-  @apply block 
-        text-slate-200
-        border-white
-        transition 
-        duration-150 
-        ease-in-out 
-        py-2 
-        pl-0;
+  display: block;
+  border-color: white;
+  color: var(--mobnav-text);
+  padding: 0 0.5rem;
+  padding-left: 0;
+  @apply transition 
+    duration-150 
+    ease-in-out;
 }
 .mobilenavlinks a:first-child {
   margin-top: 1rem;
@@ -708,7 +709,7 @@ nav {
 }
 .mobilenavlinks a:hover {
   background-color: var(--mobnav-hover-colour);
-  @apply underline;
+  text-decoration: underline;
 }
 .mobilenavlinks a:active {
   background-color: var(--mobnav-active-colour);
@@ -718,14 +719,14 @@ nav {
     border: 1px solid red;
 } */
 footer {
-  @apply bg-blue-300;
+  background-color: var(--second-colour);
 }
 footer a {
-  @apply inline-block
-        pr-2;
+  display: inline-block;
+  padding-right: 0.5rem;
 }
 footer .container {
-  @apply p-4;
+  padding: 1rem;
 }
 
 p {
