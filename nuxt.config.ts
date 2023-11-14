@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    ssr: false, // Disable Server Side rendering
+    ssr: true, // Disable Server Side rendering
     app: {
         head: {
             htmlAttrs: { lang: 'en' },
