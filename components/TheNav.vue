@@ -49,9 +49,12 @@ export default {
                 <NuxtLink to="/components" title="Components">Components</NuxtLink>
                 <NuxtLink to="/charts" title="Charts">Charts</NuxtLink>
                 <NuxtLink to="/cars" title="Cars">Cars</NuxtLink>
-                <NuxtLink to="/test" title="Test">Test</NuxtLink>
-                <NuxtLink to="/products" title="Products">Products</NuxtLink>
-                <NuxtLink to="/api" title="Products">Api</NuxtLink>
+                <DevOnly>
+                    <NuxtLink to="/test" title="Test">Test</NuxtLink>
+                    <NuxtLink to="/products" title="Products">Products</NuxtLink>
+                    <NuxtLink to="/api" title="Products">Api</NuxtLink>
+                </DevOnly>
+
             </div>
         </div>
 
@@ -62,9 +65,11 @@ export default {
             <NuxtLink to="/components" title="Components">Components</NuxtLink>
             <NuxtLink to="/charts" title="Charts">Charts</NuxtLink>
             <NuxtLink to="/cars" title="Cars">Cars</NuxtLink>
-            <NuxtLink to="/test" title="Test">Test</NuxtLink>
-            <NuxtLink to="/products" title="Products">Products</NuxtLink>
-            <NuxtLink to="/api" title="Products">Api</NuxtLink>
+            <DevOnly>
+                <NuxtLink to="/test" title="Test">Test</NuxtLink>
+                <NuxtLink to="/products" title="Products">Products</NuxtLink>
+                <NuxtLink to="/api" title="Products">Api</NuxtLink>
+            </DevOnly>
         </div>
     </nav>
 </template>
