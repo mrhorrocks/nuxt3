@@ -1,6 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    ssr: true, // Disable Server Side rendering
+    // https://nuxt.com/docs/getting-started/deployment#static-hosting
+    // ssr: true, // <div id="__nuxt">[CONTENT PRE-RENDERED HERE]</div>
+    ssr: false, // <div id="__nuxt"></div>
     app: {
         head: {
             htmlAttrs: { lang: 'en' },
