@@ -31,7 +31,7 @@ export default {
             </div>
         </div>
 
-        <div class="tab">
+        <!-- <div class="tab">
             <input type="radio" id="tab-3" name="tab-group-1">
             <label for="tab-3">{{ title3 }}</label>
             <div class="content">
@@ -39,7 +39,7 @@ export default {
                     <slot name="tab-three" />
                 </p>
             </div>
-        </div>
+        </div> -->
     </div>
 </template>
 

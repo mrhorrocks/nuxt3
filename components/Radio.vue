@@ -27,9 +27,8 @@ export default {
 .radio {
     position: relative;
     display: inline-block;
-    /* background-color: red; */
     cursor: pointer;
-    margin-right: 2rem;
+    margin-right: 2.4rem;
     user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -45,11 +44,12 @@ export default {
     position: absolute;
     top: 0;
     left: 0;
-    height: 2rem;
-    width: 2rem;
+    height: 20px;
+    width: 20px;
     background-color: #eee;
     border: 2px solid #888;
     border-radius: 50%;
+    box-sizing: content-box;
 }
 
 /* On mouse-over, add a grey background color */
@@ -79,18 +79,17 @@ export default {
 .radio .checkmark:after {
     top: 4px;
     left: 4px;
-    width: 1.25rem;
-    height: 1.25rem;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     background: #0097ef;
 }
 
 #checkboxLabel {
-    /* background-color: pink; */
     display: inline-block;
     float: left;
     margin-left: 2.2rem;
-    height: 2rem;
-    line-height: 2;
+    height: 1.6rem;
+    line-height: 1.5;
 }
 </style>

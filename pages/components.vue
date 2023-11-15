@@ -20,8 +20,8 @@
 
                     <!-- Tabs -->
                     <Tabs 
-                        title1="Checkbox and radio buttons"
-                        title2="Two"
+                        title1="Checkboxes"
+                        title2="Radios"
                         title3="Three"
                         >
                         <!-- Tab 1 -->
@@ -29,21 +29,19 @@
                             <Checkbox id="1" label="One" checked="checked" />
                             <Checkbox id="2" label="Two" />
                             <Checkbox id="3" label="Three" />
-                            <br>
+                        </template>
+
+                        <!-- Tab 2 -->
+                        <template #tab-two>
                             <Radio name="name" id="10" label="Yes" checked="checked" />
                             <Radio name="name" id="11" label="No" />
                             <Radio name="name" id="12" label="Maybe" />
                         </template>
 
-                        <!-- Tab 2 -->
-                        <template #tab-two>
-                            Tab 2 content
-                        </template>
-
-                        <!-- Tab 2 -->
-                        <template #tab-three>
+                        <!-- Tab 3 -->
+                        <!-- <template #tab-three>
                             Tab 3 content
-                        </template>
+                        </template> -->
                     </Tabs>
 
                     <Button buttonClass="button submit" linkText="Send" />

@@ -43,8 +43,8 @@
     position: absolute;
     top: 0px;
     left: 0;
-    height: 2rem;
-    width: 2rem;
+    height: 1.5rem;
+    width: 1.5rem;
     background-color: #eee;
     border: 2px solid #888;
     border-radius: 0.2rem;
@@ -57,10 +57,7 @@
 
 /* When the checkbox is checked, add a blue background */
 .checkbox input:checked ~ .checkmark {
-    background-color: var(--second-colour);
-    height: 2rem;
-    width: 2rem;
-    border: 0;
+    background-color: white;
     border: 2px solid var(--first-colour);
 }
 
@@ -78,12 +75,12 @@
 
 /* Style the checkmark/indicator */
 .checkbox .checkmark:after {
-    left: 8px;
-    top: 2px;
-    width: 12px;
-    height: 20px;
-    border: solid white;
-    border-width: 0 5px 5px 0;
+    left: 6px;
+    top: 1px;
+    width: 8px;
+    height: 15px;
+    border: solid var(--first-colour);
+    border-width: 0 4px 4px 0;
     transform: rotate(41deg);
         -webkit-transform: rotate(41deg);
         -ms-transform: rotate(41deg);
