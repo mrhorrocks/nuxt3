@@ -59,7 +59,6 @@ export default {
 
 /* When the radio button is checked, add a blue background */
 .radio input:checked~.checkmark {
-    background-color: #eee;
     border: 2px solid var(--first-colour);
 }
 

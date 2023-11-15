@@ -17,6 +17,9 @@
   --mobnav-text: #e2e8f0;
   --chart-title: #ea580c;
   --gold-colour: gold;
+  --pale-grey: #eeeeee;
+  --light-grey: #cccccc;
+  --dark-grey: #666666;
   --first-font: normal 2rem/1 "Ariel";
   --site-font-one: normal 2rem/1 "Lobster", cursive;
   --site-font-two: normal 2rem/1 "Yanone Kaffeesatz", cursive;
@@ -635,7 +638,7 @@ body {
 
 header {
   position: fixed;
-  z-index: 100;
+  z-index: 50;
   width: 100%;
   padding: 1rem 0;
   border-color: var(--second-colour);

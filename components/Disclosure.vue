@@ -24,7 +24,7 @@ export default {
 
 <style scss scoped>
 details {
-    background: var(--third-colour);
+    background: var(--pale-grey);
     margin-bottom: 0.1rem;
 
     summary {
@@ -32,7 +32,7 @@ details {
         display: block;
         list-style: none;
         padding: 0.5rem;
-        background-color: var(--first-colour);
+        background-color: var(--light-grey);
         color: white;
         cursor: pointer;
     }
