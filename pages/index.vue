@@ -10,7 +10,7 @@ definePageMeta({
         <p>This is a scalable, responsive single page app built with
             <NuxtLink external href="https://nuxt.com/" class="underline" title="Nuxt">Nuxt</NuxtLink> and
             <NuxtLink external href="https://tailwindcss.com/" class="underline" title="Tailwind CSS">Tailwind</NuxtLink>. 
-            It's also where I test components, API's, continuious intergration and severless CMS.
+            It's also where I test components, API's, continuious delivery and severless CMS.
         </p>
     </section>
 
