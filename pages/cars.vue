@@ -1,6 +1,6 @@
 <template>
     <Head>
-        <Title>Cars</Title>
+        <Title>Cars - Mr.Horrocks</Title>
         <Meta name="description" content='Cars' />
     </Head>
 
