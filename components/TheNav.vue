@@ -53,6 +53,7 @@ export default {
                     <NuxtLink to="/test" title="Test">Test</NuxtLink>
                     <NuxtLink to="/products" title="Products">Products</NuxtLink>
                     <NuxtLink to="/api" title="Products">Api</NuxtLink>
+                    <NuxtLink to="/gitapi" title="Git Api">Git Api</NuxtLink>
                 </DevOnly>
 
             </div>
@@ -69,6 +70,7 @@ export default {
                 <NuxtLink to="/test" title="Test">Test</NuxtLink>
                 <NuxtLink to="/products" title="Products">Products</NuxtLink>
                 <NuxtLink to="/api" title="Products">Api</NuxtLink>
+                <NuxtLink to="/gitapi" title="Git Api">Git Api</NuxtLink>
             </DevOnly>
         </div>
     </nav>
