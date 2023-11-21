@@ -11,6 +11,10 @@ const { data: teams } = await useFetch('https://mrhorrocks.github.io/data/premie
 
     <h2 class="page-heading">Git Api</h2>
 
+    <p>This page shows data from an api that I am hosting on my Git repo. That repo can be seen  
+        <NuxtLink external href="https://github.com/mrhorrocks/mrhorrocks.github.io/blob/main/data/premierleague.json" title="Git Api" class="underline">here.</NuxtLink>
+    </p>
+
     <section aria-label="Git Api">
 
         <table border="1" width="100%" cellpadding="1" cellspacing="1" class="premtable">
@@ -67,13 +71,13 @@ table.premtable {
         $bottom-places: #ffadad;
         tr {
             td {
-                // line-height: 40px;
+                line-height: 40px;
                 &:nth-of-type(1) {
                     text-align: center;
                 }
             }
             img {
-                margin: 0px 10px 0 0;
+                margin: 10px 10px 0 0;
                 float: left;
                 vertical-align: middle;
 
