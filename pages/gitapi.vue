@@ -46,33 +46,10 @@ const { data: teams } = await useFetch('https://mrhorrocks.github.io/data/premie
 
             <!-- <tfoot>
                 <tr>
-                    <td colspan="10">Last updated 17th November 2023 at 12:44</td>
+                    <td colspan="10">Last updated ##th ### 2023</td>
                 </tr>
             </tfoot> -->
         </table>
-
-        <br><br>
-
-        <!-- <div v-for="item in teams" :key="item.position">
-
-            <img :src="item.badgeUrl" width="50">
-            <ul>
-                <li>Position: {{ item.position }}</li>
-                <li>Team: {{ item.teamname }}</li>
-                <li>Played: {{ item.played }}</li>
-                <li>Won: {{ item.won }}</li>
-                <li>Drawn: {{ item.drawn }}</li>
-                <li>Lost: {{ item.lost }}</li>
-                <li>For: {{ item.for }}</li>
-                <li>Against: {{ item.against }}</li>
-                <li>GD: {{ item.GD }}</li>
-                <li>Points: {{ item.points }}</li>
-            </ul>
-
-            <br>
-            <br>
-
-        </div> -->
 
     </section>
 </template>
@@ -81,17 +58,22 @@ const { data: teams } = await useFetch('https://mrhorrocks.github.io/data/premie
 table.premtable {
     th {
         text-align: left;
+        &:nth-of-type(1) {
+            text-align: center;
+        }
     }
     tbody {
+        $top-places: #b3ffb3;
+        $bottom-places: #ffadad;
         tr {
             td {
-                line-height: 40px;
+                // line-height: 40px;
                 &:nth-of-type(1) {
-                    margin-left: 5px;
+                    text-align: center;
                 }
             }
             img {
-                margin: 10px 10px 0 0;
+                margin: 0px 10px 0 0;
                 float: left;
                 vertical-align: middle;
 
@@ -100,7 +82,25 @@ table.premtable {
                 border-bottom: 2px dotted var(--light-grey);
             }
             &:nth-of-type(1) {
-                background-color: lighten(#6b717f, 20%);
+                background-color: $top-places;
+            }
+            &:nth-of-type(2) {
+                background-color: lighten($top-places, 4%);
+            }
+            &:nth-of-type(3) {
+                background-color: lighten($top-places, 8%);
+            }
+            &:nth-of-type(4) {
+                background-color: lighten($top-places, 12%);
+            }
+            &:nth-of-type(18) {
+                background-color: lighten($bottom-places, 12%);
+            }
+            &:nth-of-type(19) {
+                background-color: lighten($bottom-places, 8%);
+            }
+            &:nth-of-type(20) {
+                background-color: lighten($bottom-places, 4%);
             }
         }
     }
