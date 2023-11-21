@@ -39,6 +39,7 @@ export default defineNuxtConfig({
         ],
         '@nuxtjs/tailwindcss',
         '@dargmuesli/nuxt-cookie-control',
+        
     ],
     tailwindcss: { exposeConfig: true },
     devtools: { enabled: true },
