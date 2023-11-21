@@ -9,7 +9,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@dargmuesli/nuxt-cookie-control": "^6.4.4",
+    "@dargmuesli/nuxt-cookie-control": "^7.1.2",
     "@nuxt/devtools": "^1.0.3",
     "@types/node": "^18.17.3",
     "nuxt": "^3.7.4",
