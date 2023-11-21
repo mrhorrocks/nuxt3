@@ -47,8 +47,9 @@ export default {
             <div class="navlinks">
                 <NuxtLink to="/" title="Home">Home</NuxtLink>
                 <NuxtLink to="/components" title="Components">Components</NuxtLink>
-                <NuxtLink to="/charts" title="Charts">Charts</NuxtLink>
                 <NuxtLink to="/cars" title="Cars">Cars</NuxtLink>
+                <NuxtLink to="/gitapi" title="Git Api">Git Api</NuxtLink>
+                <NuxtLink to="/charts" title="Charts">Charts</NuxtLink>
                 <DevOnly>
                     <NuxtLink to="/test" title="Test">Test</NuxtLink>
                     <NuxtLink to="/products" title="Products">Products</NuxtLink>
@@ -63,8 +64,9 @@ export default {
         <div v-if="mobileMenuOpen" class="mobilenavlinks">
             <NuxtLink to="/" title="Home">Home</NuxtLink>
             <NuxtLink to="/components" title="Components">Components</NuxtLink>
-            <NuxtLink to="/charts" title="Charts">Charts</NuxtLink>
             <NuxtLink to="/cars" title="Cars">Cars</NuxtLink>
+            <NuxtLink to="/gitapi" title="Git Api">Git Api</NuxtLink>
+            <NuxtLink to="/charts" title="Charts">Charts</NuxtLink>
             <DevOnly>
                 <NuxtLink to="/test" title="Test">Test</NuxtLink>
                 <NuxtLink to="/products" title="Products">Products</NuxtLink>

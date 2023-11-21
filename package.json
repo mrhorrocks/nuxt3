@@ -9,11 +9,11 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@dargmuesli/nuxt-cookie-control": "^6.4.4",
-    "@nuxt/devtools": "latest",
+    "@dargmuesli/nuxt-cookie-control": "^7.1.2",
+    "@nuxt/devtools": "^1.0.3",
     "@types/node": "^18.17.3",
     "nuxt": "^3.7.4",
-    "sass": "^1.66.1"
+    "sass": "^1.69.5"
   },
   "dependencies": {
     "@heroicons/vue": "^2.0.18",

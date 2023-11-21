@@ -90,7 +90,7 @@ export default {
 }
 
 .car-card {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     position: relative;
     display: flex;
     flex-direction: column;
