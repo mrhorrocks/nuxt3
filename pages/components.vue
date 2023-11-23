@@ -14,8 +14,8 @@
             <div class="lg:col-span-1">
                 <!-- Form UI -->
                 <div class="ui-item">
-                    <TextField label="Name" placeholder="Name" id="13" />
-                    <TextField label="Email" placeholder="Email" id="14" />
+                    <TextField type="text" label="Name" placeholder="Name" id="13" />
+                    <TextField type="text" label="Email" placeholder="Email" id="14" />
                     <TextArea label="Description" placeholder="Add description" />
 
                     <!-- Tabs -->
@@ -44,9 +44,9 @@
                         </template> -->
                     </Tabs>
 
-                    <Button buttonClass="button submit" linkText="Send" />
-                    <Button buttonClass="button cancel" linkText="Cancel" />
-                    <Button buttonClass="button reset" linkText="Reset" />
+                    <Button class="button submit" text="Send" />
+                    <Button class="button cancel" text="Cancel" />
+                    <Button class="button reset" text="Reset" />
 
                 </div>
 
