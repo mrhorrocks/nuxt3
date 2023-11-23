@@ -1,25 +1,47 @@
 <template>
     <div class="textfield">
         <label :for="id">{{ label }}</label>
-        <input
-        type="text"
-        :id="id"
-        :placeholder="placeholder"
-        :disabled="disabled"
-        />
+        <input 
+            :type="type"
+            :id="id"
+            :placeholder="placeholder"
+            :disabled="disabled"
+            :value="modelValue"
+            :required="required"
+            @input="$emit('update:modelValue', $event.target.value)"
+            :autocomplete="id" />
     </div>
 </template>
 
 <script>
+
 export default {
     props: {
-        placeholder: {
-            default: "",
+        type: {
+            type: String,
+            default: "text"
         },
-        id: String,
-        label: String,
-        disabled: String,
+        label: {
+            type: String
+        },
+        id: {
+            type: String
+        },
+        disabled: {
+            type: String
+        },
+        placeholder: {
+            type: String
+        },
+        required: {
+            type: Boolean,
+            default: false,
+        },
+        modelValue: {
+            type: String // Assuming modelValue is a string type
+        },
     },
+    emits: ['update:modelValue']
 };
 </script>
 
@@ -42,6 +64,7 @@ div.textfield {
         padding: 0 0.3rem;
         background: white;
     }
+
     input {
         border: 2px solid var(--first-colour);
         border-radius: 0.5rem;
@@ -52,27 +75,33 @@ div.textfield {
         text-indent: 0.5rem;
         margin: 0 0.5rem 1.5rem 0;
     }
+
     input:disabled {
         border: 2px solid #95989a;
     }
+
     &--disabled {
         input {
-            border-color:#ccc;
+            border-color: #ccc;
             color: #eee;
         }
+
         label {
             color: #eee;
         }
     }
+
     &--error {
         input {
             border-color: red;
-            color:  green;
+            color: green;
         }
+
         label {
             color: red
         }
     }
+
     &--button {
         input {
             border-radius: 5px 0 0 5px;
@@ -80,5 +109,4 @@ div.textfield {
         }
     }
 }
-
 </style>
