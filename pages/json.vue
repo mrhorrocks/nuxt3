@@ -1,39 +1,48 @@
 <template>
-    <h2 class="page-heading">Html to JSON</h2>
+    <Head>
+        <Title>User input to JSON - Mr.Horrocks</Title>
+        <Meta name="description" content='Convert user input to JSON' />
+    </Head>
 
-    <form @submit.prevent="submitForm" autocomplete="on">
+    <h2 class="page-heading">User input to JSON</h2>
 
-    <TextField
-      id="name" 
-      label="Name" 
-      placeholder="Add name" 
-      v-model="formData.name" 
-      :required="true" />
+    <p>This form converts user input to a JSON object</p>
 
-    <TextField 
-      type="email"
-      id="email" 
-      label="Email" 
-      placeholder="Email" 
-      v-model="formData.email" 
-      :required="true" />
+    <section aria-label="Custom Made Components">
+        <form @submit.prevent="submitForm" autocomplete="on">
 
-      <TextField
-        type="number"
-        id="age" 
-        label="Age" 
-        placeholder="Age" 
-        v-model="formData.age" 
-        :required="true" />
-        <br>
-        <Button class="button submit" text="Submit" />
-    </form>
-    
-    <div v-if="submitted">
-        <h2>Submitted Data:</h2>
-        <pre>{{ submittedData }}</pre>
-    </div>
+        <TextField
+            id="name" 
+            label="Name" 
+            placeholder="Add name" 
+            v-model="formData.name" 
+            :required="true" />
 
+        <TextField 
+            type="email"
+            id="email" 
+            label="Email" 
+            placeholder="Enter a valid email address" 
+            v-model="formData.email" 
+            :required="true" />
+
+        <TextField
+            type="number"
+            id="age" 
+            label="Age" 
+            placeholder="Enter a number" 
+            v-model="formData.age" 
+            :required="true" />
+
+            <br>
+            <Button class="button submit" text="Submit" />
+        </form>
+        
+        <div v-if="submitted">
+            <h3 class="section-title my-4">Results:</h3>
+            <pre>{{ submittedData }}</pre>
+        </div>
+    </section>
 </template>
 
 <script>

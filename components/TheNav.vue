@@ -54,7 +54,7 @@ export default {
                     <NuxtLink to="/test" title="Test">Test</NuxtLink>
                     <NuxtLink to="/products" title="Products">Products</NuxtLink>
                     <NuxtLink to="/api" title="Products">Api</NuxtLink>
-                    <NuxtLink to="/json" title="json">JSON</NuxtLink>
+                    <NuxtLink to="/json" title="Convert to JSON">Convert to JSON</NuxtLink>
                 </DevOnly>
 
             </div>
@@ -72,7 +72,7 @@ export default {
                 <NuxtLink to="/test" title="Test">Test</NuxtLink>
                 <NuxtLink to="/products" title="Products">Products</NuxtLink>
                 <NuxtLink to="/api" title="Products">Api</NuxtLink>
-                <NuxtLink to="/json" title="json">JSON</NuxtLink>
+                <NuxtLink to="/json" title="Convert to JSON">Convert to JSON</NuxtLink>
             </DevOnly>
         </div>
     </nav>
