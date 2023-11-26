@@ -8,12 +8,12 @@ const counter = useState('counter', () => Math.round(Math.random() * 1000))
             Counter: {{ counter }}
         </span>
 
-        <button class="button" @click="counter++">
+        <Button class="button" @click="counter++">
             +
-        </button>
-        <button class="button" @click="counter--">
+        </Button>
+        <Button class="button" @click="counter--">
             -
-        </button>
+        </Button>
     </div>
 </template>
 
