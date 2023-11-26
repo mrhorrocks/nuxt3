@@ -70,6 +70,7 @@ const { data: teams } = await useFetch('https://mrhorrocks.github.io/data/premie
 
 <style lang="scss">
 table.premtable {
+    min-width: 359px;
     th {
         vertical-align: middle;
         text-align: right;
