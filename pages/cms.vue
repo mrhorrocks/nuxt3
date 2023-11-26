@@ -37,7 +37,7 @@
         </form>
         
         <div v-if="submitted">
-            <h3 class="section-title my-4">Results:</h3>
+            <h3 class="section-title mt-10 mb-0">Results:</h3>
             <!-- Copy to clipboard button -->
             <CopyToClipboard>
                 <!-- Display the JSON -->
@@ -66,11 +66,6 @@ export default {
             this.submittedData = JSON.stringify(this.formData, null, 2);
             this.submitted = true;
         },
-        // copySign() {
-        //     //btw writeText() returns a promise so you could utilize that somehow if you want
-        //     navigator.clipboard.writeText(this.$refs.jsonresult.$el.innerHTML)
-        //     console.log("copy activated");
-        // }
     },
 };
 </script>
