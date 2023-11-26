@@ -1,10 +1,8 @@
 <template>
-    <div>
-        <Button class="button" text="Copy" @click="copyToClipboard" />
-        <div ref="copyContent" class=" mt-4">
-            <!-- Content you want to copy -->
-            <slot></slot>
-        </div>
+    <Button class="button" text="Copy" @click="copyToClipboard" />
+    <div ref="copyContent" class=" mt-4">
+        <!-- Content you want to copy -->
+        <slot></slot>
     </div>
 </template>
   
