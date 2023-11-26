@@ -1,7 +1,7 @@
 <script setup>
 defineProps(['error'])
-// Use this to reset errors and redirect to the homepage
-const handleError = () => clearError({ redirect: '/' })
+const handleError = () => clearError(window.history.back())
+// const handleError = () => clearError({ redirect: '/' }) 
 </script>
 
 <template>
@@ -11,16 +11,25 @@ const handleError = () => clearError({ redirect: '/' })
 
             <Head>
                 <Title>A Nuxt 3 Project - {{ error.statusCode }} - {{ error.message }}</Title>
-                <Meta name="description" content='Error' />
+                <Meta name="description" content='Error Page' />
             </Head>
             <div class="grid grid-cols-1">
                 <div class="pt-8 text-center">
-                    <h2>Error {{ error.statusCode }}</h2>
-
+                    <h2>{{ error.statusCode }}</h2>
                     <p>{{ error.message }}</p>
 
                     <!-- Clear the errors and redirect back to see bellow -->
-                    <button @click="handleError">Go to the homepage</button>
+                    <Button class="button" @click="handleError();">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="w-6 h-6">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M16 12H8" />
+                            <path d="m12 8-4 4 4 4" />
+                        </svg>
+
+                        Go Back</Button>
                 </div>
             </div>
         </main>
@@ -30,29 +39,17 @@ const handleError = () => clearError({ redirect: '/' })
 
 <style lang="scss" scoped>
 h2 {
-    font-size: 4rem;
-    line-height: 10rem;
+    font-size: 8rem;
+    line-height: 1;
     font-weight: bold;
-    text-shadow: 1px 1px 0px #000;
     font-style: italic;
+    // color: var(--light-grey);
+    color: transparent;
+    text-shadow: 0 0 10px #ccc;
 }
 
 p {
-    font-size: 3rem;
     font-weight: bold;
-}
-
-button {
-    background-color: #3b82f6;
-    border-radius: 0.375rem;
-    margin-top: 4rem;
-    color: white;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    &:hover {
-        background-color: #1d4ed8;
-    }
+    color: var(--dark-grey);
 }
 </style>
