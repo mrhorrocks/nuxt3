@@ -40,7 +40,7 @@ export default {
                     </svg>
 
                 </span>
-            </button>
+            </button>   
 
             <!-- MAIN MENU -->
             <!-- Hide below 1024px -->
@@ -52,6 +52,7 @@ export default {
                 <NuxtLink to="/charts" title="Charts">Charts</NuxtLink>
                 <NuxtLink to="/json" title="Convert to JSON">Convert to JSON</NuxtLink>
                 <DevOnly>
+                    <NuxtLink to="/cms" title="CMS">CMS</NuxtLink>
                     <NuxtLink to="/test" title="Test">Test</NuxtLink>
                     <NuxtLink to="/products" title="Products">Products</NuxtLink>
                     <NuxtLink to="/api" title="Products">Api</NuxtLink>
@@ -70,6 +71,7 @@ export default {
             <NuxtLink to="/charts" title="Charts">Charts</NuxtLink>
             <NuxtLink to="/json" title="Convert to JSON">Convert to JSON</NuxtLink>
             <DevOnly>
+                <NuxtLink to="/cms" title="CMS">CMS</NuxtLink>
                 <NuxtLink to="/test" title="Test">Test</NuxtLink>
                 <NuxtLink to="/products" title="Products">Products</NuxtLink>
                 <NuxtLink to="/api" title="Products">Api</NuxtLink>
