@@ -1,54 +1,54 @@
 .button {
-    position: relative;
-    display: inline-block;
-    background-color: var(--first-colour);
-    padding: 0.5rem 2rem;
-    margin: 1rem 0.9rem 0 0;
-    border-radius: 0.3rem;
-    color: white;
-    cursor: pointer;
-    text-align: center;
-    box-shadow: 0px 3px 3px #ccc;
-    @apply 
-    w-full
-    sm:w-auto
+  position: relative;
+  display: inline-block;
+  background-color: var(--first-colour);
+  padding: 0.4rem 1.5rem;
+  margin: 0.3rem 0.2rem 0.3rem 0;
+  margin-left: 0;
+  border-radius: 0.3rem;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0px 3px 3px #ccc;
+  width: 100%;
+  @apply sm:w-auto
     transition 
     duration-150 
     ease-in-out;
-
+  &:hover {
+    top: 1px;
+    background-color: var(--gold-colour);
+    color: black;
+    box-shadow: 0px 3px 3px #ccc;
+  }
+  &:active {
+    background-color: var(--active-colour);
+    color: white;
+  }
+  &.submit {
+    background-color: var(--first-colour);
     &:hover {
-        top: 1px;
-        background-color: var(--gold-colour);
-        color: black;
-        box-shadow: 0px 3px 3px #ccc;
+      background-color: var(--dark-colour);
+      color: white;
     }
-
-    &:active {
-        background-color: var(--active-colour);
-        color: white;
+  }
+  &.cancel {
+    background-color: var(--alert-colour);
+    &:hover {
+      background-color: var(--alert-dark-colour);
+      color: white;
     }
-
-    &.submit {
-        background-color: var(--first-colour);
-        &:hover {
-            background-color: var(--dark-colour);
-            color:white;
-        }
+  }
+  &.reset {
+    background-color: var(--reset-dark-colour);
+    &:hover {
+      background-color: var(--reset-colour);
+      color: white;
     }
-
-    &.cancel {
-        background-color: var(--alert-colour);
-        &:hover {
-            background-color: var(--alert-dark-colour);
-            color:white;
-        }
-    }
-
-    &.reset {
-        background-color: var(--reset-dark-colour);
-        &:hover {
-            background-color: var(--reset-colour);
-            color:white;
-        }
-    }
+  }
+  /* svg icon */
+  svg {
+    float: left;
+    margin-right: 5px;
+  }
 }
