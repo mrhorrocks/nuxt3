@@ -136,6 +136,7 @@ table.premtable {
                 }
                 &:last-of-type {
                     padding-right: 0.5rem;
+                    font-weight: 700;
                 }
             }
             img {
