@@ -7,7 +7,7 @@
             :placeholder="placeholder"
             :disabled="disabled"
             :required="required"
-            :autocomplete="id" 
+            :autocomplete="type" 
             :value="modelValue"
             @input="$emit('update:modelValue', $event.target.value)" />
     </div>

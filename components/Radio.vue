@@ -19,7 +19,7 @@ export default {
     props: {
         value: {
             type: String,
-            default: false,
+            default: "false",
         },
         id: {
             type: String
