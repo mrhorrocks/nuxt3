@@ -1,6 +1,14 @@
 <template>
-    <label class="radio">
-        <input type="radio" :id="id" :checked="checked" :name="name" autocomplete="on" />
+    <label class="radio" :for="id">
+        <input 
+        type="radio" 
+        :id="id" 
+        :checked="checked" 
+        autocomplete="on"
+        :name="name" 
+        :value="value"
+        @input="$emit('update:modelValue', $event.target.value)" />
+
         <span class="checkmark"></span>
         <span id="checkboxLabel">{{ label }}</span>
     </label>
@@ -10,13 +18,26 @@
 export default {
     props: {
         value: {
-            type: Boolean,
+            type: String,
             default: false,
         },
-        label: String,
-        id: String,
-        checked: String,
-        name: String,
+        id: {
+            type: String
+        },
+        name: {
+            type: String,
+            default: "name"
+        },
+        label: {
+            type: String
+        },
+        checked: {
+            type: String
+        },
+        modelValue: {
+            type: String // Assuming modelValue is a string type
+        },
+        emits: ['update:modelValue']
     },
 
 };
