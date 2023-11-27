@@ -71,7 +71,7 @@ export default {
             <DevOnly>
                     <NuxtLink to="/json" title="Convert to JSON">Convert to JSON</NuxtLink>
                     <NuxtLink to="/cms" title="CMS">CMS</NuxtLink>
-                    <NuxtLink to="/cms2" title="Test">CMS2</NuxtLink>
+                    <NuxtLink to="/cms-two" title="Test">CMS2</NuxtLink>
                     <!-- <NuxtLink to="/charts" title="Charts">Charts</NuxtLink> -->
                     <!-- <NuxtLink to="/products" title="Products">Products</NuxtLink> -->
                     <!-- <NuxtLink to="/api" title="Products">Api</NuxtLink> -->
