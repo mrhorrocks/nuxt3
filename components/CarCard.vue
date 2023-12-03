@@ -1,3 +1,26 @@
+<script>
+import carsData from '~/assets/data/mock-vehicle-search-response.json';
+
+export default {
+    data() {
+        return {
+            carsData
+        };
+    },
+    methods: {
+        calculateFinance() {
+            console.log('Finance button clicked');
+            // e.preventDefault();
+        },
+        loadAlternateImage(e) {
+            // e.target.src = '~/assets/img/alternate-image.jpg';
+            console.log('Component added');
+            return
+        },
+    },
+}
+</script>
+
 <template>
     <article v-for="item in carsData.data" :key="item.id" class="car-card">
 
@@ -59,29 +82,6 @@
 
     </article>
 </template>
-
-<script>
-import carsData from '~/assets/data/mock-vehicle-search-response.json';
-
-export default {
-    data() {
-        return {
-            carsData
-        };
-    },
-    methods: {
-        calculateFinance() {
-            console.log('Finance button clicked');
-            // e.preventDefault();
-        },
-        loadAlternateImage(e) {
-            // e.target.src = '~/assets/img/alternate-image.jpg';
-            console.log('Component added');
-            return
-        },
-    },
-}
-</script>
 
 <style lang="scss" scoped>
 /* Handle */
