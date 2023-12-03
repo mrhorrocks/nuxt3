@@ -33,9 +33,9 @@
 
                         <!-- Tab 2 -->
                         <template #tab-two>
-                            <Radio  name="name" label="Mr" id="mr" checked="checked" />
-                            <Radio  name="name" label="Mrs" id="Mrs" />
-                            <Radio  name="name" label="Ms" id="ms"/>
+                            <Radio name="name" label="Mr" id="mr" checked="checked" />
+                            <Radio name="name" label="Mrs" id="Mrs" />
+                            <Radio name="name" label="Ms" id="ms"/>
                         </template>
 
                         <!-- Tab 3 -->
