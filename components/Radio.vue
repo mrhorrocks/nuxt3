@@ -9,8 +9,8 @@
         :value="value"
         @input="$emit('update:modelValue', $event.target.value)" />
 
-        <span class="checkmark"></span>
-        <span id="checkboxLabel">{{ label }}</span>
+        <span class="radiomark"></span>
+        <span class="radiobuttonLabel">{{ label }}</span>
     </label>
 </template>
   
@@ -61,7 +61,7 @@ export default {
 }
 
 /* Create a custom radio button */
-.radio .checkmark {
+.radio .radiomark {
     position: absolute;
     top: 0;
     left: 0;
@@ -74,29 +74,29 @@ export default {
 }
 
 /* On mouse-over, add a grey background color */
-.radio:hover input~.checkmark {
+.radio:hover input~.radiomark {
     background-color: var(--third-colour);
 }
 
 /* When the radio button is checked, add a blue background */
-.radio input:checked~.checkmark {
+.radio input:checked~.radiomark {
     border: 2px solid var(--first-colour);
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
-.checkmark:after {
+.radiomark:after {
     content: "";
     position: absolute;
     display: none;
 }
 
 /* Show the indicator (dot/circle) when checked */
-.radio input:checked~.checkmark:after {
+.radio input:checked~.radiomark:after {
     display: block;
 }
 
 /* Style the indicator (dot/circle) */
-.radio .checkmark:after {
+.radio .radiomark:after {
     top: 4px;
     left: 4px;
     width: 12px;
@@ -105,7 +105,7 @@ export default {
     background: #0097ef;
 }
 
-#checkboxLabel {
+.radiobuttonLabel {
     display: inline-block;
     float: left;
     margin-left: 2.2rem;
