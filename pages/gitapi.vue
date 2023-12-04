@@ -1,6 +1,6 @@
-<script setup>
+<!-- <script setup>
 const { data: teams, pending, error } = await useFetch('https://mrhorrocks.github.io/data/premierleague.json')
-</script>
+</script> -->
 
 <script>
 import localPremData from '~/assets/data/localPremData.json';
@@ -39,7 +39,8 @@ export default {
     </p>
 
     <section aria-label="Git Api">
-        <table border="1" width="100%" cellpadding="1" cellspacing="1" class="premtable">
+
+        <!-- <table border="1" width="100%" cellpadding="1" cellspacing="1" class="premtable">
             <thead>
                 <tr>
                     <th>#</th>
@@ -63,7 +64,7 @@ export default {
 
                     <td>{{ item.position }}</td>
                     <td>
-                        <!-- <img :src="item.badgeUrl" width="20" alt="{{ item.teamname }}"> -->
+                        <img :src="item.badgeUrl" width="20" alt="{{ item.teamname }}">
                     </td>
                     <td>{{ item.teamname }}</td>
                     <td>{{ item.played }}</td>
@@ -76,16 +77,7 @@ export default {
                     <td>{{ item.points }}</td>
                 </tr>
             </tbody>
-
-            <!-- <tfoot>
-                <tr>
-                    <td colspan="10">Last updated ##th ### 2023</td>
-                </tr>
-            </tfoot> -->
-        </table>
-        <br>
-        <br>
-        
+        </table> -->
 
         <table border="1" width="100%" cellpadding="1" cellspacing="1" class="premtable">
             <thead>
