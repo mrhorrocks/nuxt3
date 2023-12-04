@@ -1,23 +1,5 @@
 <script setup>
-const { data: teams, pending, error } = await useFetch('https://mrhorrocks.github.io/data/premierleague.json')
-</script>
-
-<script>
-import localPremData from '~/assets/data/localPremData.json';
-
-export default {
-    data() {
-        return {
-            localPremData
-        };
-    },
-    methods: {
-        // calculateFinance() {
-        //     console.log('Finance button clicked');
-        //     // e.preventDefault();
-        // }
-    },
-}
+const { data: premData, pending, error } = await useFetch('https://mrhorrocks.github.io/data/premData.json')
 </script>
 
 <template>
@@ -29,17 +11,14 @@ export default {
     <h2 class="page-heading">Git Api</h2>
 
     <ButtonLink 
-        to="https://github.com/mrhorrocks/mrhorrocks.github.io/blob/main/data/premierleague.json" 
+        to="https://github.com/mrhorrocks/mrhorrocks.github.io/blob/main/data/premData.json" 
         class="w-full sm:w-[initial]" 
         linkText="Go to Api"
-        title="https://github.com/mrhorrocks/mrhorrocks.github.io/blob/main/data/premierleague.json" />
-
-    <p>
-        
-    </p>
+        title="https://github.com/mrhorrocks/mrhorrocks.github.io/blob/main/data/premData.json" />
 
     <section aria-label="Git Api">
-        <table border="1" width="100%" cellpadding="1" cellspacing="1" class="premtable">
+
+        <!-- <table border="1" width="100%" cellpadding="1" cellspacing="1" class="premtable">
             <thead>
                 <tr>
                     <th>#</th>
@@ -63,7 +42,7 @@ export default {
 
                     <td>{{ item.position }}</td>
                     <td>
-                        <!-- <img :src="item.badgeUrl" width="20" alt="{{ item.teamname }}"> -->
+                        <img :src="item.badgeUrl" width="20" alt="{{ item.teamname }}">
                     </td>
                     <td>{{ item.teamname }}</td>
                     <td>{{ item.played }}</td>
@@ -76,16 +55,9 @@ export default {
                     <td>{{ item.points }}</td>
                 </tr>
             </tbody>
+        </table> -->
 
-            <!-- <tfoot>
-                <tr>
-                    <td colspan="10">Last updated ##th ### 2023</td>
-                </tr>
-            </tfoot> -->
-        </table>
         <br>
-        <br>
-        
 
         <table border="1" width="100%" cellpadding="1" cellspacing="1" class="premtable">
             <thead>
@@ -115,7 +87,9 @@ export default {
             </thead>
 
             <tbody>
-                <tr v-for="item in localPremData" :key="item.position">
+                <tr v-for="item in premData" :key="item.position">
+                    <td v-if="pending" colspan="11">Fetching...</td>
+                    <td v-else-if="error" colspan="11">{{ error }}</td>
                     <td>{{ item.position }}</td>
                     <td><img :src="'https://mrhorrocks.github.io/img/' + item.teamname + '.svg'" width="20"></td>
                     <td>{{ item.teamname }} </td>
