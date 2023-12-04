@@ -14,9 +14,9 @@
             <div class="lg:col-span-1">
                 <!-- Form UI -->
                 <div class="ui-item">
-                    <TextField type="text" label="Name" placeholder="Name" id="13" />
-                    <TextField type="text" label="Email" placeholder="Email" id="14" />
-                    <TextArea label="Description" placeholder="Add description" />
+                    <TextField id="firstName" type="text" label="Name" placeholder="Name" />
+                    <TextField id="emailAddress" type="text" label="Email" placeholder="Email" />
+                    <TextArea id="description" label="Description" placeholder="Add description" />
 
                     <!-- Tabs -->
                     <Tabs 
@@ -26,16 +26,16 @@
                         >
                         <!-- Tab 1 -->
                         <template #tab-one>
-                            <Checkbox id="1" label="One" checked="checked" />
-                            <Checkbox id="2" label="Two" />
-                            <Checkbox id="3" label="Three" />
+                            <Checkbox id="1" label="1" checked="checked" />
+                            <Checkbox id="2" label="2" />
+                            <Checkbox id="3" label="3" />
                         </template>
 
                         <!-- Tab 2 -->
                         <template #tab-two>
-                            <Radio name="name" id="10" label="Yes" checked="checked" />
-                            <Radio name="name" id="11" label="No" />
-                            <Radio name="name" id="12" label="Maybe" />
+                            <Radio name="name" label="Mr" id="mr" checked="checked" />
+                            <Radio name="name" label="Mrs" id="Mrs" />
+                            <Radio name="name" label="Ms" id="ms"/>
                         </template>
 
                         <!-- Tab 3 -->

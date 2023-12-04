@@ -1,3 +1,28 @@
+<template>
+	<div class="selectbox">
+		<label v-if="label" :for="id">{{ label }}</label>
+		<select 
+			:id="id"
+            :value="modelValue"
+            @input="$emit('update:modelValue', $event.target.value)">
+
+			<option v-if="!selectedOption" value="">Select an option</option>
+			<option v-for="item in jsonDataFile.orgs" 
+				:key="item.trust_code" 
+				:value="item.trust_name" 
+				:id="item.trust_code"
+				>
+
+				{{ item.trust_name }}</option>
+				<slot></slot>
+
+		</select>
+
+		<!-- <p v-if="selectedOption">{{ selectedOption }}</p> -->
+
+	</div>
+</template>
+
 <script>
 import jsonDataFile from '~/assets/data/db.json';
 export default {
@@ -9,33 +34,24 @@ export default {
 		}
 	},
 	props: {
-		label: {
-			type: String,
-			required: false,
-			default: 'Label property is required'
-		},
 		id: {
 			type: String,
 			required: false,
-			default: 'id-property-is-required'
+			default: 'id-prop-is-required'
 		},
-	},
+		label: {
+			type: String,
+			required: false
+		},
+        modelValue: {
+            type: String // Assuming modelValue is a string type
+        },
+    },
+    emits: ['update:modelValue']
 };
 </script>
 
-<template>
-	<div class="selectbox">
-		<label v-if="label" :for="id">{{ label }}</label>
-		<select :id="id" v-model="selectedOption">
-			<option v-if="!selectedOption" value="">Select an option</option>
-			<option v-for="item in jsonDataFile.orgs" :key="item.trust_code" :value="item.trust_name" :id="item.trust_code">
-				{{ item.trust_name }}</option>
-		</select>
 
-		<!-- <p v-if="selectedOption">{{ selectedOption }}</p> -->
-
-	</div>
-</template>
 
 <style scss scoped>
 .selectbox {

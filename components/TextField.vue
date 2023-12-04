@@ -6,10 +6,10 @@
             :id="id"
             :placeholder="placeholder"
             :disabled="disabled"
-            :value="modelValue"
             :required="required"
-            @input="$emit('update:modelValue', $event.target.value)"
-            :autocomplete="id" />
+            :autocomplete="type" 
+            :value="modelValue"
+            @input="$emit('update:modelValue', $event.target.value)" />
     </div>
 </template>
 
@@ -17,6 +17,9 @@
 
 export default {
     props: {
+        id: {
+            type: String
+        },
         type: {
             type: String,
             default: "text"
@@ -24,13 +27,10 @@ export default {
         label: {
             type: String
         },
-        id: {
+        placeholder: {
             type: String
         },
         disabled: {
-            type: String
-        },
-        placeholder: {
             type: String
         },
         required: {

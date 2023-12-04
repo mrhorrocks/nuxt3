@@ -40,7 +40,7 @@ export default {
                     </svg>
 
                 </span>
-            </button>
+            </button>   
 
             <!-- MAIN MENU -->
             <!-- Hide below 1024px -->
@@ -49,12 +49,13 @@ export default {
                 <NuxtLink to="/components" title="Components">Components</NuxtLink>
                 <NuxtLink to="/cars" title="Cars">Cars</NuxtLink>
                 <NuxtLink to="/gitapi" title="Git Api">Git Api</NuxtLink>
-                <NuxtLink to="/charts" title="Charts">Charts</NuxtLink>
-                <NuxtLink to="/json" title="Convert to JSON">Convert to JSON</NuxtLink>
                 <DevOnly>
-                    <NuxtLink to="/test" title="Test">Test</NuxtLink>
-                    <NuxtLink to="/products" title="Products">Products</NuxtLink>
-                    <NuxtLink to="/api" title="Products">Api</NuxtLink>
+                    <NuxtLink to="/json" title="Convert to JSON">Convert to JSON</NuxtLink>
+                    <NuxtLink to="/cms" title="CMS">CMS</NuxtLink>
+                    <NuxtLink to="/cms-two" title="Test">CMS2</NuxtLink>
+                    <!-- <NuxtLink to="/charts" title="Charts">Charts</NuxtLink> -->
+                    <!-- <NuxtLink to="/products" title="Products">Products</NuxtLink> -->
+                    <!-- <NuxtLink to="/api" title="Products">Api</NuxtLink> -->
                 </DevOnly>
 
             </div>
@@ -67,13 +68,14 @@ export default {
             <NuxtLink to="/components" title="Components">Components</NuxtLink>
             <NuxtLink to="/cars" title="Cars">Cars</NuxtLink>
             <NuxtLink to="/gitapi" title="Git Api">Git Api</NuxtLink>
-            <NuxtLink to="/charts" title="Charts">Charts</NuxtLink>
-            <NuxtLink to="/json" title="Convert to JSON">Convert to JSON</NuxtLink>
             <DevOnly>
-                <NuxtLink to="/test" title="Test">Test</NuxtLink>
-                <NuxtLink to="/products" title="Products">Products</NuxtLink>
-                <NuxtLink to="/api" title="Products">Api</NuxtLink>
-            </DevOnly>
+                    <NuxtLink to="/json" title="Convert to JSON">Convert to JSON</NuxtLink>
+                    <NuxtLink to="/cms" title="CMS">CMS</NuxtLink>
+                    <NuxtLink to="/cms-two" title="Test">CMS2</NuxtLink>
+                    <!-- <NuxtLink to="/charts" title="Charts">Charts</NuxtLink> -->
+                    <!-- <NuxtLink to="/products" title="Products">Products</NuxtLink> -->
+                    <!-- <NuxtLink to="/api" title="Products">Api</NuxtLink> -->
+                </DevOnly>
         </div>
     </nav>
 </template>

@@ -1,21 +1,46 @@
 <template>
     <div class="textarea">
-        <label for="textarea">{{ label }}</label>
+        <label :for="id">{{ label }}</label>
         <textarea
-            id="textarea"
+            :id="id"
             :placeholder="placeholder"
             :disabled="disabled"
-        />
+            :required="required"
+            :autocomplete="id" 
+            :value="modelValue"
+            @input="$emit('update:modelValue', $event.target.value)" />
     </div>
 </template>
 
 <script>
 export default {
     props: {
-        label: String,
-        disabled: String,
-        placeholder: "",
+        id: {
+            type: String
+        },
+        type: {
+            type: String,
+            default: "text"
+        },
+        label: {
+            type: String
+        },
+        placeholder: {
+            type: String,
+            default: ""
+        },
+        disabled: {
+            type: String
+        },
+        required: {
+            type: Boolean,
+            default: false,
+        },
+        modelValue: {
+            type: String // Assuming modelValue is a string type
+        },
     },
+    emits: ['update:modelValue']
 };
 </script>
 

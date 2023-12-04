@@ -1,8 +1,16 @@
 <template>
-    <label class="radio">
-        <input type="radio" :id="id" :checked="checked" :name="name" autocomplete="on" />
-        <span class="checkmark"></span>
-        <span id="checkboxLabel">{{ label }}</span>
+    <label class="radio" :for="id">
+        <input 
+        type="radio" 
+        :id="id" 
+        :checked="checked" 
+        autocomplete="on"
+        :name="name" 
+        :value="value"
+        @input="$emit('update:modelValue', $event.target.value)" />
+
+        <span class="radiomark"></span>
+        <span class="radiobuttonLabel">{{ label }}</span>
     </label>
 </template>
   
@@ -10,13 +18,26 @@
 export default {
     props: {
         value: {
-            type: Boolean,
-            default: false,
+            type: String,
+            default: "false",
         },
-        label: String,
-        id: String,
-        checked: String,
-        name: String,
+        id: {
+            type: String
+        },
+        name: {
+            type: String,
+            default: "name"
+        },
+        label: {
+            type: String
+        },
+        checked: {
+            type: String
+        },
+        modelValue: {
+            type: String // Assuming modelValue is a string type
+        },
+        emits: ['update:modelValue']
     },
 
 };
@@ -40,7 +61,7 @@ export default {
 }
 
 /* Create a custom radio button */
-.radio .checkmark {
+.radio .radiomark {
     position: absolute;
     top: 0;
     left: 0;
@@ -53,29 +74,29 @@ export default {
 }
 
 /* On mouse-over, add a grey background color */
-.radio:hover input~.checkmark {
+.radio:hover input~.radiomark {
     background-color: var(--third-colour);
 }
 
 /* When the radio button is checked, add a blue background */
-.radio input:checked~.checkmark {
+.radio input:checked~.radiomark {
     border: 2px solid var(--first-colour);
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
-.checkmark:after {
+.radiomark:after {
     content: "";
     position: absolute;
     display: none;
 }
 
 /* Show the indicator (dot/circle) when checked */
-.radio input:checked~.checkmark:after {
+.radio input:checked~.radiomark:after {
     display: block;
 }
 
 /* Style the indicator (dot/circle) */
-.radio .checkmark:after {
+.radio .radiomark:after {
     top: 4px;
     left: 4px;
     width: 12px;
@@ -84,7 +105,7 @@ export default {
     background: #0097ef;
 }
 
-#checkboxLabel {
+.radiobuttonLabel {
     display: inline-block;
     float: left;
     margin-left: 2.2rem;

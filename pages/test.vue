@@ -1,9 +1,6 @@
 <script setup>
-
 const convertTimeStamp = useConvertTimeStamp();
-
-// found @ ~/composables/usePrintString.ts
-const printString = usePrintString(); // Call the usePrintString plugin
+const printString = usePrintString(); // usePrintString plugin, ~/composables/usePrintString.ts
 
 </script>
 
@@ -16,19 +13,13 @@ const printString = usePrintString(); // Call the usePrintString plugin
     <h2 class="page-heading">Test</h2>
 
     <section aria-label="Testing Examples">
-
         <!-- GRID -->
         <div class="flexed-cols">
             <Counter />
         </div>
 
-        <p>
-            {{ printString }}
-        </p>
-
-        <p>
-            {{ convertTimeStamp }}
-        </p>
+        <p>{{ printString }}</p>
+        <p>{{ convertTimeStamp }}</p>
         <!-- END-GRID -->
 
     </section>
