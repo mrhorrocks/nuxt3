@@ -1,17 +1,33 @@
 <script setup>
-const { data: teams } = await useFetch('https://mrhorrocks.github.io/data/premierleague.json')
+const { data: teams, pending, error } = await useFetch('https://mrhorrocks.github.io/data/premierleague.json')
+</script>
 
+<script>
+import localPremData from '~/assets/data/localPremData.json';
+
+export default {
+    data() {
+        return {
+            localPremData
+        };
+    },
+    methods: {
+        // calculateFinance() {
+        //     console.log('Finance button clicked');
+        //     // e.preventDefault();
+        // }
+    },
+}
 </script>
 
 <template>
     <Head>
-        <Title>A Nuxt 3 Project - Git Api</Title>
+        <Title>Git Api - Mr.Horrocks</Title>
         <Meta name="description" content="Git Api" />
     </Head>
 
     <h2 class="page-heading">Git Api</h2>
 
-    
     <ButtonLink 
         to="https://github.com/mrhorrocks/mrhorrocks.github.io/blob/main/data/premierleague.json" 
         class="w-full sm:w-[initial]" 
@@ -23,7 +39,6 @@ const { data: teams } = await useFetch('https://mrhorrocks.github.io/data/premie
     </p>
 
     <section aria-label="Git Api">
-
         <table border="1" width="100%" cellpadding="1" cellspacing="1" class="premtable">
             <thead>
                 <tr>
@@ -43,10 +58,14 @@ const { data: teams } = await useFetch('https://mrhorrocks.github.io/data/premie
 
             <tbody>
                 <tr v-for="item in teams" :key="item.position">
+                    <td v-if="pending" colspan="11">Fetching...</td>
+                    <td v-else-if="error" colspan="11">{{ error }}</td>
 
                     <td>{{ item.position }}</td>
-                    <td><img :src="item.badgeUrl" width="20" alt="{{ item.teamname }}"></td>
-                    <td>{{ item.teamname }} </td>
+                    <td>
+                        <!-- <img :src="item.badgeUrl" width="20" alt="{{ item.teamname }}"> -->
+                    </td>
+                    <td>{{ item.teamname }}</td>
                     <td>{{ item.played }}</td>
                     <td>{{ item.won }}</td>
                     <td>{{ item.drawn }}</td>
@@ -55,6 +74,67 @@ const { data: teams } = await useFetch('https://mrhorrocks.github.io/data/premie
                     <td>{{ item.against }}</td>
                     <td>{{ item.GD }}</td>
                     <td>{{ item.points }}</td>
+                </tr>
+            </tbody>
+
+            <!-- <tfoot>
+                <tr>
+                    <td colspan="10">Last updated ##th ### 2023</td>
+                </tr>
+            </tfoot> -->
+        </table>
+        <br>
+        <br>
+        
+
+        <table border="1" width="100%" cellpadding="1" cellspacing="1" class="premtable">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>
+                        <!-- BADGE -->
+                    </th>
+                    <th>Team</th>
+                    <th><span>P</span><span>Played</span></th>
+
+                    <th><span>HW</span><span>HW</span></th>
+                    <th><span>HD</span><span>HD</span></th>
+                    <th><span>HL</span><span>HL</span></th>
+                    <th><span>HF</span><span>HF</span></th>
+                    <th><span>HA</span><span>HA</span></th>
+
+                    <th><span>AW</span><span>AW</span></th>
+                    <th><span>AD</span><span>AD</span></th>
+                    <th><span>AL</span><span>AL</span></th>
+                    <th><span>AF</span><span>AF</span></th>
+                    <th><span>AA</span><span>AA</span></th>
+
+                    <th><span>GD</span><span>GD</span></th>
+                    <th><span>P</span><span>Points</span></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr v-for="item in localPremData" :key="item.position">
+                    <td>{{ item.position }}</td>
+                    <td><img :src="'https://mrhorrocks.github.io/img/' + item.teamname + '.svg'" width="20"></td>
+                    <td>{{ item.teamname }} </td>
+                    <td>{{ item.PL }}</td>
+
+                    <td>{{ item.HW }}</td>
+                    <td>{{ item.HD }}</td>
+                    <td>{{ item.HL }}</td>
+                    <td>{{ item.HF }}</td>
+                    <td>{{ item.HA }}</td>
+
+                    <td>{{ item.AW }}</td>
+                    <td>{{ item.AD }}</td>
+                    <td>{{ item.AL }}</td>
+                    <td>{{ item.AF }}</td>
+                    <td>{{ item.AA }}</td>
+                    
+                    <td>{{ item.GD }}</td>
+                    <td>{{ item.PTS }}</td>
                 </tr>
             </tbody>
 
@@ -125,6 +205,7 @@ table.premtable {
 
                 &:nth-of-type(1), &:nth-of-type(2) {
                     text-align: center;
+                    padding: 0;
                 }
                 &:nth-of-type(3) {
                     text-align: left;
@@ -142,6 +223,7 @@ table.premtable {
             }
             img {
                 display: inline;
+                height: 36px;
 
             }
 
