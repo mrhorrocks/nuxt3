@@ -64,6 +64,8 @@ definePageMeta({
                         Icons</NuxtLink>
                     <NuxtLink external class="chip" href="https://css2sass.herokuapp.com/" title="CSS to SASS">CSS to SASS
                     </NuxtLink>
+                    <NuxtLink external class="chip" href="https://csvjson.com/csv2json" title="CSV to JSON">CSV to JSON
+                    </NuxtLink>
                 </p>
             </section>
         </div>
